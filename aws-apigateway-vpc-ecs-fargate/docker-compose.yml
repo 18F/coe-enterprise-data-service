@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  gsaecs:
+    image: gsaecs
+    build:
+      context: gsa-ecs
+      dockerfile: ./Dockerfile
+    environment:
+      DATABASE_URL: postgres://gsa_data_pguser:dqVvAy89h9RsV3kEKn@data-coe-gsa-aurorapg-sampledata.cluster-cozpouof2ron.us-east-2.rds.amazonaws.com:5432/postgres
+      NODE_ENV: development
+    ports:
+      - 80:80
