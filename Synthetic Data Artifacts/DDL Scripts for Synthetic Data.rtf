@@ -1,0 +1,1221 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red128\green0\blue0;\red0\green0\blue128;\red0\green0\blue255;
+\red255\green0\blue0;\red128\green128\blue128;}
+{\*\expandedcolortbl;;\csgenericrgb\c50196\c0\c0;\csgenericrgb\c0\c0\c50196;\csgenericrgb\c0\c0\c100000;
+\csgenericrgb\c100000\c0\c0;\csgenericrgb\c50196\c50196\c50196;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.eqpmts (\
+item_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0  ,\
+item_estd_cst 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 8\cf0 ,\cf4 4\cf0 ) 
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+item_desc 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 30\cf0 ) 
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+actl_nbr 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+actl_amt 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+rqstd_nbr 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+rqstd_amt 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+projd_nbr 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+projd_amt 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 NULL
+\f1\b0 \cf0 ,\
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_assoc_prin_bond (\
+bond_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+int_unpd_due_bond_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 9\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 , \
+prin_unpd_due_bond_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 9\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 , \
+int_next_instlmt_bond_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 9\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 , \
+prin_next_instlmt_bond_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 9\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 , \
+int_on_delq_prin 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 9\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_case (\
+case_id 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 15\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 , \cf6 --change to string\cf0 \
+st_cde_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cty_cde_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+id_nbr_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 10\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\cf6 --change to string\cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.farms_ck_info_frauds(\
+rcrd_typ 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_2 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+st_ofc_mailg 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cty_ofc_mailg 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dst_ofc_mailg 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+st_cde_oblr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cty_cde_oblr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+id_nbr_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 10\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ln_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cr_rept_fee_cde 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+nme_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 19\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+advnc_multi_amt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 10\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_ck 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aproptn_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+geog_st_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fy 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fed_resv_route_nbr  
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ck_digit_route_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+typ_bank_acct 
+\f0\b \cf3 char
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dpstr_acct_nbr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 17\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+enty_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ck_cncltn_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fnl_advnc_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_rgstr_dtl 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+blk_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_ck_info (\
+rcrd_typ 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_2 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+nme_flds_borr_cnt 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+mailg_lvl 
+\f0\b \cf3 char
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+st_ofc_mailg 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cty_ofc_mailg 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dst_ofc_mailg 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+st_cde_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cty_cde_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+id_nbr_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 10\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ln_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cr_rept_fee_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+nme_oblr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 19\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+advnc_multi_amt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 10\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_ck 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aproptn_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+geog_st_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fy 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_eqtyrvrs (\
+dte_trnsctn 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ln_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ln_nbr_new 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_2 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_3rd 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_4th 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+amortn_amt_cum 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+prtl_sale_ln_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0   
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+prtl_sale_amortn_amt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_equity (\
+fd_cde_2 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_3rd 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_4th 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ln_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+typ_plan_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+wrtdwn_amt_scrd_re 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+wrtdwn_amt_not_scrd_re 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+begng_mkt_vlu 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+endg_mkt_vlu 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+net_recvry_vlu 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+potl_recptr_amt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rcvb_amt_due 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rcvb_amt_pd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_efctv 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_mturty 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_csh 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_fnl_pymt 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_rgstr_dtl 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rgstr_typ_lst_trnsctn 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+equity_sale_contr  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+appltn_cde  
+\f0\b \cf3 varchar
+\f1\b0 \cf0  (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fully_pd_cde 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fnl_rcvb_cde  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_sale_prop  
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_compld_srvcg_appltn  
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+asstnc_typ_cde  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_oblgn  
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cr_appld_noncsh 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 11\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_noncsh  
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+susp_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_fd_side (\
+altmt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+altmt_1st_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+altmt_2nd_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+altmt_3rd_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+altmt_4th_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_mallot_oblgn (\
+sbmsn_cde 
+\f0\b \cf3 numeric
+\f1\b0 \cf0  (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+purp_cde 
+\f0\b \cf3 numeric
+\f1\b0 \cf0  (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+oblgns_amt_cum 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+oblgns_cnt_cum 
+\f0\b \cf3 numeric
+\f1\b0 \cf0 (\cf4 6\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+vou_amt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ppb_cde_1st 
+\f0\b \cf3 numeric
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ppb_cde_2_3 
+\f0\b \cf3 numeric
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.farms_mallot (\
+aproptn_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+maj_cls 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+obj_clsfctn_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fy_acctg 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_typ_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+multi_elmt_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ok_to_proc_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aprtnmts_cur_dtl 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+altmt_cur 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aprtnmt_typ 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+altmt_typ 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,d\
+prd_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aprtnmts_1st_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aprtnmts_2nd_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aprtnmts_3rd_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+aprtnmts_4th_acctg_prd 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 12\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 \
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.gl_mstacct (\
+rd_tax_id 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rd_acct_nbr 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.glacctc (\
+gl_cntrl_key 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rcrd_cnt 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_rgstrct 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf5 ;\cf0 \
+\
+\
+
+\f0\b \cf2 CREATE
+\f1\b0 \cf0  
+\f0\b \cf2 TABLE
+\f1\b0 \cf0  farm_account.dbo.glacct (\
+acct_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+prfx_line_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+sfx_line_nbr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+sub_sfx_line_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 , \
+minor_cde_flag 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_title 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 50\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+bal_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+enty 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_rgstr_acct 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+
+\f0\b \cf2 primary
+\f1\b0 \cf0  
+\f0\b \cf2 key
+\f1\b0 \cf0  (acct_nbr)\
+)\cf5 ;\cf0 \
+\
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.glblkc(\
+fy 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+enty_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+blk_nbr_5 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+sbsdry_acct_hash_ttl 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_nbrs_hash_ttl 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+minor_cde_hash_ttl 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dr_amt_indiv_gl_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0 (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cr_amt_indiv_gl_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+user_inits 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf5 ;\cf0 \
+\
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.glblkd(\
+acct_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+minor_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_2 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_3rd 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_4th 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+trnsctn_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_end_of_mo 
+\f0\b \cf3 bigint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+purp_cde_1 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dr_amt_indiv_gl_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cr_amt_indiv_gl_accts 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+mo_actv  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rgstr_typ_cde  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+time_stnds_data  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+user_inits 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 3\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+
+\f0\b \cf2 primary
+\f1\b0 \cf0  
+\f0\b \cf2 key
+\f1\b0 \cf0  (acct_nbr)\
+)\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.glmstr(\
+fy  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+enty_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+minor_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cur_mo_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cur_acct_bal 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+pr_yr_endg_bal 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+gl_mo_actv 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+clsg_entries 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+cur_mo_pr_yr_actv 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+subq_mo_pr_yr_actv 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+memo_acct_bal 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+prev_bal_cntr 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 15\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_rgstr_acct 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+rgstr_typ_cde 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+ctry_digit 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.symbol(\
+trsry_sym 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 20\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_mo 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dept_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+srvc_agcy 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+agcy 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_statn 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 4\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_2 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_3rd 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+fd_cde_4th 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+trnsmt 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+trnsmt_dte 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.usglact(\
+acct_nbrgl  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_nbr_sub  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_nbrda  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+acct_title 
+\f0\b \cf3 varchar
+\f1\b0 \cf0  (\cf4 50\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+bal_cde  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+prfx_line_nbr 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+sfx_line_nbr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 1\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+sub_sfx_line_nbr  
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dte_lst_rgstr_acct 
+\f0\b \cf3 int
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+
+\f0\b \cf2 primary
+\f1\b0 \cf0  
+\f0\b \cf2 key
+\f1\b0 \cf0 (acct_nbrgl))\cf5 ;\cf0 \
+\
+
+\f0\b \cf2 create
+\f1\b0 \cf0  
+\f0\b \cf2 table
+\f1\b0 \cf0  farm_account.dbo.acctacct(\
+acct 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 not
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+
+\f0\b \cf2 primary
+\f1\b0 \cf0  
+\f0\b \cf2 key
+\f1\b0 \cf0 (acct),\
+sub_acct 
+\f0\b \cf3 smallint
+\f1\b0 \cf0  
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+obj_cls 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+amt 
+\f0\b \cf3 decimal
+\f1\b0 \cf0  (\cf4 14\cf0 ,\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 ,\
+dr_cr 
+\f0\b \cf3 varchar
+\f1\b0 \cf0 (\cf4 2\cf0 ) 
+\f0\b \cf2 null
+\f1\b0 \cf0 )\cf5 ;\cf0 \
+}

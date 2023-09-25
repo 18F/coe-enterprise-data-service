@@ -1,0 +1,1001 @@
+ACCT-NBR,PRFX-LINE-NBR,SFX-LINE-NBR,SUB-SFX-LINE-NBR,MINOR-CDE-FLAG,ACCT-TITLE,BAL-CDE,ENTY,DTE-LST-RGSTR-ACCT
+7000,81,9,7,0,Dry Creek Pumpkin Patch,5,4,11413
+7001,77,3,5,0,Blue Lake Mushroom Farm,2,4,21721
+7002,61,5,1,0,Ramaya's Horses,7,1,11518
+7003,41,1,9,0,Los Angeles Egg Farm,3,2,51915
+7004,77,3,9,0,Abdalah's Chickens,1,5,122915
+7005,82,1,9,0,Ross Lake Homestead,5,5,21513
+7006,61,7,1,0,Blooming Family Vineyards,3,4,61920
+7007,41,2,7,1,Deer Creek Homestead,7,4,112815
+7008,82,2,5,0,Black Mountain Hills,9,5,111313
+7009,61,8,1,0,Sparkle Pond Sunflower Farms,3,5,71820
+7010,41,3,4,1,Serene Sunflower Farms,2,4,31014
+7011,61,8,5,1,Blissful Herb Garden,6,4,71821
+7012,61,8,7,1,Webb Family Goats,7,3,72318
+7013,82,3,6,1,Turtle Pond Herb Farm,3,1,111621
+7014,82,3,7,0,Coleman Lavender Fields,7,2,32717
+7015,61,9,1,1,Arizona Sunflower Farms,7,3,81115
+7016,41,4,4,0,Francesco's Lavender Fields,4,1,50813
+7017,41,4,5,1,Jimmy's Pumpkin Patch,2,2,92920
+7018,41,4,6,0,Sparkle Pond Pumpkin Patch,4,2,21519
+7019,41,4,3,0,Rustic Fields,6,1,81220
+7020,61,9,6,1,Sunny Cow Farm,3,5,70918
+7021,41,4,9,1,Alaska Fields,4,3,120518
+7022,41,5,6,0,Kathy's Honeybees,5,1,120219
+7023,62,1,3,0,Salt Lake Egg Farm,3,2,42614
+7024,82,6,5,1,Alaska Avocado Farm,7,1,21220
+7025,62,1,7,1,Black Mountain Farm,6,5,60118
+7026,62,1,9,1,Sharon's Horses,3,2,41813
+7027,41,7,2,0,Maribel's Lavender Fields,7,5,110416
+7028,41,7,3,1,Kathy's Ranch,9,4,80922
+7029,41,7,7,1,Maribel's Vineyards,9,1,52817
+7030,62,3,1,0,Sparkle Pond Horse Ranch,3,3,42814
+7031,62,3,2,1,Kristen's Acres,8,3,50514
+7032,41,8,5,1,Timmy's Acres,1,4,101415
+7033,62,3,4,0,Coleman Farm,5,5,12215
+7034,21,3,9,1,Cloudy Plum Orchard,1,3,120220
+7035,41,8,7,0,Smucker's Vegetable Farm,2,3,122314
+7036,21,3,8,1,Webb Family Vegetable Farm,6,2,63021
+7037,21,4,2,1,Pringle Family Avocado Farm,4,3,92922
+7038,21,4,3,0,Alberto's Horses,2,3,42622
+7039,21,4,4,0,Middle Creek Lavender Fields,2,5,111616
+7040,41,9,6,0,Blissful Pumpkin Patch,7,4,51218
+7041,82,9,2,0,Serene Squash Farm,1,3,110715
+7042,41,9,8,0,Elm Tree Oranges,1,4,92114
+7043,82,9,7,0,Anita's Farm,8,1,91015
+7044,21,5,3,1,Harvest Herb Farm,2,5,71121
+7045,62,4,9,1,Dry Creek Lavender Fields,2,1,51217
+7046,21,5,7,1,Jasmin's Organic Farm,4,4,73013
+7047,62,5,4,1,Albert's Country Estate,8,2,103017
+7048,21,6,2,1,Turtle Pond Avocado Farm,5,3,72714
+7049,21,6,4,0,Blue Lake Farm,6,5,101213
+7050,42,1,7,1,Timmy's Vineyards,3,2,62515
+7051,83,1,4,1,Rustic Honey Bee Farm,9,4,32817
+7052,42,1,9,0,Serene Herb Garden,3,2,61116
+7053,21,7,2,1,Kristen's Homestead,2,3,60318
+7054,62,6,9,1,Nelson's Hills,8,1,10919
+7055,42,2,2,0,Gloria's Chickens,6,2,110413
+7056,62,7,1,1,Crater Lake Flower Garden,9,3,90519
+7057,42,2,4,1,Breezy Goats,5,1,31713
+7058,42,2,6,0,Los Angeles Acres,7,2,62222
+7059,83,2,6,1,Francesco's Vineyards,4,1,72017
+7060,83,2,7,0,Francesco's Horse Ranch,3,4,101320
+7061,42,3,2,1,Sunset Hill Mushroom Farm,7,3,22422
+7062,83,3,4,1,Timmy's Fruit Orchard,1,1,60813
+7063,21,9,3,0,Blue Lake Ranch,1,5,93014
+7064,61,3,5,0,Sunny Oranges,8,2,42313
+7065,83,3,9,0,Alberto's Vegetable Farm,4,3,22020
+7066,21,9,7,0,Alberto's Maple Syrup,4,5,100914
+7067,62,9,3,0,Golden Goats,9,5,111119
+7068,83,4,9,0,Sunset Hill Farm,1,4,11420
+7069,83,5,2,1,Black Mountain Herb Farm,1,1,73121
+7070,83,5,3,1,Nelson's Fields,9,4,120120
+7071,22,1,1,1,Pringle Family Juicery,5,4,60514
+7072,42,6,1,0,Kristen's Plum Orchard,4,4,50122
+7073,22,1,4,0,Sharon's Country Estate,8,2,100519
+7074,83,6,1,0,Blissful Herb Farm,7,5,102916
+7075,83,6,2,0,Kathy's Organic Farm,6,3,100121
+7076,22,2,5,0,Jimmy's Ranch,8,5,102919
+7077,63,2,2,0,Jose's Peach Orchard,2,4,122015
+7078,83,7,3,1,Albert's Egg Farm,2,1,91615
+7079,42,7,7,0,Esmeralda's Pumpkin Patch,9,4,42916
+7080,22,3,2,0,Pringle Family Sunflower Farms,6,5,71313
+7081,83,7,8,0,Elm Tree Squash Farm,5,3,110820
+7082,22,3,8,0,Black Mountain Horse Ranch,7,2,31720
+7083,83,8,3,0,Carolina's Sunflower Farms,9,4,121815
+7084,83,8,7,1,Arizona Egg Farm,3,2,10719
+7085,63,3,9,1,Webb Family Avocado Farm,6,5,122316
+7086,42,9,1,1,Mountain Meadows Honeybees,3,2,82315
+7087,22,4,6,0,Black Mountain Cow Farm,3,4,21017
+7088,42,9,6,0,Monarch Meadow Pumpkin Patch,4,1,70520
+7089,83,9,3,0,Breezy Fields,7,1,72113
+7090,63,4,7,1,Alberto's Fields,6,2,121216
+7091,22,5,1,1,Blooming Family Squash Farm,6,4,52119
+7092,22,5,2,1,Maribel's Farm,2,1,92617
+7093,42,9,9,0,Ramaya's Honey Bee Farm,5,2,31222
+7094,83,9,9,1,Blooming Family Acres,2,4,121417
+7095,22,5,6,1,Maribel's Egg Farm,6,3,50715
+7096,63,5,7,1,Carolina's Cattle,3,3,71114
+7097,43,1,1,0,Harvest Vegetable Farm,6,4,52713
+7098,43,1,4,1,Sharon's Oranges,8,5,52113
+7099,63,6,6,0,Cloudy Horse Ranch,5,3,83020
+7100,84,1,7,0,Harvest Goats,3,4,32021
+7101,43,2,2,1,Delightful Creamery,8,1,72019
+7102,84,1,9,0,Carolina's Vegetable Farm,6,5,72515
+7103,43,2,3,1,Charlotte's Farm,5,3,51514
+7104,84,2,2,1,Ross Lake Vineyards,1,2,50221
+7105,63,7,5,0,Fly Creek Oranges,4,3,121614
+7106,43,2,9,0,Esmeralda's Oranges,8,4,40414
+7107,43,3,1,0,Radiant Homestead,5,2,53122
+7108,22,8,4,0,Maria's Flower Garden,8,5,22315
+7109,22,8,3,0,Happy Mushroom Farm,7,3,112416
+7110,63,8,2,0,Kristen's Acre Farms,3,4,52421
+7111,22,8,7,0,Ross Lake Oranges,7,1,53014
+7112,43,3,5,1,Pringle Family Acre Farms,5,4,42119
+7113,43,3,8,1,Badger Hill Flower Garden,3,4,60216
+7114,63,8,8,0,Badger Hill Chickens,4,1,72021
+7115,43,4,2,0,Webb Family Horses,8,5,111722
+7116,43,4,3,1,Bankers Hill Juicery,5,5,90913
+7117,22,9,5,1,Francesco's Egg Farm,3,4,10816
+7118,22,9,6,1,Mountain Meadows Herb Farm,1,4,120418
+7119,63,9,1,1,Blooming Family Pumpkin Patch,6,2,102016
+7120,43,4,7,0,Charlotte's Plum Orchard,2,1,113017
+7121,63,9,8,0,Tranquil Hills,5,4,80718
+7122,43,5,4,1,Hightower Family Juicery,6,4,50818
+7123,43,5,5,1,Black Mountain Vineyards,9,3,22515
+7124,84,5,5,0,Virginia's Fields,7,5,33119
+7125,43,5,9,1,Ross Lake Organic Farm,2,4,122715
+7126,43,6,2,0,Sparkle Pond Acre Farms,5,1,21718
+7127,23,1,4,0,Maria's Cow Farm,3,4,61519
+7128,64,1,5,0,Blissful Horse Ranch,3,1,30321
+7129,84,6,5,0,Ross Lake Cow Farm,8,2,20321
+7130,64,1,8,1,Green Meadow Cow Farm,1,2,91416
+7131,84,6,7,0,Green Meadow Juicery,1,3,112013
+7132,43,7,1,1,Ross Lake Flower Garden,3,1,32014
+7133,43,7,6,0,Alberto's Vineyards,4,4,112216
+7134,84,7,3,0,Smucker's Country Estate,4,4,52219
+7135,23,3,1,1,Arizona Farm,5,2,31613
+7136,23,3,2,1,Salt Lake Farm,7,5,62414
+7137,23,3,4,0,Hudson Family Fields,9,3,71720
+7138,84,7,9,1,Elm Tree Honeybees,9,2,111117
+7139,23,3,6,1,Albert's Acre Farms,9,5,93020
+7140,84,8,3,0,Maria's Avocado Farm,2,2,71321
+7141,84,9,3,1,Sauer Family Acres,9,3,101116
+7142,64,4,5,1,Maria's Chickens,7,2,10413
+7143,64,4,9,0,Sparkle Pond Cow Farm,6,4,42016
+7144,64,5,2,0,Breezy Pumpkin Patch,8,1,72016
+7145,23,5,7,1,Los Angeles Goats,8,3,32419
+7146,64,5,4,1,Arizona Cattle,1,1,70416
+7147,23,5,9,0,Tranquil Farm,2,2,81122
+7148,64,5,6,1,Fly Creek Hills,6,4,61718
+7149,64,5,7,0,Jimmy's Vineyards,2,3,110818
+7150,23,6,6,1,Timmy's Herb Farm,1,5,60918
+7151,64,6,3,0,Salt Lake Squash Farm,5,4,82717
+7152,44,1,5,1,Turtle Pond Peach Orchard,7,2,21621
+7153,23,7,2,1,Sauer Family Honey Bee Farm,5,3,22216
+7154,64,6,9,1,Kristen's Goats,4,5,50922
+7155,85,1,9,1,Smith Peach Orchard,4,2,82621
+7156,44,2,5,0,Coleman Pumpkin Patch,4,5,32120
+7157,85,2,1,1,Jose's Cow Farm,1,2,41117
+7158,85,2,8,1,Fullerton Herb Farm,7,1,91716
+7159,64,8,1,0,Green Meadow Herb Farm,4,3,22013
+7160,23,8,6,0,Monarch Meadow Hills,3,3,101013
+7161,23,8,7,1,Deer Creek Herb Farm,9,3,42813
+7162,44,3,9,0,Olivia's Goats,1,5,92019
+7163,85,3,6,1,Virginia's Honeybees,9,2,82321
+7164,23,9,3,0,Fulkerson Family Squash Farm,5,1,42113
+7165,44,4,5,1,Middle Creek Horses,9,1,101914
+7166,64,9,4,0,Carolina's Acre Farms,4,1,92221
+7167,85,4,3,1,Monarch Meadow Creamery,2,5,111419
+7168,85,4,2,0,Sunny Peach Orchard,4,5,51720
+7169,85,4,5,0,Esmeralda's Cow Farm,1,1,82920
+7170,85,4,8,1,Cloudy Maple Syrup,8,5,111819
+7171,24,1,7,0,Hightower Family Cow Farm,3,3,81717
+7172,85,6,2,0,Middle Creek Avocado Farm,3,2,50521
+7173,85,6,3,0,Sunny Honeybees,2,2,101917
+7174,65,1,6,1,Sunset Hill Goats,5,2,61913
+7175,65,1,9,1,Dry Creek Homestead,3,4,91317
+7176,65,2,1,1,Swallowtail Ponds Apples,5,4,82618
+7177,85,7,3,1,Blue Lake Honeybees,9,1,81121
+7178,65,2,8,0,Green Meadow Goats,8,5,40914
+7179,24,3,3,1,Timmy's Country Estate,5,4,93022
+7180,85,7,9,0,Nelson's Vineyards,7,4,10116
+7181,44,8,3,0,Sauer Family Herb Garden,7,1,53118
+7182,65,3,7,0,Elm Tree Acre Farms,8,4,82014
+7183,24,4,1,0,Eduardo's Horses,9,4,20320
+7184,65,3,9,1,Esmeralda's Acre Farms,1,3,32313
+7185,85,8,8,1,Blooming Family Juicery,3,3,73116
+7186,65,4,1,1,Monarch Meadow Ranch,1,5,91620
+7187,24,4,6,1,Carolina's Avocado Farm,4,3,40714
+7188,44,9,4,1,Aisha's Creamery,9,2,92622
+7189,65,4,4,0,Deer Creek Fields,1,5,101016
+7190,24,4,2,0,Harvest Creamery,9,4,92715
+7191,85,9,5,1,Tranquil Plum Orchard,9,5,102318
+7192,85,9,7,1,Mountain Horses,8,2,80418
+7193,24,5,4,1,Swallowtail Ponds Homestead,2,4,40115
+7194,24,5,8,1,Albert's Vegetable Farm,7,2,53019
+7195,24,6,2,1,Smith Goats,9,3,123016
+7196,24,6,4,0,Green Meadow Homestead,9,3,112914
+7197,24,6,5,0,Hudson Family Pumpkin Patch,9,3,22021
+7198,86,1,1,0,Green Meadow Lavender Fields,9,4,60616
+7199,45,1,6,0,Mountain Meadows Cattle,1,4,52015
+7200,86,1,2,0,Monarch Meadow Farm,8,5,11522
+7201,65,6,6,1,Happy Pumpkin Patch,2,5,71517
+7202,65,6,7,0,Hightower Family Avocado Farm,2,4,91014
+7203,24,7,2,1,Charlotte's Mushroom Farm,1,4,30116
+7204,86,1,7,1,Pringle Family Peach Orchard,9,1,90521
+7205,45,1,7,1,Mountain Horse Ranch,6,2,50216
+7206,24,7,6,1,Carolina's Flower Garden,4,4,92815
+7207,86,2,5,1,Cloudy Apples,6,1,122714
+7208,86,2,6,1,Maribel's Horse Ranch,6,5,32015
+7209,65,7,8,1,Eduardo's Vineyards,1,2,72620
+7210,24,8,4,1,Kristen's Farm,9,1,101214
+7211,65,8,3,1,Ross Lake Fruit Orchard,4,4,71714
+7212,24,8,7,1,Francesco's Squash Farm,5,1,60419
+7213,45,4,1,0,Arizona Maple Syrup,2,2,62322
+7214,45,4,2,1,Harvest Squash Farm,3,5,82118
+7215,86,4,3,1,Sauer Family Organic Farm,4,5,120322
+7216,45,4,8,1,Kathy's Hills,8,2,52621
+7217,65,9,6,0,Ramaya's Country Estate,6,2,10213
+7218,24,9,9,1,Breezy Juicery,9,1,100118
+7219,86,4,7,1,Mountain Hills,4,4,31314
+7220,65,9,5,1,Jasmin's Vineyards,7,1,70317
+7221,65,9,7,1,Jose's Juicery,3,5,50116
+7222,45,5,7,1,Virginia's Apples,1,3,11316
+7223,45,5,8,0,Albert's Sunflower Farms,8,2,121016
+7224,25,1,1,0,Monarch Meadow Goats,6,5,41120
+7225,25,1,2,0,Timmy's Apples,4,3,90422
+7226,25,1,4,0,Ramaya's Organic Farm,8,1,11320
+7227,45,6,3,0,Anita's Egg Farm,5,4,70618
+7228,86,5,8,1,Hightower Family Fruit Orchard,7,3,101017
+7229,86,6,5,1,Green Meadow Plum Orchard,6,2,72121
+7230,66,1,7,1,Black Mountain Organic Farm,1,3,110116
+7231,86,6,7,1,Blissful Goats,2,2,21120
+7232,86,6,6,0,Sunset Hill Fields,9,3,31821
+7233,86,6,9,0,Timmy's Juicery,2,5,90713
+7234,45,7,3,0,Swallowtail Ponds Acre Farms,8,4,50214
+7235,66,2,4,1,Gloria's Apples,8,1,123115
+7236,66,2,5,0,Blooming Family Cattle,4,5,31620
+7237,45,7,8,1,Jose's Pumpkin Patch,1,4,102915
+7238,86,7,5,0,Serene Creamery,5,1,70319
+7239,25,3,3,1,Fullerton Ranch,5,5,50217
+7240,25,3,4,0,Gloria's Ranch,5,3,91516
+7241,66,2,9,0,Blooming Family Sunflower Farms,5,3,52514
+7242,66,3,5,0,Delightful Horses,7,1,42518
+7243,25,4,2,0,Francesco's Mushroom Farm,1,3,100716
+7244,86,8,7,0,Nelson's Acres,7,1,81619
+7245,25,4,4,1,Golden Vineyards,7,2,102613
+7246,25,4,3,1,Timmy's Cattle,5,1,51119
+7247,45,9,5,1,Maricel's Plum Orchard,5,5,71016
+7248,45,9,9,0,Charlotte's Goats,3,1,72418
+7249,86,9,9,0,Kathy's Avocado Farm,8,3,50622
+7250,66,5,7,1,Virginia's Homestead,4,2,82818
+7251,25,6,1,1,Francesco's Acre Farms,8,5,71322
+7252,46,1,1,1,Charlotte's Avocado Farm,5,3,51815
+7253,66,6,1,1,Dry Creek Country Estate,5,1,11221
+7254,25,6,6,1,Fly Creek Pumpkin Patch,4,5,32122
+7255,66,6,4,1,Salt Lake Hills,6,4,30819
+7256,46,1,9,0,Alaska Vineyards,7,1,60917
+7257,66,6,8,0,Coleman Avocado Farm,6,2,12015
+7258,87,1,7,1,Pringle Family Organic Farm,3,4,31214
+7259,66,7,2,0,Fullerton Maple Syrup,9,5,90717
+7260,87,2,3,0,Deer Creek Maple Syrup,1,1,22316
+7261,66,7,6,0,Eduardo's Herb Farm,3,1,112422
+7262,25,8,1,1,Fly Creek Lavender Fields,7,5,122914
+7263,46,2,8,0,Crater Lake Hills,1,3,72114
+7264,46,3,2,0,Alberto's Pumpkin Patch,1,3,41014
+7265,87,3,1,1,Serene Mushroom Farm,5,2,12221
+7266,46,3,5,1,Maricel's Juicery,4,2,102321
+7267,87,3,3,0,Charlotte's Fruit Orchard,7,2,30913
+7268,25,9,2,0,Jasmin's Homestead,1,5,41815
+7269,25,9,3,0,Alaska Mushroom Farm,2,3,123116
+7270,66,8,9,1,Mountain Meadows Honey Bee Farm,6,1,31514
+7271,46,4,1,0,Sunset Hill Sunflower Farms,3,2,120913
+7272,66,9,3,0,Salt Lake Horses,2,3,81119
+7273,66,9,5,1,Albert's Honey Bee Farm,8,2,92519
+7274,66,9,6,0,Pringle Family Honeybees,3,1,22616
+7275,46,5,3,0,Maricel's Acres,7,2,112721
+7276,87,5,4,1,Salt Lake Mushroom Farm,2,2,92915
+7277,87,5,5,0,Badger Hill Plum Orchard,9,2,91013
+7278,26,1,4,1,Elm Tree Peach Orchard,4,2,31421
+7279,67,1,1,0,Crater Lake Honey Bee Farm,7,5,100821
+7280,26,1,8,1,Green Meadow Organic Farm,9,3,81020
+7281,87,6,2,0,Fullerton Cow Farm,1,5,51917
+7282,26,1,9,1,Bankers Hill Mushroom Farm,9,2,101117
+7283,87,6,5,1,Webb Family Honeybees,5,5,112819
+7284,26,2,2,1,Olivia's Cattle,4,2,100915
+7285,46,7,4,1,Rustic Hills,7,5,91618
+7286,46,7,5,1,Ramaya's Cow Farm,5,2,82515
+7287,67,2,5,1,Anita's Maple Syrup,2,4,50321
+7288,46,7,8,1,Nelson's Juicery,9,3,120414
+7289,46,7,7,1,Radiant Egg Farm,7,2,91815
+7290,87,7,7,0,Middle Creek Sunflower Farms,1,2,91314
+7291,26,3,6,1,Jimmy's Creamery,5,4,91215
+7292,26,3,8,0,Hightower Family Farm,6,5,62218
+7293,87,8,6,0,Crater Lake Herb Farm,5,3,52916
+7294,87,8,8,1,Kristen's Squash Farm,8,2,72616
+7295,46,9,4,0,Arizona Horses,4,5,10113
+7296,26,5,1,1,Jimmy's Honeybees,4,4,120320
+7297,67,4,8,1,Delightful Herb Garden,4,2,110521
+7298,87,9,5,1,Middle Creek Squash Farm,2,1,21121
+7299,26,5,7,0,Fulkerson Family Chickens,8,1,100122
+7300,67,5,5,1,Hudson Family Hills,2,4,53013
+7301,67,5,8,0,Gloria's Farm,6,2,70922
+7302,67,6,4,0,Carolina's Fruit Orchard,5,3,51715
+7303,47,1,6,0,Timmy's Organic Farm,1,2,70420
+7304,67,6,5,1,Radiant Goats,9,2,62714
+7305,26,6,8,1,Cloudy Herb Farm,8,1,92420
+7306,88,1,7,0,Deer Creek Flower Garden,1,5,111522
+7307,26,7,4,0,Middle Creek Mushroom Farm,7,2,20114
+7308,47,2,3,0,Kristen's Juicery,7,4,12621
+7309,26,7,5,0,Abdalah's Herb Garden,5,3,61522
+7310,26,7,3,0,Maricel's Egg Farm,3,5,81915
+7311,88,2,2,0,Mountain Meadows Organic Farm,6,2,120115
+7312,67,7,4,0,Maricel's Farm,5,1,100315
+7313,26,8,2,0,Green Meadow Squash Farm,5,1,121117
+7314,47,3,4,0,Maribel's Vegetable Farm,9,4,102120
+7315,26,8,8,0,Aisha's Honeybees,7,3,92618
+7316,88,3,4,1,Bankers Hill Peach Orchard,5,3,110513
+7317,88,3,5,1,Serene Horses,9,2,121518
+7318,88,3,6,0,Fly Creek Acre Farms,1,4,81814
+7319,26,9,5,1,Kathy's Pumpkin Patch,7,3,102416
+7320,67,9,2,1,Eduardo's Farm,9,3,61416
+7321,88,4,2,0,Sunset Hill Hills,6,1,60720
+7322,88,4,3,1,Jimmy's Maple Syrup,5,4,91921
+7323,67,9,7,0,Timmy's Plum Orchard,7,3,30114
+7324,67,9,9,1,Salt Lake Pumpkin Patch,2,1,51413
+7325,88,4,9,1,Aisha's Acre Farms,5,2,82521
+7326,68,1,1,1,Fullerton Vineyards,2,1,70119
+7327,27,1,6,0,Sunny Mushroom Farm,5,3,70617
+7328,88,6,2,1,Black Mountain Chickens,3,3,102917
+7329,68,1,4,1,Cloudy Juicery,7,1,82318
+7330,68,1,6,0,Los Angeles Cow Farm,5,1,120718
+7331,27,2,2,1,Aisha's Honey Bee Farm,1,2,81918
+7332,47,7,1,1,Fullerton Mushroom Farm,6,4,42615
+7333,88,6,8,0,Bankers Hill Sunflower Farms,8,2,30918
+7334,68,2,2,0,Maribel's Ranch,8,2,11620
+7335,47,7,5,0,Hudson Family Acres,8,3,101819
+7336,68,2,4,0,Maricel's Squash Farm,8,4,22519
+7337,88,7,2,1,Kathy's Farm,1,4,72118
+7338,47,7,8,0,Fulkerson Family Avocado Farm,1,3,102514
+7339,47,7,7,0,Elm Tree Fruit Orchard,7,1,60117
+7340,88,7,7,0,Aisha's Lavender Fields,6,2,110118
+7341,47,8,6,0,Blissful Cow Farm,3,5,70517
+7342,88,8,2,0,Maria's Mushroom Farm,5,3,81016
+7343,47,8,7,0,Elm Tree Lavender Fields,1,3,31413
+7344,27,4,1,1,Blissful Organic Farm,3,1,21318
+7345,88,8,6,0,Sparkle Pond Peach Orchard,3,3,113022
+7346,88,8,5,0,Abdalah's Herb Farm,7,5,100416
+7347,68,3,5,0,Deer Creek Honeybees,3,2,20913
+7348,47,9,3,1,Fullerton Honeybees,3,3,52221
+7349,27,4,6,1,Crater Lake Juicery,3,3,11318
+7350,27,4,9,0,Ramaya's Fields,3,3,121321
+7351,88,9,9,0,Badger Hill Farm,8,4,80417
+7352,48,1,2,1,Olivia's Fields,6,1,80721
+7353,68,6,1,0,Jasmin's Cow Farm,8,5,111214
+7354,48,1,4,0,Hudson Family Juicery,3,5,61513
+7355,89,1,1,1,Bankers Hill Plum Orchard,6,2,51013
+7356,89,1,2,1,Hudson Family Vineyards,4,4,42914
+7357,68,6,5,1,Swallowtail Ponds Farm,9,1,110217
+7358,89,1,5,0,Blooming Family Apples,5,3,121821
+7359,89,1,8,1,Turtle Pond Plum Orchard,9,2,32713
+7360,48,2,2,0,Black Mountain Honeybees,3,3,10417
+7361,27,7,6,0,Monarch Meadow Herb Garden,1,1,12213
+7362,68,7,5,0,Maria's Herb Farm,6,2,22115
+7363,89,2,7,1,Blooming Family Acre Farms,3,5,40615
+7364,48,3,2,0,Gloria's Horses,5,2,21920
+7365,89,2,9,1,Dry Creek Goats,1,2,61819
+7366,68,8,2,0,Crater Lake Mushroom Farm,8,4,120921
+7367,27,8,3,0,Jasmin's Flower Garden,3,1,110822
+7368,48,3,8,0,Olivia's Acre Farms,3,2,61413
+7369,27,9,2,0,Happy Peach Orchard,1,1,110813
+7370,48,4,1,1,Fly Creek Plum Orchard,2,3,100622
+7371,27,9,4,0,Gloria's Plum Orchard,9,2,72119
+7372,48,4,3,1,Los Angeles Avocado Farm,5,2,11515
+7373,68,8,8,0,Elm Tree Farm,9,4,43020
+7374,68,9,5,1,Alberto's Plum Orchard,4,3,20915
+7375,89,4,4,0,Crater Lake Fields,3,2,111918
+7376,48,4,7,1,Fulkerson Family Peach Orchard,9,4,72922
+7377,68,9,9,1,Sunset Hill Honeybees,1,5,50817
+7378,89,5,1,1,Gloria's Country Estate,2,2,82821
+7379,89,5,2,0,Gloria's Oranges,8,4,52116
+7380,28,1,3,1,Tranquil Honey Bee Farm,5,4,51321
+7381,69,1,1,1,Tranquil Egg Farm,8,4,100522
+7382,89,5,9,1,Happy Creamery,1,1,11314
+7383,48,6,4,1,Happy Goats,6,2,102718
+7384,28,1,8,0,Fulkerson Family Plum Orchard,1,1,33122
+7385,89,6,3,0,Salt Lake Flower Garden,9,5,43016
+7386,89,6,7,1,Mountain Lavender Fields,1,2,122219
+7387,28,2,3,1,Butterfly Creek Herb Farm,2,5,102521
+7388,69,2,2,0,Maribel's Fruit Orchard,8,3,40817
+7389,48,7,5,1,Smith Plum Orchard,2,5,82713
+7390,28,2,8,1,Jimmy's Peach Orchard,9,5,62313
+7391,48,7,6,0,Kristen's Apples,2,5,22116
+7392,89,7,4,1,Los Angeles Ranch,9,5,60618
+7393,69,3,3,0,Harvest Flower Garden,7,3,100316
+7394,89,8,1,0,Los Angeles Chickens,9,2,51716
+7395,89,8,4,0,Smucker's Ranch,1,4,91919
+7396,48,8,9,1,Dry Creek Fields,2,4,100220
+7397,89,8,5,0,Maribel's Peach Orchard,1,1,21322
+7398,28,4,3,0,Alberto's Fruit Orchard,5,5,30620
+7399,48,9,3,1,Webb Family Herb Garden,4,1,71220
+7400,89,9,2,1,Sauer Family Fruit Orchard,4,2,71221
+7401,69,4,9,0,Turtle Pond Squash Farm,9,1,53021
+7402,49,1,1,0,Albert's Vineyards,3,2,62615
+7403,69,5,9,0,Alaska Honeybees,2,1,80819
+7404,49,1,6,1,Golden Lavender Fields,5,1,121921
+7405,28,6,9,1,Breezy Horse Ranch,3,5,70421
+7406,49,1,8,0,Middle Creek Honeybees,9,3,30619
+7407,69,6,7,0,Radiant Herb Garden,6,1,91115
+7408,69,7,1,0,Charlotte's Horses,7,4,122018
+7409,28,7,5,0,Sparkle Pond Honey Bee Farm,9,5,92216
+7410,49,2,5,0,Middle Creek Vineyards,5,3,93013
+7411,28,7,8,1,Elm Tree Cow Farm,5,4,81520
+7412,28,7,9,0,Middle Creek Flower Garden,8,2,31013
+7413,28,8,3,1,Kathy's Herb Garden,5,5,110214
+7414,28,8,6,0,Elm Tree Herb Farm,4,4,50819
+7415,28,8,8,1,Nelson's Vegetable Farm,3,5,111115
+7416,69,8,5,1,Maria's Farm,7,1,62920
+7417,28,9,5,0,Coleman Vegetable Farm,4,2,110117
+7418,69,9,1,0,Sauer Family Hills,4,2,50517
+7419,49,5,5,1,Ross Lake Farm,3,5,32215
+7420,29,1,2,1,Sunny Lavender Fields,6,4,122616
+7421,29,1,3,0,Rustic Honeybees,5,1,73115
+7422,49,6,2,1,Sunset Hill Plum Orchard,9,1,123014
+7423,29,1,5,0,Swallowtail Ponds Hills,7,3,123119
+7424,29,1,7,0,Sauer Family Egg Farm,1,1,41415
+7425,29,2,3,0,Badger Hill Fruit Orchard,5,2,12419
+7426,49,7,5,0,Francesco's Horses,5,1,61213
+7427,49,7,7,0,Jimmy's Cattle,5,4,101218
+7428,29,3,6,0,Sharon's Herb Farm,2,4,111321
+7429,49,8,8,1,Crater Lake Homestead,9,3,90513
+7430,29,4,7,0,Aisha's Vegetable Farm,7,4,90814
+7431,29,4,8,1,Mountain Meadows Juicery,3,4,82216
+7432,49,9,6,0,Blissful Honeybees,3,4,53117
+7433,49,9,9,0,Nelson's Acre Farms,7,5,82422
+7434,29,5,8,0,Maricel's Avocado Farm,1,5,11818
+7435,29,5,9,1,Hightower Family Creamery,9,5,21319
+7436,29,6,4,0,Pringle Family Vegetable Farm,6,2,40819
+7437,29,6,5,0,Albert's Oranges,7,3,92713
+7438,29,6,6,0,Bankers Hill Squash Farm,4,5,31218
+7439,29,6,7,1,Olivia's Juicery,5,5,82120
+7440,91,1,6,1,Green Meadow Creamery,1,4,52819
+7441,29,7,3,0,Maribel's Cow Farm,9,3,120820
+7442,91,2,3,0,Breezy Squash Farm,1,3,31714
+7443,91,2,4,0,Cloudy Sunflower Farms,8,2,21113
+7444,91,2,6,1,Turtle Pond Fruit Orchard,6,2,110622
+7445,29,8,3,0,Serene Organic Farm,2,5,80116
+7446,91,3,1,0,Kristen's Lavender Fields,5,3,70920
+7447,29,8,7,0,Bankers Hill Vegetable Farm,4,4,80522
+7448,29,8,9,0,Los Angeles Farm,1,5,42114
+7449,91,3,4,0,Elm Tree Goats,6,2,51222
+7450,91,3,6,0,Golden Homestead,2,4,22222
+7451,91,3,7,0,Tranquil Horses,8,1,11715
+7452,29,9,4,1,Anita's Goats,7,1,80617
+7453,91,5,2,0,Maricel's Flower Garden,4,5,90618
+7454,91,5,3,0,Blue Lake Cow Farm,4,3,52318
+7455,91,5,5,0,Hightower Family Acres,3,4,42221
+7456,91,6,3,1,Pringle Family Herb Garden,7,1,110821
+7457,91,6,4,0,Turtle Pond Fields,7,5,121514
+7458,71,1,7,0,Green Meadow Ranch,4,4,21813
+7459,71,2,5,0,Sharon's Organic Farm,6,2,81720
+7460,71,2,9,1,Fly Creek Farm,3,5,50318
+7461,91,7,8,1,Bankers Hill Fruit Orchard,5,4,73122
+7462,71,3,1,1,Sauer Family Mushroom Farm,2,3,81818
+7463,91,7,9,1,Timmy's Mushroom Farm,7,3,121213
+7464,91,8,5,0,Jose's Squash Farm,7,4,111413
+7465,71,4,1,1,Olivia's Pumpkin Patch,3,2,112214
+7466,71,4,2,1,Blooming Family Lavender Fields,2,1,61919
+7467,91,9,2,1,Elm Tree Country Estate,6,5,100113
+7468,91,9,3,0,Tranquil Mushroom Farm,2,4,60113
+7469,71,5,1,1,Maricel's Organic Farm,4,3,62518
+7470,71,5,7,1,Alaska Apples,9,4,71213
+7471,51,1,9,1,Abdalah's Vegetable Farm,6,4,11516
+7472,92,1,7,0,Abdalah's Homestead,9,4,12114
+7473,92,1,8,0,Delightful Juicery,4,1,81316
+7474,51,2,2,1,Cloudy Mushroom Farm,6,5,63013
+7475,71,7,4,0,Jimmy's Plum Orchard,6,2,102616
+7476,92,2,5,1,Fullerton Lavender Fields,9,5,30314
+7477,92,2,6,1,Fulkerson Family Sunflower Farms,2,2,42818
+7478,71,8,3,0,Cloudy Fruit Orchard,4,1,102419
+7479,92,3,2,0,Swallowtail Ponds Acres,5,5,52018
+7480,71,8,5,1,Olivia's Lavender Fields,5,4,22117
+7481,71,8,8,1,Smucker's Juicery,2,5,41420
+7482,71,9,1,0,Sunset Hill Horse Ranch,5,4,31213
+7483,71,9,2,0,Fulkerson Family Vegetable Farm,4,5,40117
+7484,92,4,9,1,Timmy's Sunflower Farms,6,1,12615
+7485,31,1,5,0,Jose's Organic Farm,5,1,61515
+7486,51,6,8,1,Jose's Egg Farm,8,3,100913
+7487,92,6,4,1,Rustic Maple Syrup,3,5,80118
+7488,31,2,3,0,Kathy's Apples,9,4,110916
+7489,92,6,8,1,Sparkle Pond Lavender Fields,9,2,112421
+7490,51,7,3,1,Bankers Hill Hills,2,2,10917
+7491,72,2,3,0,Maria's Vineyards,6,2,12017
+7492,72,2,4,0,Olivia's Country Estate,6,4,111821
+7493,31,2,9,0,Butterfly Creek Horses,5,4,40718
+7494,92,7,5,1,Happy Country Estate,8,3,10218
+7495,31,3,2,1,Smith Vineyards,7,1,121413
+7496,92,7,9,0,Los Angeles Mushroom Farm,2,5,120613
+7497,31,4,2,0,Sunny Creamery,8,3,41517
+7498,51,9,3,0,Fulkerson Family Horse Ranch,4,1,121618
+7499,51,9,4,0,Smith Chickens,9,3,31522
+7500,51,9,5,1,Turtle Pond Homestead,6,5,70220
+7501,92,8,9,1,Elm Tree Plum Orchard,6,1,121822
+7502,72,4,5,1,Blue Lake Maple Syrup,4,2,61720
+7503,72,4,7,0,Blissful Homestead,9,4,120817
+7504,92,9,6,0,Jasmin's Herb Farm,4,5,82221
+7505,92,9,8,0,Happy Oranges,5,3,102317
+7506,31,6,1,0,Gloria's Egg Farm,1,2,41714
+7507,11,1,4,0,Olivia's Farm,5,1,70813
+7508,52,1,3,0,Maribel's Plum Orchard,1,1,110719
+7509,52,1,4,0,Happy Apples,2,2,41818
+7510,72,6,3,0,Turtle Pond Chickens,7,5,71422
+7511,31,6,8,1,Tranquil Organic Farm,1,4,11814
+7512,11,2,2,0,Badger Hill Herb Farm,7,4,21522
+7513,31,7,1,0,Deer Creek Vineyards,4,4,10314
+7514,72,6,7,0,Gloria's Hills,7,5,121915
+7515,72,6,9,0,Virginia's Cow Farm,4,5,40619
+7516,11,2,6,1,Fly Creek Flower Garden,1,1,121217
+7517,11,2,7,0,Gloria's Acres,4,2,42216
+7518,93,1,7,1,Virginia's Organic Farm,7,3,43021
+7519,11,2,9,0,Crater Lake Vineyards,3,3,100215
+7520,72,7,7,1,Turtle Pond Lavender Fields,5,3,42617
+7521,11,3,4,0,Coleman Flower Garden,2,4,51520
+7522,11,3,5,0,Turtle Pond Cattle,3,5,50315
+7523,93,3,1,1,Jose's Herb Farm,4,5,93019
+7524,72,8,4,1,Green Meadow Chickens,9,1,61315
+7525,93,3,3,1,Ramaya's Fruit Orchard,2,5,122419
+7526,72,8,6,0,Black Mountain Plum Orchard,1,3,120413
+7527,52,3,9,1,Harvest Sunflower Farms,3,5,11120
+7528,11,4,4,1,Sparkle Pond Juicery,1,4,103119
+7529,93,3,8,1,Gloria's Squash Farm,2,1,31313
+7530,93,3,9,0,Smith Horses,9,2,21918
+7531,11,4,8,1,Crater Lake Ranch,7,4,12516
+7532,72,9,4,0,Abdalah's Squash Farm,5,5,20421
+7533,11,5,1,1,Badger Hill Honeybees,7,4,21717
+7534,93,4,4,1,Badger Hill Squash Farm,5,4,81722
+7535,52,4,8,0,Dry Creek Herb Garden,1,4,10514
+7536,11,5,4,1,Blooming Family Honeybees,9,2,90516
+7537,93,4,7,0,Golden Horse Ranch,4,1,10722
+7538,11,5,6,0,Monarch Meadow Juicery,9,3,111220
+7539,93,4,6,1,Maria's Pumpkin Patch,1,4,32614
+7540,11,5,8,0,Abdalah's Horse Ranch,3,5,20521
+7541,52,5,5,0,Charlotte's Sunflower Farms,6,2,111814
+7542,52,4,7,0,Ramaya's Homestead,5,5,10321
+7543,52,6,1,0,Radiant Vegetable Farm,4,1,21818
+7544,32,1,4,0,Fullerton Farm,3,4,102617
+7545,73,1,4,0,Turtle Pond Creamery,8,3,102019
+7546,52,7,1,0,Harvest Acres,8,2,70819
+7547,73,2,1,0,Sunny Farm,9,1,40121
+7548,73,2,3,0,Elm Tree Mushroom Farm,2,2,101719
+7549,11,8,1,0,Black Mountain Apples,4,1,31417
+7550,52,7,8,0,Nelson's Horses,5,5,102117
+7551,11,8,8,0,Kathy's Flower Garden,5,5,30822
+7552,32,3,8,1,Arizona Mushroom Farm,4,4,33114
+7553,93,8,5,1,Cloudy Horses,6,5,82616
+7554,11,9,6,0,Sparkle Pond Egg Farm,6,1,72519
+7555,73,4,1,0,Hightower Family Fields,4,2,21217
+7556,32,4,7,1,Carolina's Juicery,3,2,11418
+7557,52,9,5,1,Jimmy's Herb Farm,8,2,82122
+7558,93,9,2,0,Anita's Mushroom Farm,4,4,52614
+7559,73,4,3,0,Carolina's Oranges,8,5,90818
+7560,93,9,6,1,Nelson's Lavender Fields,5,2,122822
+7561,93,9,9,0,Jose's Chickens,2,2,122114
+7562,53,1,2,1,Sharon's Mushroom Farm,5,5,52413
+7563,12,1,6,1,Jasmin's Avocado Farm,2,5,81221
+7564,32,6,6,1,Tranquil Herb Garden,1,3,21615
+7565,94,1,1,1,Swallowtail Ponds Squash Farm,2,5,101516
+7566,73,6,2,0,Golden Egg Farm,9,3,21416
+7567,73,6,1,0,Alaska Cattle,9,2,91116
+7568,73,6,8,1,Francesco's Farm,7,4,42215
+7569,12,2,5,1,Fulkerson Family Herb Garden,7,5,111316
+7570,32,7,4,0,Nelson's Fruit Orchard,3,3,62815
+7571,53,2,4,0,Delightful Hills,5,3,43015
+7572,32,7,9,1,Black Mountain Honey Bee Farm,9,1,32213
+7573,53,2,8,1,Breezy Fruit Orchard,5,1,32513
+7574,12,3,3,0,Jimmy's Mushroom Farm,8,2,71018
+7575,12,3,1,0,Coleman Mushroom Farm,4,4,60517
+7576,12,3,2,0,Nelson's Oranges,6,3,60522
+7577,94,2,8,1,Fly Creek Mushroom Farm,4,1,61020
+7578,53,3,3,0,Los Angeles Sunflower Farms,2,4,81215
+7579,32,8,8,1,Fly Creek Cow Farm,4,2,82314
+7580,73,8,5,0,Esmeralda's Honeybees,2,3,51920
+7581,94,3,4,1,Smucker's Farm,6,1,91814
+7582,73,8,8,1,Hightower Family Hills,2,5,60418
+7583,73,9,1,0,Sunny Organic Farm,3,4,80713
+7584,53,4,3,0,Anita's Herb Garden,6,2,71519
+7585,73,9,5,1,Tranquil Ranch,8,2,122022
+7586,94,4,5,0,Deer Creek Mushroom Farm,1,5,92817
+7587,12,5,4,0,Bankers Hill Goats,6,5,102615
+7588,53,5,3,0,Alberto's Sunflower Farms,4,1,11016
+7589,12,5,9,0,Radiant Fruit Orchard,4,5,50522
+7590,94,5,2,1,Mountain Vineyards,3,5,122214
+7591,94,5,4,1,Maribel's Goats,7,4,72618
+7592,53,5,9,0,Fly Creek Peach Orchard,2,1,42115
+7593,94,5,5,0,Delightful Fruit Orchard,7,1,91619
+7594,94,5,8,0,Virginia's Acres,6,1,33115
+7595,94,6,2,1,Anita's Honey Bee Farm,3,1,42120
+7596,33,1,8,0,Blissful Creamery,5,4,22916
+7597,12,7,4,0,Tranquil Honeybees,1,3,100414
+7598,33,2,4,0,Jimmy's Egg Farm,7,3,22018
+7599,94,6,9,0,Esmeralda's Hills,8,4,110716
+7600,33,2,6,1,Rustic Sunflower Farms,2,1,72816
+7601,74,2,3,0,Dry Creek Creamery,3,1,72615
+7602,12,7,9,0,Olivia's Hills,1,4,90615
+7603,74,2,4,0,Deer Creek Fruit Orchard,4,2,41720
+7604,94,7,4,0,Carolina's Pumpkin Patch,1,1,30516
+7605,53,7,9,1,Ramaya's Maple Syrup,9,2,61617
+7606,94,7,6,0,Breezy Mushroom Farm,8,2,102115
+7607,33,2,7,1,Jasmin's Peach Orchard,9,2,50713
+7608,33,3,4,1,Deer Creek Farm,3,2,53115
+7609,33,3,5,1,Mountain Pumpkin Patch,9,5,82417
+7610,74,3,1,0,Webb Family Plum Orchard,7,3,80919
+7611,33,3,7,1,Kristen's Mushroom Farm,3,2,110417
+7612,12,8,7,1,Blooming Family Horse Ranch,7,2,100218
+7613,33,3,1,0,Badger Hill Herb Garden,9,1,113015
+7614,12,8,9,1,Smith Lavender Fields,8,3,10322
+7615,33,4,1,0,Aisha's Vineyards,3,5,70916
+7616,12,9,4,0,Mountain Meadows Hills,1,5,41313
+7617,33,4,4,0,Crater Lake Acre Farms,7,3,11313
+7618,74,4,1,1,Virginia's Plum Orchard,7,5,22019
+7619,74,4,3,0,Alberto's Avocado Farm,1,1,121015
+7620,53,9,7,0,Swallowtail Ponds Goats,1,5,92522
+7621,94,9,4,0,Albert's Plum Orchard,5,1,32521
+7622,74,4,7,0,Mountain Meadows Acres,5,2,52821
+7623,94,9,7,1,Virginia's Egg Farm,4,2,72218
+7624,74,5,4,1,Abdalah's Goats,5,3,10820
+7625,54,1,1,1,Rustic Acres,4,2,91119
+7626,33,6,3,0,Green Meadow Acre Farms,2,2,40222
+7627,33,6,4,0,Serene Cattle,1,5,121622
+7628,54,1,4,1,Bankers Hill Herb Garden,2,4,110420
+7629,74,5,9,1,Deer Creek Plum Orchard,1,2,71915
+7630,74,6,1,1,Bankers Hill Egg Farm,6,3,111815
+7631,74,6,5,1,Jasmin's Horse Ranch,2,3,72814
+7632,74,6,6,1,Hightower Family Egg Farm,8,3,122920
+7633,95,1,5,0,Dry Creek Flower Garden,9,4,40114
+7634,74,7,3,1,Jose's Farm,9,5,41820
+7635,95,2,7,0,Carolina's Apples,1,1,11720
+7636,13,3,7,0,Abdalah's Country Estate,1,4,110520
+7637,74,8,2,0,Maria's Creamery,6,1,51116
+7638,54,3,5,1,Swallowtail Ponds Vineyards,4,5,80722
+7639,33,8,7,0,Alberto's Goats,8,2,70218
+7640,74,8,6,1,Smucker's Sunflower Farms,6,1,31622
+7641,13,4,6,0,Cloudy Egg Farm,5,5,11820
+7642,54,4,3,1,Breezy Chickens,5,5,91122
+7643,95,3,9,1,Kristen's Horse Ranch,4,3,103121
+7644,95,4,1,0,Delightful Country Estate,6,4,81914
+7645,95,4,2,1,Sunset Hill Cow Farm,7,5,80219
+7646,33,9,9,0,Turtle Pond Maple Syrup,8,5,112121
+7647,95,4,3,0,Butterfly Creek Lavender Fields,2,1,92917
+7648,95,4,5,0,Abdalah's Horses,2,2,120521
+7649,54,5,1,1,Jasmin's Apples,5,3,51114
+7650,13,5,5,1,Jose's Ranch,1,4,52515
+7651,13,5,7,0,Francesco's Creamery,1,4,121717
+7652,34,1,1,0,Sauer Family Farm,1,2,92015
+7653,13,6,4,0,Coleman Cattle,4,1,113020
+7654,34,1,6,0,Carolina's Creamery,2,5,102816
+7655,54,6,6,0,Sauer Family Country Estate,4,4,72213
+7656,13,7,2,0,Aisha's Squash Farm,2,5,33016
+7657,95,6,5,0,Sparkle Pond Squash Farm,4,4,41422
+7658,95,6,9,0,Maribel's Herb Garden,8,2,110920
+7659,34,2,6,0,Mountain Mushroom Farm,1,2,50420
+7660,95,7,1,0,Alberto's Creamery,6,2,72518
+7661,95,7,2,0,Salt Lake Lavender Fields,4,5,30717
+7662,95,7,3,1,Swallowtail Ponds Peach Orchard,2,1,32819
+7663,95,7,4,1,Alaska Ranch,7,1,111213
+7664,95,7,7,0,Ramaya's Acre Farms,8,4,111416
+7665,54,8,2,0,Esmeralda's Mushroom Farm,2,4,61817
+7666,54,8,1,1,Los Angeles Fruit Orchard,7,5,102619
+7667,75,3,2,1,Elm Tree Ranch,2,5,70716
+7668,34,3,5,1,Salt Lake Honeybees,5,5,21417
+7669,34,3,4,1,Tranquil Country Estate,6,4,60622
+7670,34,3,9,1,Virginia's Creamery,3,4,51516
+7671,75,2,9,0,Monarch Meadow Honeybees,7,3,121818
+7672,75,3,7,0,Harvest Organic Farm,8,4,32815
+7673,34,4,2,1,Turtle Pond Goats,2,5,123114
+7674,54,9,1,0,Abdalah's Farm,3,2,62422
+7675,54,9,2,0,Hudson Family Honey Bee Farm,6,3,122013
+7676,34,4,8,1,Maria's Acres,6,3,101113
+7677,95,9,3,1,Hightower Family Vegetable Farm,7,5,73022
+7678,54,9,8,1,Los Angeles Vineyards,6,5,112314
+7679,75,4,4,0,Sparkle Pond Organic Farm,4,2,61716
+7680,75,5,3,1,Green Meadow Cattle,3,5,51313
+7681,34,5,9,0,Maricel's Herb Farm,1,2,52620
+7682,34,6,1,1,Fullerton Homestead,5,3,112113
+7683,34,6,4,0,Esmeralda's Organic Farm,6,2,72416
+7684,55,1,3,1,Cloudy Peach Orchard,7,1,70622
+7685,14,1,8,0,Delightful Egg Farm,4,3,50621
+7686,14,1,9,0,Jasmin's Herb Garden,6,2,72022
+7687,34,7,1,1,Esmeralda's Peach Orchard,7,5,13120
+7688,14,2,7,0,Alberto's Mushroom Farm,4,1,72619
+7689,14,2,8,1,Francesco's Herb Garden,3,5,61118
+7690,34,7,9,1,Mountain Meadows Herb Garden,4,5,70816
+7691,75,7,5,1,Golden Honey Bee Farm,3,2,91916
+7692,75,7,7,0,Blooming Family Fields,8,2,10715
+7693,55,2,7,0,Charlotte's Maple Syrup,7,4,10714
+7694,96,2,8,1,Olivia's Vineyards,6,1,112918
+7695,96,2,9,0,Delightful Mushroom Farm,2,2,12422
+7696,14,3,6,1,Golden Mushroom Farm,5,5,92613
+7697,34,8,7,0,Harvest Lavender Fields,6,1,30117
+7698,75,8,4,0,Esmeralda's Ranch,8,1,120215
+7699,96,3,1,0,Webb Family Chickens,5,5,92013
+7700,75,8,6,1,Golden Country Estate,1,4,51617
+7701,14,4,2,0,Fullerton Sunflower Farms,7,3,31915
+7702,55,4,1,1,Blissful Fields,2,4,110713
+7703,96,3,8,0,Sauer Family Flower Garden,8,2,33116
+7704,75,9,4,0,Abdalah's Sunflower Farms,2,3,22217
+7705,34,9,9,0,Cloudy Squash Farm,5,5,81222
+7706,96,4,4,0,Jose's Mushroom Farm,3,3,50917
+7707,55,4,9,1,Smucker's Herb Garden,9,5,42817
+7708,55,5,7,1,Coleman Peach Orchard,7,4,11816
+7709,14,6,2,1,Maria's Horses,4,5,91822
+7710,55,6,3,0,Rustic Creamery,3,3,113018
+7711,14,6,8,1,Blue Lake Hills,5,5,111622
+7712,55,6,6,0,Sunset Hill Organic Farm,7,3,71922
+7713,55,6,7,0,Golden Sunflower Farms,1,3,40321
+7714,14,7,5,0,Black Mountain Herb Garden,6,3,50617
+7715,35,2,6,1,Olivia's Oranges,5,4,42315
+7716,55,7,6,1,Serene Acre Farms,2,4,83118
+7717,35,3,1,1,Alaska Goats,1,4,31322
+7718,96,7,7,1,Kathy's Horses,2,2,71822
+7719,55,8,3,1,Esmeralda's Herb Farm,3,4,82916
+7720,35,3,6,0,Swallowtail Ponds Herb Garden,8,2,51422
+7721,35,3,7,1,Dry Creek Cow Farm,7,5,81715
+7722,76,3,4,0,Butterfly Creek Egg Farm,3,4,42314
+7723,55,8,5,1,Bankers Hill Pumpkin Patch,7,1,20914
+7724,76,3,6,0,Virginia's Hills,5,3,13018
+7725,96,8,5,1,Swallowtail Ponds Maple Syrup,7,5,71014
+7726,14,9,4,1,Happy Flower Garden,8,5,20816
+7727,35,4,2,1,Nelson's Honeybees,7,3,50920
+7728,76,3,2,1,Sunset Hill Lavender Fields,9,3,31919
+7729,35,4,6,0,Eduardo's Maple Syrup,8,3,123022
+7730,96,9,1,0,Maricel's Oranges,4,3,30722
+7731,96,9,2,0,Deer Creek Oranges,5,5,103013
+7732,35,4,9,1,Black Mountain Acre Farms,8,3,40313
+7733,96,9,5,1,Webb Family Apples,9,3,31122
+7734,96,9,9,1,Swallowtail Ponds Country Estate,4,1,92919
+7735,76,5,3,0,Badger Hill Homestead,1,3,122514
+7736,76,5,4,0,Jose's Goats,1,4,33014
+7737,35,5,9,1,Middle Creek Chickens,3,5,72215
+7738,15,1,2,0,Elm Tree Fields,5,2,101622
+7739,15,1,1,0,Fullerton Acre Farms,7,3,21314
+7740,35,6,4,0,Webb Family Farm,1,3,60322
+7741,76,6,3,1,Sauer Family Herb Farm,8,5,90219
+7742,35,6,7,0,Sharon's Pumpkin Patch,7,4,90517
+7743,97,1,3,1,Salt Lake Ranch,7,1,110817
+7744,97,1,4,0,Monarch Meadow Squash Farm,9,5,11717
+7745,35,7,1,1,Golden Squash Farm,8,5,70217
+7746,76,6,7,0,Jimmy's Herb Garden,4,4,81813
+7747,15,2,5,1,Blooming Family Maple Syrup,5,5,101220
+7748,15,2,6,1,Virginia's Farm,5,4,20317
+7749,56,2,4,0,Albert's Lavender Fields,2,2,80122
+7750,76,7,2,1,Swallowtail Ponds Sunflower Farms,2,3,42514
+7751,56,2,6,1,Sharon's Fruit Orchard,8,3,52319
+7752,97,2,2,1,Hightower Family Herb Garden,4,4,111116
+7753,35,8,1,1,Breezy Vineyards,7,1,42819
+7754,97,2,6,0,Anita's Cow Farm,2,4,122816
+7755,35,8,3,0,Dry Creek Oranges,9,5,30219
+7756,15,3,6,1,Deer Creek Horses,6,3,51919
+7757,76,8,1,1,Jimmy's Homestead,5,1,52019
+7758,15,3,8,0,Albert's Herb Farm,7,5,113021
+7759,35,8,5,1,Hudson Family Flower Garden,8,1,42619
+7760,76,8,4,0,Charlotte's Vegetable Farm,2,2,71814
+7761,56,3,7,1,Coleman Cow Farm,8,1,40618
+7762,35,8,7,0,Harvest Ranch,2,4,12713
+7763,76,7,8,0,Sharon's Vineyards,5,1,100515
+7764,56,3,2,0,Mountain Meadows Apples,5,2,31415
+7765,35,9,3,1,Turtle Pond Farm,2,1,111120
+7766,15,4,6,0,Los Angeles Acre Farms,7,5,22822
+7767,97,3,9,1,Hudson Family Squash Farm,5,4,30318
+7768,56,4,1,1,Hightower Family Maple Syrup,4,4,103019
+7769,76,9,3,1,Alaska Peach Orchard,4,5,51318
+7770,56,4,4,0,Blooming Family Herb Garden,4,3,101520
+7771,35,9,9,0,Mountain Meadows Vegetable Farm,4,3,21022
+7772,56,4,8,1,Breezy Farm,1,5,103122
+7773,76,9,7,0,Ross Lake Ranch,9,4,100520
+7774,56,4,9,1,Breezy Creamery,7,3,91913
+7775,76,9,9,1,Tranquil Lavender Fields,4,2,81920
+7776,56,5,3,1,Webb Family Acres,9,2,110814
+7777,97,5,1,1,Pringle Family Fruit Orchard,4,5,92317
+7778,97,5,3,0,Fullerton Cattle,2,5,62018
+7779,56,5,8,0,Francesco's Sunflower Farms,8,4,101120
+7780,36,1,1,0,Gloria's Herb Farm,3,2,112021
+7781,15,6,5,0,Happy Herb Farm,6,2,22413
+7782,36,1,5,1,Radiant Herb Farm,9,1,30319
+7783,36,1,7,0,Harvest Mushroom Farm,8,4,50416
+7784,77,1,3,1,Maricel's Fruit Orchard,7,5,21521
+7785,97,6,1,1,Nelson's Pumpkin Patch,5,4,120119
+7786,15,7,2,1,Golden Organic Farm,2,3,41315
+7787,77,1,8,0,Salt Lake Cow Farm,9,2,92722
+7788,77,1,9,0,Timmy's Farm,8,1,91918
+7789,56,7,2,0,Cloudy Farm,6,2,41917
+7790,97,6,8,0,Anita's Vineyards,3,3,22214
+7791,56,7,4,1,Kristen's Cattle,2,3,100620
+7792,97,7,1,1,Kristen's Vineyards,6,5,50919
+7793,77,2,3,1,Sunny Vegetable Farm,2,1,70718
+7794,15,8,1,0,Abdalah's Acre Farms,7,4,112320
+7795,56,7,8,0,Sunset Hill Horses,1,4,41115
+7796,97,7,4,1,Fullerton Oranges,2,5,11819
+7797,77,2,5,1,Blissful Oranges,7,1,120118
+7798,97,6,9,0,Blue Lake Lavender Fields,1,3,12620
+7799,97,7,8,0,Eduardo's Vegetable Farm,2,5,101422
+7800,56,8,2,0,Virginia's Squash Farm,4,3,63018
+7801,36,3,7,0,Francesco's Juicery,8,4,52114
+7802,15,8,9,0,Tranquil Avocado Farm,5,3,122622
+7803,56,8,7,1,Blissful Farm,8,4,52813
+7804,77,3,6,1,Timmy's Egg Farm,6,4,20513
+7805,56,8,8,1,Aisha's Homestead,8,1,80413
+7806,36,3,8,0,Pringle Family Farm,1,5,82918
+7807,97,8,6,0,Sunset Hill Ranch,8,4,90621
+7808,97,8,8,0,Abdalah's Mushroom Farm,1,4,102522
+7809,36,4,5,0,Fly Creek Honeybees,3,5,32917
+7810,15,9,6,1,Aisha's Cattle,9,2,102819
+7811,97,9,1,0,Fullerton Horse Ranch,6,3,72913
+7812,56,9,6,1,Virginia's Fruit Orchard,8,4,21015
+7813,97,9,3,0,Fly Creek Horses,5,4,33022
+7814,97,9,2,0,Los Angeles Herb Garden,2,2,80820
+7815,97,9,5,0,Sparkle Pond Plum Orchard,9,3,121819
+7816,77,4,7,1,Gloria's Cow Farm,1,2,71619
+7817,36,5,3,1,Mountain Maple Syrup,4,1,120720
+7818,97,9,8,0,Jasmin's Juicery,4,1,112813
+7819,36,5,8,0,Alaska Homestead,2,1,50317
+7820,77,5,9,1,Albert's Fruit Orchard,7,4,91019
+7821,57,1,5,1,Jose's Creamery,8,2,30814
+7822,36,6,8,0,Mountain Chickens,3,3,62113
+7823,57,1,6,0,Butterfly Creek Maple Syrup,9,4,61113
+7824,98,1,4,1,Arizona Cow Farm,1,5,82721
+7825,16,2,5,1,Badger Hill Vegetable Farm,6,1,70318
+7826,57,2,2,1,Serene Vineyards,8,1,110119
+7827,57,2,3,0,Bankers Hill Herb Farm,4,4,121617
+7828,16,2,7,0,Webb Family Organic Farm,5,3,12414
+7829,57,2,5,1,Maria's Goats,1,4,12515
+7830,16,3,1,1,Maricel's Pumpkin Patch,2,4,80813
+7831,36,8,5,1,Aisha's Egg Farm,7,4,92813
+7832,16,3,8,1,Alberto's Ranch,1,2,42320
+7833,77,8,7,1,Mountain Meadows Mushroom Farm,5,4,13114
+7834,36,9,2,0,Alaska Honey Bee Farm,9,2,82319
+7835,98,3,7,1,Gloria's Honey Bee Farm,8,2,51220
+7836,16,4,8,1,Smith Fields,2,4,20917
+7837,57,4,5,0,Elm Tree Apples,1,5,52220
+7838,77,9,4,0,Sauer Family Ranch,7,1,100822
+7839,36,9,6,0,Deer Creek Juicery,2,4,42121
+7840,98,5,5,1,Charlotte's Flower Garden,9,5,30316
+7841,98,5,6,1,Francesco's Cow Farm,7,3,31820
+7842,78,1,1,1,Fly Creek Acres,5,3,11219
+7843,37,1,7,1,Radiant Plum Orchard,5,2,71314
+7844,16,6,9,0,Ramaya's Hills,7,1,53022
+7845,78,1,5,1,Gloria's Peach Orchard,2,5,111919
+7846,16,7,3,1,Salt Lake Sunflower Farms,9,2,103118
+7847,37,2,1,0,Sharon's Juicery,8,1,30618
+7848,37,2,2,1,Black Mountain Horses,7,4,90922
+7849,98,6,9,1,Albert's Chickens,6,3,111620
+7850,78,2,2,0,Rustic Farm,4,4,60417
+7851,16,7,9,0,Los Angeles Country Estate,2,2,80915
+7852,78,2,4,0,Maribel's Creamery,7,1,30720
+7853,57,7,6,0,Crater Lake Avocado Farm,6,4,82113
+7854,16,8,2,0,Arizona Juicery,8,5,53119
+7855,16,8,3,0,Anita's Fruit Orchard,7,4,71815
+7856,98,7,6,0,Salt Lake Herb Farm,5,5,51717
+7857,16,8,5,1,Turtle Pond Vineyards,5,2,72713
+7858,98,7,8,1,Monarch Meadow Plum Orchard,8,1,82015
+7859,57,8,2,1,Fly Creek Cattle,9,4,120917
+7860,16,8,6,1,Coleman Oranges,9,2,12322
+7861,78,3,4,0,Nelson's Farm,7,1,90819
+7862,98,8,3,1,Jose's Herb Garden,2,5,33120
+7863,57,8,6,0,Aisha's Juicery,2,1,31719
+7864,78,3,7,1,Happy Acre Farms,8,4,10815
+7865,78,3,8,0,Bankers Hill Maple Syrup,5,2,71921
+7866,16,9,1,1,Sauer Family Acre Farms,2,3,71620
+7867,57,8,7,1,Francesco's Apples,7,4,62816
+7868,57,8,8,1,Butterfly Creek Farm,8,5,82622
+7869,16,9,8,1,Mountain Meadows Maple Syrup,3,1,53116
+7870,98,9,1,1,Crater Lake Peach Orchard,1,5,60316
+7871,78,4,3,0,Bankers Hill Vineyards,7,4,51622
+7872,37,5,3,0,Cloudy Vegetable Farm,8,3,92219
+7873,37,6,1,1,Harvest Maple Syrup,2,4,101314
+7874,78,5,9,0,Smucker's Squash Farm,9,1,31216
+7875,37,6,3,0,Bankers Hill Creamery,4,1,30417
+7876,78,6,2,1,Los Angeles Horse Ranch,6,3,70418
+7877,17,1,9,1,Badger Hill Fields,8,5,31617
+7878,78,6,5,1,Hudson Family Herb Garden,8,5,60520
+7879,58,1,9,1,Butterfly Creek Horse Ranch,1,3,73119
+7880,37,7,6,0,Anita's Organic Farm,6,4,111813
+7881,99,2,2,1,Maria's Horse Ranch,9,2,121318
+7882,17,3,2,1,Charlotte's Squash Farm,6,2,52120
+7883,78,7,8,1,Sunset Hill Vineyards,4,4,101316
+7884,58,3,1,0,Jasmin's Hills,2,3,10414
+7885,99,2,9,0,Mountain Meadows Squash Farm,9,1,122014
+7886,37,8,6,0,Blue Lake Goats,4,3,82520
+7887,17,4,2,0,Carolina's Honeybees,1,3,70518
+7888,17,4,3,0,Black Mountain Maple Syrup,9,1,62514
+7889,99,3,6,0,Coleman Herb Farm,9,2,110718
+7890,37,9,2,1,Kristen's Avocado Farm,7,5,41620
+7891,37,9,6,0,Badger Hill Sunflower Farms,7,5,52417
+7892,37,9,8,0,Rustic Goats,2,2,12722
+7893,17,5,2,1,Fly Creek Chickens,5,5,92515
+7894,99,4,5,0,Smith Maple Syrup,4,5,62314
+7895,17,5,5,1,Fulkerson Family Egg Farm,1,5,61322
+7896,99,4,7,1,Radiant Horse Ranch,7,3,10215
+7897,58,5,7,1,Sharon's Cow Farm,9,5,52017
+7898,58,5,8,1,Hightower Family Sunflower Farms,3,4,30820
+7899,38,1,1,0,Blooming Family Homestead,2,4,32616
+7900,99,5,9,1,Ross Lake Herb Garden,7,2,83021
+7901,58,6,6,0,Radiant Mushroom Farm,6,4,41514
+7902,79,1,5,0,Green Meadow Honey Bee Farm,7,2,72919
+7903,58,6,9,0,Olivia's Maple Syrup,4,3,71715
+7904,38,2,2,1,Middle Creek Farm,3,1,71721
+7905,17,7,4,1,Gloria's Herb Garden,6,1,90915
+7906,99,6,9,0,Salt Lake Homestead,3,3,111519
+7907,38,2,9,1,Blooming Family Horses,3,5,10617
+7908,58,8,1,1,Pringle Family Honey Bee Farm,9,4,111018
+7909,17,8,9,0,Alaska Fruit Orchard,6,2,11417
+7910,99,8,2,0,Mountain Organic Farm,3,4,81615
+7911,58,8,5,1,Dry Creek Juicery,3,1,91720
+7912,79,3,9,1,Black Mountain Country Estate,4,1,71415
+7913,58,9,2,1,Kathy's Herb Farm,7,2,30714
+7914,38,4,5,0,Salt Lake Acres,1,2,71416
+7915,38,4,6,0,Rustic Ranch,6,4,91315
+7916,79,4,3,1,Blissful Squash Farm,1,2,112022
+7917,38,4,8,1,Alaska Juicery,4,2,122221
+7918,38,5,2,0,Bankers Hill Organic Farm,6,1,62717
+7919,79,5,1,0,Kristen's Sunflower Farms,7,2,61713
+7920,38,5,6,1,Francesco's Hills,5,1,41118
+7921,38,5,8,0,Sauer Family Horses,9,3,52917
+7922,38,6,3,0,Maria's Peach Orchard,5,1,70320
+7923,18,1,6,0,Green Meadow Avocado Farm,5,4,82822
+7924,59,1,2,0,Happy Herb Garden,8,1,82121
+7925,59,1,1,1,Green Meadow Maple Syrup,8,2,122621
+7926,38,6,7,0,Webb Family Ranch,4,1,41713
+7927,52,4,6,1,Fullerton Apples,2,2,31917
+7928,18,2,2,1,Monarch Meadow Cow Farm,1,3,102218
+7929,18,2,4,0,Alberto's Organic Farm,8,4,122315
+7930,18,2,5,1,Monarch Meadow Honey Bee Farm,6,3,120814
+7931,79,6,8,1,Pringle Family Apples,1,2,20817
+7932,38,7,8,0,Middle Creek Honey Bee Farm,7,1,31315
+7933,18,3,1,0,Eduardo's Country Estate,9,1,111014
+7934,79,7,4,1,Serene Chickens,3,2,32017
+7935,18,3,3,1,Monarch Meadow Maple Syrup,1,3,121520
+7936,59,3,1,1,Anita's Juicery,4,1,121013
+7937,59,3,4,0,Maria's Herb Garden,6,4,12013
+7938,79,8,3,0,Delightful Honey Bee Farm,3,4,71217
+7939,18,3,9,1,Virginia's Pumpkin Patch,2,1,110516
+7940,59,3,5,1,Tranquil Creamery,8,3,110922
+7941,18,4,1,1,Harvest Peach Orchard,2,5,20819
+7942,59,3,9,1,Los Angeles Apples,8,4,62213
+7943,79,9,3,0,Carolina's Herb Farm,4,5,22920
+7944,38,9,8,0,Eduardo's Lavender Fields,6,2,110918
+7945,18,5,2,1,Turtle Pond Honey Bee Farm,5,3,101022
+7946,79,9,6,0,Rustic Acre Farms,7,5,60218
+7947,18,5,3,1,Breezy Ranch,2,2,42419
+7948,18,5,5,1,Cloudy Honeybees,7,5,51822
+7949,18,5,8,1,Deer Creek Cow Farm,1,5,72217
+7950,39,1,6,1,Blue Lake Chickens,5,2,62021
+7951,59,6,5,1,Radiant Cattle,2,5,11321
+7952,39,1,8,1,Timmy's Lavender Fields,3,4,42117
+7953,59,6,4,0,Jimmy's Farm,2,3,100616
+7954,18,6,8,0,Bankers Hill Honeybees,6,3,112114
+7955,39,2,1,0,Nelson's Cattle,8,4,90322
+7956,39,2,3,1,Kathy's Cattle,5,5,51417
+7957,39,2,6,0,Smith Juicery,3,2,80218
+7958,18,7,8,1,Mountain Acre Farms,3,1,22517
+7959,39,3,4,0,Fly Creek Goats,8,4,110721
+7960,39,3,5,0,Fullerton Juicery,1,5,71616
+7961,59,8,4,0,Francesco's Ranch,7,1,92120
+7962,59,9,1,1,Maricel's Cattle,2,1,41414
+7963,59,9,2,1,Breezy Herb Garden,2,2,50921
+7964,59,9,4,0,Sunset Hill Avocado Farm,4,2,22221
+7965,39,5,7,1,Eduardo's Plum Orchard,1,2,40717
+7966,19,1,7,1,Mountain Meadows Horses,9,5,60820
+7967,39,6,5,1,Alberto's Herb Garden,4,2,30718
+7968,39,6,7,0,Green Meadow Horses,2,5,101716
+7969,39,7,1,0,Maricel's Mushroom Farm,9,1,63015
+7970,19,2,3,1,Hudson Family Country Estate,6,5,100313
+7971,36,3,9,0,Charlotte's Chickens,5,1,12222
+7972,39,7,4,0,Fly Creek Horse Ranch,3,5,112118
+7973,39,7,9,0,Cloudy Avocado Farm,9,3,50613
+7974,19,3,4,1,Harvest Horse Ranch,2,4,50120
+7975,19,3,5,0,Blissful Maple Syrup,2,2,92415
+7976,19,4,1,1,Aisha's Flower Garden,2,3,21213
+7977,39,9,3,0,Elm Tree Hills,8,2,111921
+7978,19,4,7,0,Webb Family Pumpkin Patch,4,1,120315
+7979,19,6,2,0,Gloria's Honeybees,3,3,70314
+7980,19,7,1,1,Blue Lake Creamery,6,3,62319
+7981,81,1,8,1,Black Mountain Egg Farm,3,4,103018
+7982,19,7,5,0,Smith Pumpkin Patch,1,2,122521
+7983,81,2,1,1,Middle Creek Herb Farm,7,3,62220
+7984,81,2,4,0,Mountain Meadows Farm,8,1,40518
+7985,81,3,1,0,Maria's Lavender Fields,2,3,62316
+7986,81,3,2,0,Harvest Pumpkin Patch,3,2,121219
+7987,81,3,7,0,Jasmin's Acre Farms,5,4,40814
+7988,19,9,3,0,Delightful Pumpkin Patch,8,2,72414
+7989,19,9,7,1,Bankers Hill Flower Garden,1,2,51517
+7990,81,5,4,0,Swallowtail Ponds Fruit Orchard,7,4,81721
+7991,61,1,7,1,Golden Peach Orchard,1,5,81913
+7992,81,6,7,1,Dry Creek Cattle,6,2,101019
+7993,81,7,6,1,Arizona Herb Farm,9,1,50414
+7994,61,3,3,0,Harvest Herb Garden,7,5,92318
+7995,81,8,2,1,Smith Avocado Farm,3,1,21115
+7996,81,8,3,0,Middle Creek Horse Ranch,4,2,11019
+7997,81,8,5,0,Bankers Hill Apples,2,1,42715
+7998,61,3,9,0,Arizona Oranges,1,3,90914
+7999,61,4,3,0,Sharon's Avocado Farm,3,3,51722
