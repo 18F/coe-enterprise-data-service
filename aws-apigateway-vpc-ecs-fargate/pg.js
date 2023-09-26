@@ -2,12 +2,12 @@
 const {Pool, Client} = require('pg');
 
 const config = {
-    user: 'gsa_data_pguser',
+    user: 'XXXXXXXXXX',
     database: 'postgres',
-    password: 'dqVvAy89h9RsV3kEKn',
+    password: 'XXXXXXXXXX',
     port: 5432,
     //host: 'data-coe-gsa-aurorapg-sampledata.cluster-cozpouof2ron.us-east-2.rds.amazonaws.com'
-    host: 'aurora-postgres-cluster-complete-postgresql.cluster-ro-cozpouof2ron.us-east-2.rds.amazonaws.com'
+    host: 'XXXXXXXXXX'
 };
 
 const client = new Client(config);
