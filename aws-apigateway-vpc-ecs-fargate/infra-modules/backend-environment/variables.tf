@@ -36,7 +36,7 @@ variable "app_port" {
 variable "app_image" {
   type = string 
   description = "Container image to be used for application in task definition file"
-  default="533787958253.dkr.ecr.us-east-2.amazonaws.com/eds-ecr-demo-repo:latest"
+  default="<<ACCOUNTNO>>.dkr.ecr.us-east-2.amazonaws.com/eds-ecr-demo-repo:latest"
 }
 
 variable "availability_zones" {
@@ -60,13 +60,13 @@ variable "db_password" {
   description = "RDS root user password"
   type        = string
   sensitive   = true
-  default     = "dqVvAy89h9RsV3kEKn"
+  default     = "XXXXXXXXXX"
 }
 variable "db_user" {
   description = "RDS root user name"
   type        = string
   sensitive   = true
-  default     = "gsa_data_pguser"
+  default     = "XXXXXXXXXX"
 }
 
 variable "db_port" {
