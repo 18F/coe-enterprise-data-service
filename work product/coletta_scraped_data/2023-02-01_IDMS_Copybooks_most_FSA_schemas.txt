@@ -1,0 +1,3298 @@
+000050 01  ACCT.
+000100      05  GOVT-ACCT.
+000200          10  ACCT                          PIC 9(4).
+000300          10  SUB-ACCT                      PIC 99.
+000400      05  OBJ-CLS                           PIC XX.
+000500      05  AMT                               PIC 9(12)V99 COMP-3.
+000600      05  DR-CR                             PIC X.
+000700      05  FILLER                            PIC X(0023).
+000050 01  APPEAL.
+000100      05  APPEAL-NBR.
+000200          10  APPEAL-FY                     PIC 99.
+000300          10  APPEAL-SEQNC-NBR              PIC 9(06).
+000400          10  APPEAL-AREA                   PIC X.
+000500      05  FMHA-CASE-NBR.
+000600          10  CASE-ST-NBR                   PIC X(02).
+000700          10  CTY-DST-NBR                   PIC X(03).
+000800          10  CASE-ENTY                     PIC X(10).
+000900      05  APPLNT-ENTY-NME.
+001000          10  APPLNT-LST-NME                PIC X(17).
+001100          10  APPLNT-1ST-NME                PIC X(12).
+001200          10  APPLNT-MID-NME                PIC X.
+001300      05  CUR-REVW-DECSN                    PIC X(01).
+001400      05  ENTY-CNTCT-NME.
+001500          10  ENTY-CNTCT-LST-NME            PIC X(17).
+001600          10  ENTY-CNTCT-1ST-NME            PIC X(12).
+001700      05  APPLNT-ADDR.
+001800          10  APPLNT-ADDR-GRP.
+001900              15  APPLNT-STREET-CITY-1      PIC X(25).
+002000              15  APPLNT-STREET-CITY-2      PIC X(25).
+002100          10  APPLNT-ST                     PIC X(02).
+002200          10  APPLNT-ZIP.
+002300              15  APPLNT-ZIP-1              PIC X(05).
+002400              15  APPLNT-ZIP-2              PIC X(04).
+002500      05  APPLNT-OFC-PHN.
+002600          10  APPLNT-OFC-AREA               PIC X(03).
+002700          10  APPLNT-OFC-PHN-NBR            PIC X(07).
+002800          10  APPLNT-OFC-EXTNSN             PIC X(04).
+002900      05  APPLNT-HOME-PHN.
+003000          10  APPLNT-HOME-AREA              PIC X(03).
+003100          10  APPLNT-HOME-PHN-NBR           PIC X(07).
+003200      05  LNDR-APPLNT                       PIC X(40).
+003300      05  LNDR-APPLNT-NME.
+003400          10  LNDR-APPLNT-LST-NME           PIC X(17).
+003500          10  LNDR-APPLNT-1ST-NME           PIC X(12).
+003600      05  LNDR-APPLNT-ADDR.
+003700          10  LNDR-APPLNT-ADDR-GRP.
+003800              15  LNDR-APPLNT-STREET-1      PIC X(25).
+003900              15  LNDR-APPLNT-STREET-2      PIC X(25).
+004000          10  LNDR-APPLNT-ST                PIC X(2).
+004100          10  LNDR-APPLNT-ZIP.
+004200              15  LNDR-APPLNT-ZIP-1         PIC X(05).
+004300              15  LNDR-APPLNT-ZIP-2         PIC X(04).
+004400      05  LNDR-APPLNT-OFC-PHN.
+004500          10  LNDR-APPLNT-OFC-AREA          PIC X(03).
+004600          10  LNDR-APPLNT-OFC-PHN-NBR       PIC X(07).
+004700          10  LNDR-APPLNT-OFC-EXTNSN        PIC X(04).
+004800      05  APPEAL-CUR-STAT.
+004900          10  APPEAL-STAT-MAJ               PIC X.
+005000          10  APPEAL-STAT-PHASE             PIC X.
+005100          10  APPEAL-STAT-LVL               PIC X.
+005200          10  APPEAL-STAT-DECSN             PIC X.
+005300      05  REP-NME.
+005400          10  REP-LST-NME                   PIC X(17).
+005500          10  REP-1ST-NME                   PIC X(12).
+005600          10  REP-MID-NME                   PIC X(01).
+005700      05  REP-ADDR.
+005800          10  REP-ADDR-GRP.
+005900              15  REP-STREET-CITY-1         PIC X(25).
+006000              15  REP-STREET-CITY-2         PIC X(25).
+006100          10  REP-ST                        PIC X(02).
+006200          10  REP-ZIP.
+006300              15  REP-ZIP-1                 PIC X(05).
+006400              15  REP-ZIP-2                 PIC X(04).
+006500      05  REP-OFC-PHN.
+006600          10  REP-OFC-AREA                  PIC X(03).
+006700          10  REP-OFC-PHN-NBR               PIC X(07).
+006800          10  REP-OFC-EXTNSN                PIC X(04).
+006900      05  DECSN-OFCL-NME.
+007000          10  DECSN-OFCL-LST-NME            PIC X(17).
+007100          10  DECSN-OFCL-1ST-NME            PIC X(12).
+007200          10  DECSN-OFCL-MID-NME            PIC X(01).
+007300      05  DECSN-OFCL-CDE                    PIC X(06).
+007400      05  DECSN-OFCL-ADDR.
+007500          10  DECSN-OFCL-ADDR-GRP.
+007600              15  DECSN-OFCL-STREET-CITY-1  PIC X(25).
+007700              15  DECSN-OFCL-STREET-CITY-2  PIC X(25).
+007800          10  DECSN-OFCL-ST                 PIC X(02).
+007900          10  DECSN-OFCL-ZIP.
+008000              15  DECSN-OFCL-ZIP-1          PIC X(05).
+008100              15  DECSN-OFCL-ZIP-2          PIC X(04).
+008200      05  DECSN-OFCL-PHN.
+008300          10  DECSN-OFCL-AREA               PIC X(03).
+008400          10  DECSN-OFCL-PHN-NBR            PIC X(07).
+008500          10  DECSN-OFCL-EXTNSN             PIC X(04).
+008600      05  PROG-CDE                          PIC X(06).
+008700      05  LN-CDE                            PIC X(06).
+008800      05  ACTN-CDE                          PIC X(06).
+008900      05  SUB-ACTN-CDE                      PIC X(06).
+009000      05  STATCS-CDE.
+009100          10  RACE-DESC-CDE                 PIC 9(1).
+009200          10  SEX-CDE                       PIC 9(1).
+009300          10  HNDICPD-CDE                   PIC 9(01).
+009400      05  FMHA-ORIG-DECSN-DTE               PIC 9(06).
+009500      05  HEARG-RQSTD-DTE                   PIC 9(06).
+009600      05  HEARG-ASGD-DTE                    PIC 9(06).
+009700      05  HEARG-DECSN-DUE-DTE               PIC 9(06).
+009800      05  HEARG-DTE                         PIC 9(06).
+009900      05  HEARG-CNFNC-CALL                  PIC X.
+010000      05  HEARG-USER-ID                     PIC X(05).
+010100      05  HEARG-DECSN                       PIC X.
+010200      05  HEARG-DECSN-NOTFCTN-DTE           PIC 9(06).
+010300      05  MTRL.
+010400          10  MTRL-TRNSCRPT                 PIC X.
+010500          10  MTRL-TAPE                     PIC X.
+010600          10  MTRL-RCRD-COPY                PIC X.
+010700          10  MTRL-PYMT-RCVD                PIC X.
+010800          10  MTRL-RQSTD-DTE                PIC 9(06).
+010900          10  MTRL-DTE-SENT                 PIC 9(06).
+011000      05  MTRL-AMT-PD                       PIC 9(05)V99 COMP-3.
+011100      05  MTRL-OTH                          PIC X.
+011200      05  ST-USER-ID                        PIC X(05).
+011300      05  APPLNT-RQSTD-ST-REVW-DTE          PIC 9(06).
+011400      05  ST-ASGD-DTE                       PIC 9(06).
+011500      05  ST-REVW-DUE-DTE                   PIC 9(06).
+011600      05  ST-APPEAL-NOTFCTN-DTE             PIC 9(06).
+011700      05  ST-APPEAL-DECSN                   PIC X(01).
+011800      05  NATL-USER-ID                      PIC X(05).
+011900      05  NATL-RQSTD-REVW-DTE               PIC 9(06).
+012000      05  NATL-ASGD-DTE                     PIC 9(06).
+012100      05  NATL-RCVD-DTE                     PIC 9(06).
+012200      05  NATL-ASGD-STAFF                   PIC 9(06).
+012300      05  NATL-APPEAL-DUE-DTE               PIC 9(06).
+012400      05  NATL-APPEAL-NOTFCTN-DTE           PIC 9(06).
+012500      05  NATL-APPEAL-DECSN                 PIC X(01).
+012600      05  HEARG-REVW-FLAG                   PIC X(01).
+012700      05  ST-REVW-FLAG                      PIC X(01).
+012800      05  NATL-REVW-FLAG                    PIC X(01).
+012900      05  PREV-HEARG-USER-ID                PIC X(05).
+013000      05  PREV-ST-USER-ID                   PIC X(05).
+013100      05  PREV-NATL-USER-ID                 PIC X(05).
+013200      05  LST-UPDTE-USER-ID                 PIC X(05).
+013300      05  LST-UPDTE-DTE                     PIC 9(06).
+013400      05  USER-ID-WORK                      PIC X(08).
+013500      05  APPEAL-RCRD-SENT                  PIC X(01).
+013600      05  WK-DTE-1                          PIC 9(06).
+013700      05  WK-DTE-2                          PIC 9(06).
+013800      05  WK-DTE-3                          PIC 9(06).
+013900      05  WK-AMT-1                          PIC 9(08)V99 COMP-3.
+014000      05  WK-AMT-2                          PIC 9(08)V99 COMP-3.
+014100      05  WK-AMT-3                          PIC 9(08)V99 COMP-3.
+014200      05  FILLER                            PIC X(0046).
+000050 01  APPLCMT.
+000100      05  APPEAL-CMMTS-PSTN                 PIC X(02).
+000200      05  APPEAL-CMMTS                      PIC X(70).
+000300      05  FILLER                            PIC X(0008).
+000050 01  AREAOFC.
+000100      05  AREA-OFC-ID                       PIC X(02).
+000200      05  OFC-ADDR.
+000300          10  OFC-ADDR-GRP.
+000400              15  OFC-STREET-CITY-1         PIC X(25).
+000500              15  OFC-STREET-CITY-2         PIC X(25).
+000600          10  OFC-ST                        PIC X(02).
+000700          10  OFC-ZIP.
+000800              15  OFC-ZIP-1                 PIC X(05).
+000900              15  OFC-ZIP-2                 PIC X(04).
+001000      05  FMHA-ST                           OCCURS 35.
+001100          10  ST-NBR                        PIC 9(02).
+001200          10  ST-ABBR.
+001300              15  ST-ABBR-1ST               PIC A.
+001400              15  ST-ABBR-2ND               PIC A.
+001500          10  ST-NME                        PIC X(15).
+001600      05  LST-APPEAL-LOG-NBR.
+001700          10  LST-APPEAL-FY                 PIC 9(02).
+001800          10  LST-APPEAL-SEQNC-NBR          PIC 9(06).
+001900      05  FILLER                            PIC X(0048).
+000050 01  AVLBLFD.
+000100      05  FD-DESC-AVLBL                     PIC X(40).
+000200      05  FD-AMT-AVLBL-1                    PIC S9(10) COMP-3.
+000300      05  FD-CDE-AVLBL                      PIC 9(3).
+000400      05  FILLER                            PIC X(0031).
+000050 01  BDGTCTRL.
+000100      05  BDGT-CNTRL-KEY.
+000200          10  OFC-CDE                       PIC 9(02).
+000300          10  FY                            PIC 9(2).
+000400      05  SRMP-ALTEE                        PIC 9(02).
+000500      05  LST-UPDTE-DTE                     PIC 9(06).
+000600      05  FILLER                            PIC X(28).
+000050 01  BDGTSTAF.
+000100      05  GEN-WORK-LOAD-FTIME-EMPL          OCCURS 3 PIC 9(06).
+000200      05  EMERG-LN-MKG-FTIME-EMPL           OCCURS 3 PIC 9(06).
+000300      05  FRM-CR-SRVC-FTIME-EMPL            OCCURS 3 PIC 9(06).
+000400      05  OFC-SPC-FTIME-NBR                 OCCURS 3 PIC 9(06).
+000500      05  OFC-SPC-DST-NBR                   OCCURS 3 PIC 9(06).
+000600      05  OFC-SPC-CTY-FTIME-NBR             OCCURS 3 PIC 9(06).
+000700      05  OFC-SPC-CTY-SUB-OFC-NBR           OCCURS 3 PIC 9(06).
+000800      05  OFC-SPC-CTY-PTIME-NBR             OCCURS 3 PIC 9(06).
+000900      05  INFO-RESRCS-PROJ-OBJTV            OCCURS 2 PIC X(60).
+001000      05  INFO-RESRCS-ACT-DESC              OCCURS 4 PIC X(60).
+001100      05  INFO-RESRCS-ID-FUNCTN             OCCURS 4 PIC X(60).
+001200      05  INFO-RESRCS-STAFF-YR              OCCURS 5 PIC 9(10).
+001300      05  INFO-RESRCS-STAFF-CST       OCCURS 5 PIC S9(10) COMP-3.
+001400      05  INFO-RESRCS-OTH-CST         OCCURS 5 PIC S9(10) COMP-3.
+001500      05  INFO-RESRCS-EST-BNFTS-CST   OCCURS 5 PIC S9(10) COMP-3.
+001600      05  CMMTS                             OCCURS 4 PIC X(78).
+001700      05  INFO-RESRCS-ACT-START-DTE         OCCURS 4 PIC 9(06).
+001800      05  INFO-RESRCS-ACT-END-DTE           OCCURS 4 PIC 9(06).
+001900      05  LST-UPDTE-DTE                     PIC 9(06).
+002000      05  FILLER                            PIC X(0014).
+000050 01  CMMTS-RCRD.
+000100      05  RCRD-NBR-KEY                      PIC 9(2).
+000200      05  CMMT-DATA                         PIC X(110).
+000300      05  RMS-OPRTR-NBR                     PIC 9(3).
+000400      05  FILLER                            PIC X.
+000050 01  CODEREC.
+000100      05  CDE-KEY.
+000200          10  TBL-CDE                       PIC X(02).
+000300          10  TBL-NBR                       PIC X(06).
+000400      05  TBL-DESCV                         PIC X(40).
+000500      05  TBL-ENTRY-PROG                    PIC X.
+000600      05  TBL-ENTRY-ACTN-TYP                PIC X.
+000700      05  LST-UPDTE-USER-ID                 PIC X(05).
+000800      05  LST-UPDTE-DTE                     PIC 9(06).
+000900      05  FILLER                            PIC X(0011).
+000050 01  CRBREC.
+000100      05  CRB-NBR.
+000200          10  DIV-CDE                       PIC X(06).
+000300          10  FY                            PIC 9(2).
+000400          10  CRB-ID                        PIC X(03).
+000500      05  CRB-PRRTY-CDE                     PIC X(02).
+000600      05  CRB-DIV-NME                       PIC X(30).
+000700      05  CRB-FY-AMT                        PIC 9(10) COMP-3.
+000800      05  CRB-ACTN-TYP                      PIC X.
+000900      05  CRB-OTH-TYP                       PIC X(40).
+001000      05  CRB-PROCURMT-TYP                  PIC X.
+001100      05  CRB-CNTRCR-NME                    PIC X(30).
+001200      05  CRB-SRC-FD                        PIC X.
+001300      05  CRB-COMPLD-SRVC-DTE               PIC 9(06).
+001400      05  CRB-PY                            OCCURS 4 PIC 9(04).
+001500      05  CRB-PR-VNDR-NME                   OCCURS 4 PIC X(30).
+001600      05  CRB-PR-CNTRC-NBR                  OCCURS 4 PIC X(15).
+001700      05  CRB-PR-YR-AMT                OCCURS 4 PIC 9(10) COMP-3.
+001800      05  CRB-IMPACT-FUTR                   OCCURS 3 PIC X(60).
+001900      05  CRB-COMPRH-PROJ-TYP               PIC X.
+002000      05  CRB-COMPRH-PROJ-AMT               PIC 9(10) COMP-3.
+002100      05  CRB-COMPRH-PROJ-PCT               PIC 99V99.
+002200      05  CRB-CNTRC-PROJ-LEADR              PIC X(30).
+002300      05  CRB-CNTRC-PROJ-TLPHN              PIC 9(10).
+002400      05  CRB-DTE                           PIC 9(06).
+002500      05  CRB-ACCT-ID                       PIC X(05).
+002600      05  CRB-APPRVD-AMT                    PIC S9(10) COMP-3.
+002700      05  CRB-OBLGD-AMT                     PIC S9(10) COMP-3.
+002800      05  CRB-DESC                          OCCURS 2 PIC X(70).
+002900      05  CRB-RMRKS                         OCCURS 2 PIC X(70).
+003000      05  CRB-REAS                          OCCURS 10 PIC X(70).
+003100      05  CRB-ID-CNTRCR                     PIC X(70).
+003200      05  LST-UPDTE-DTE                     PIC 9(06).
+003300      05  FILLER                            PIC X(0018).
+000050 01  DIVREC.
+000100      05  DIV-CNTRL-KEY.
+000200          10  FY                            PIC 9(2).
+000300          10  DIV-NBR                       PIC 9(02).
+000400      05  DIV-CDE                           PIC X(06).
+000500      05  CRB-DIV-NME                       PIC X(30).
+000600      05  CMMTS                             OCCURS 12 PIC X(78).
+000700      05  FURNTR-DESC                       OCCURS 12 PIC X(78).
+000800      05  FILLER                            PIC X(0024).
+000050 01  EQPMTS.
+000100      05  ITEM-NBR                          PIC 9(03).
+000200      05  ITEM-ESTD-CST                     PIC S9(05)V99 COMP-3.
+000300      05  ITEM-DESC                         PIC X(30).
+000400      05  ACTL-NBR                          PIC 9(06) COMP-3.
+000500      05  ACTL-AMT                          PIC S9(10) COMP-3.
+000600      05  RQSTD-NBR                         PIC 9(06).
+000700      05  RQSTD-AMT                         PIC S9(10) COMP-3.
+000800      05  PROJD-NBR                         PIC 9(06).
+000900      05  PROJD-AMT                         PIC S9(10) COMP-3.
+001000      05  FILLER                            PIC X(0017).
+000050 01  EQPTCTRL.
+000100      05  EQPMT-DESC                        PIC X(30).
+000200      05  EQPMT-CST                         PIC S9(5)V99 COMP-3.
+000300      05  EQPMT-CDE                         PIC X(01).
+000400      05  FILLER                            PIC X(0045).
+000050 01  EVENT-HN.
+000100      05  EVENT-KEY.
+000200          10  DTE-EVENT                     PIC X(8).
+000300          10  TIME-EVENT                    PIC X(6).
+000400          10  ENVRNMT-CDE                   PIC X(4).
+000500          10  SEQNC                         PIC S9(8) COMP.
+000600      05  ADM-USER-ID                       PIC X(18).
+000700      05  SRT-CDE                           PIC X(4).
+000800      05  FILLER                            PIC X(20).
+000050 01  EXPSCTRL.
+000100      05  OFC-CDE                           PIC 9(02).
+000200      05  ALTEE                             PIC 9.
+000300      05  OFC-NME                           PIC X(30).
+000400      05  FILLER                            PIC X(47).
+000050 01  FARMS-ACCT-DATA.
+000100      05  LN-NBR                            PIC 9(2).
+000200      05  FD-CDE.
+000300          10  FD-CDE-3.
+000400              15  FD-CDE-2                  PIC 9(2).
+000500              15  FD-CDE-3RD                PIC 9(1).
+000600          10  FD-CDE-4TH                    PIC 9(1).
+000700      05  KIND-CDE-LN                       PIC 9(2).
+000800      05  INT-RATE-NOTE                     PIC 9(2)V9(4).
+000900      05  INT-RATE-NOTE-1ST    REDEFINES INT-RATE-NOTE PIC V9(6).
+001000      05  PYMT-TYP-CDE                      PIC 9(1).
+001100      05  DIR-PYMT-CDE                      PIC 9(1).
+001200      05  DTE-AMORTN-EFCTV                  PIC 9(06).
+001300      05  DSTR-DCLRD-CDE.
+001400          10  DSTR-TYP-CDE                  PIC 9(1).
+001500          10  FY-DSTR-DCLRD                 PIC 9(1).
+001600          10  DSTR-DCLRD-NBR                PIC 9(3).
+001700      05  MRG-CNTRL                         PIC 9(2).
+001800      05  DOCMT-TYP-CDE                     PIC X(1).
+001900      05  DTE-OBLGN-LN                      PIC 9(06).
+002000      05  ASSTNC-TYP-CDE                    PIC 9(3).
+002100      05  LN-AMT-OBLGN                      PIC S9(8)V99 COMP-3.
+002200      05  BEGNG-FRMR-RNCHR-CDE              PIC X(01).
+002300      05  COLLTL-CDE                        PIC 9(1).
+002400      05  CPN-PROCG-DTE                     PIC 9(6).
+002500      05  CASE-NBR-CHNG-CDE                 PIC 9(01).
+002600      05  PYMT-ASSTNC-METH-CDE              PIC 9(1).
+002700      05  INT-RATE-PREV                     PIC 9(2)V9(4).
+002800      05  INT-RATE-PREV-REDFND REDEFINES INT-RATE-PREV PIC V9(6).
+002900      05  FILLER                            PIC X(0019).
+000050 01  FARMS-ACQD-PROP.
+000100      05  FD-CDE-ACQD-PROP.
+000200          10  FD-CDE-3-ACQD-PROP.
+000300              15  FD-CDE-2-ACQD-PROP        PIC 9(2).
+000400              15  FD-CDE-3RD-ACQD-PROP      PIC 9(1).
+000500          10  FD-CDE-4TH-ACQD-PROP          PIC 9(1).
+000600      05  ASCS-FRM-NBR-1                    PIC X(07).
+000700      05  ASCS-FRM-NBR-2                    PIC X(07).
+000800      05  ACQD-PROP-NBR.
+000900          10  ST-CDE-ACQD-PROP              PIC 9(2).
+001000          10  CTY-CDE-ACQD-PROP             PIC 9(3).
+001100          10  ADVC-NBR                      PIC 9(5).
+001200      05  MAILG-OFC-ACQD.
+001300          10  MAILG-LVL-ACQD                PIC X(1).
+001400                      88  ST-MAILG-LVL-ACQD VALUE 'S'.
+001500                      88  DST-MAILG-LVL-ACQD VALUE 'D'.
+001600                      88  CTY-MAILG-LVL-ACQD VALUE 'C'.
+001700                      88  CTY-SPECL-LVL-ACQD VALUE 'T'.
+001800                      88  DST-SPECL-LVL-ACQD VALUE 'U'.
+001900                      88  ST-SPECL-LVL-ACQD VALUE 'V'.
+002000          10  MAILG-CDE-ACQD.
+002100              15  ST-OFC-MAILG-ACQD         PIC 9(2).
+002200              15  CTY-OFC-MAILG-ACQD        PIC 9(3).
+002300              15  DST-OFC-MAILG-ACQD
+002350                           REDEFINES CTY-OFC-MAILG-ACQD PIC 9(3).
+002400      05  DTE-LST-CSH-CR-PROP               PIC 9(6).
+002500      05  DTE-ACQSTN                        PIC 9(06).
+002600      05  LQDTN-CDE                         PIC 9(1).
+002700      05  VLU-ACQSTN                        PIC S9(08)V99 COMP-3.
+002800      05  ACRES-CNT                         PIC S9(6)V9.
+002900      05  PRIN-CR-ACQSTN                    PIC S9(08)V99 COMP-3.
+003000      05  INT-CR-ACQSTN                     PIC S9(7)V99 COMP-3.
+003100      05  PRIN-UNPD-PROP-ACQSTN             PIC S9(08)V99 COMP-3.
+003200      05  INT-UNPD-PROP-ACQSTN              PIC S9(7)V99 COMP-3.
+003300      05  CPTL-IMPRVMTS                     PIC S9(7)V99 COMP-3.
+003400      05  DTE-1ST-ADVTSD                    PIC 9(06).
+003500      05  INCM-OTH-ACQD-PROP                PIC S9(07)V99 COMP-3.
+003600      05  ACQD-PROP-GAIN-LOSS-FNL-SALE      PIC S9(7)V99 COMP-3.
+003700      05  DTE-JDGMT                         PIC 9(06).
+003800      05  JDGMT-AMT                         PIC S9(7)V99 COMP-3.
+003900      05  DTE-WRTF                          PIC 9(06).
+004000      05  WRTF-UNPD-PRIN                    PIC S9(7)V99 COMP-3.
+004100      05  WRTF-UNPD-INT-AMT                 PIC S9(7)V99 COMP-3.
+004200      05  DTE-SALE-PROP                     PIC 9(06).
+004300      05  ACQD-PROP-SALE-AMT                PIC S9(08)V99 COMP-3.
+004400      05  SALE-PRTL-COMPL-CDE               PIC 9(1).
+004500      05  NME-PURCHR                        PIC X(19).
+004600      05  CASE-NBR-PURCHR.
+004700          10  ST-CDE-PURCHR                 PIC 9(2).
+004800          10  CTY-CDE-PURCHR                PIC 9(3).
+004900          10  ID-NBR-PURCHR                 PIC 9(10).
+005000      05  DTE-ACQSTN-PROCD                  PIC 9(04).
+005100      05  DTE-SALE-PROCD                    PIC 9(04).
+005200      05  DLT-CDE                           PIC 9(1).
+005300      05  FD-CDE-ACQD-PROP-PR-ACQSTN        PIC 9(2).
+005400      05  SUSP-CDE-ACQD-PROP                PIC 9(2).
+005500      05  DTE-LST-RGSTR-DTL-PROP            PIC 9(06).
+005600      05  RGSTR-TYP-LST-CHNG-PROP           PIC 9(2).
+005700      05  DTE-ACQSTN-SBMTD.
+005800          10  DTE-ACQSTN-SBMTD-MO           PIC 99.
+005900          10  DTE-ACQSTN-SBMTD-DAY          PIC 99.
+006000          10  DTE-ACQSTN-SBMTD-YR           PIC 99.
+006100      05  PROP-LOCTN                        PIC X(16).
+006200      05  PROP-DESC-CDE                     PIC 9(2).
+006300      05  PROP-SUTBLTY                      PIC 9(1).
+006400      05  ORIG-MKT-VLU                      PIC S9(7)V99 COMP-3.
+006500      05  TYP-BUS                           PIC 9(4).
+006600      05  CUR-MKT-VLU                       PIC S9(7)V99 COMP-3.
+006700      05  DTE-LST-APPRSL.
+006800          10  DTE-LST-APPRSL-MO             PIC 99.
+006900          10  DTE-LST-APPRSL-DAY            PIC 99.
+007000          10  DTE-LST-APPRSL-YR             PIC 99.
+007100      05  ACRES-ACQD-CROP                   PIC S9(5)V9 COMP-3.
+007200      05  ACRES-ACQD-PSTR                   PIC S9(5)V9 COMP-3.
+007300      05  ACRES-ACQD-WDLND                  PIC S9(5)V9 COMP-3.
+007400      05  ACRES-ACQD-OTH                    PIC S9(5)V9 COMP-3.
+007500      05  DTE-CR-SALE-COMPLD.
+007600          10  DTE-CR-SALE-COMPLD-MO         PIC 99.
+007700          10  DTE-CR-SALE-COMPLD-DAY        PIC 99.
+007800          10  DTE-CR-SALE-COMPLD-YR         PIC 99.
+007900      05  TYP-SALE-DSPSL                    PIC 9(1).
+008000      05  TERM-SALE-DSPSL                   PIC 9(1).
+008100      05  PURCHR-TYP-CDE                    PIC 9(2).
+008200      05  SD-APPLT-CDE                      PIC X(01).
+008300      05  DTE-FLD-NOTFS-FWS                 PIC 9(06).
+008400      05  DTE-FWS-RQSTS-EASMNT              PIC 9(06).
+008500      05  BORR-RHTS-WAVD                    PIC X(01).
+008600      05  PROP-MNGR                         PIC X(19).
+008700      05  DTE-MNGMT-AGRMT                   PIC 9(06).
+008800      05  EXPRTN-DTE-MNGMT-AGRMT            PIC 9(06).
+008900      05  DTE-2ND-ADVTSD                    PIC 9(06).
+009000      05  SALES-COMMSN                      PIC S9(6)V99 COMP-3.
+009100      05  OTH-SELLG-EXP                     PIC S9(6)V99 COMP-3.
+009200      05  PROP-STREET-ADRS                  PIC X(16).
+009300      05  DTE-PROP-LISTD.
+009400          10  PROP-LISTD-MO                 PIC 9(02).
+009500          10  PROP-LISTD-DAY                PIC 9(02).
+009600          10  PROP-LISTD-YR                 PIC 9(02).
+009700      05  GAIN-LOSS-ACQSTN                  PIC S9(7)V99 COMP-3.
+009800      05  GR-SALE-AMT                       PIC S9(8)V99 COMP-3.
+009900      05  DTE-SUBDVSN                       PIC 9(6).
+010000      05  SUBQ-DTE-SUBDVSN                  PIC 9(6).
+010100      05  PR-PROP-ID                        PIC 9(5).
+010200      05  PURCHR-RACE-CDE                   PIC 9(1).
+010300      05  PURCHR-KIND-CDE                   PIC 9(2).
+010400      05  PURCHR-RELTNSHP-CDE               PIC 9(2).
+010500      05  DWNPYMT-SBMTD                     PIC S9(7)V99 COMP-3.
+010600      05  DWNPYMT-CRDTD                     PIC S9(7)V99 COMP-3.
+010700      05  NET-CSH-SALE-CRDTD                PIC S9(8)V99 COMP-3.
+010800      05  NET-CSH-SALE-RCVB                 PIC S9(8)V99 COMP-3.
+010900      05  NET-DWNPYMT-RCVB                  PIC S9(7)V99 COMP-3.
+011000      05  ASSTNC-TYP-CDE-ACQD               PIC 9(03).
+011100      05  DTE-OBLGN-LN-ACQD                 PIC 9(06).
+011200      05  LN-NBR-SCRD-ACQD                  PIC 9(02).
+011300      05  ACQD-PROP-OPRTG-CST-FMHA          PIC S9(06)V99 COMP-3.
+011400      05  FILLER                            PIC X(28).
+000050 01  FARMS-ADPS-CNTRL.
+000100      05  ADPS-CNTRL-KEY                    PIC X(2).
+000200      05  ADPS-SEQNC-NBR                    PIC 9(5) COMP-3.
+000300      05  DTE-JULIAN                        PIC 9(5).
+000400      05  FILLER                            PIC X(0008).
+000500      05  FILLER                            PIC XX.
+000050 01  FARMS-ADVANCE.
+000100      05  CHGS-ADVNC-FROM-FD                PIC S9(7)V99 COMP-3.
+000200      05  PRIN-CR-ADVNC-FROM-FD             PIC S9(7)V99 COMP-3.
+000300      05  INT-CR-ADVNC-FROM-FD              PIC S9(7)V99 COMP-3.
+000400      05  INT-FCL-FROM-ADVNC-DTE            PIC S9(7)V99 COMP-3.
+000500      05  SCHED-STAT-ADVNC-FROM-FD          PIC S9(7)V99 COMP-3.
+000600      05  FILLER                            PIC XXX.
+000050 01  FARMS-AID.
+000100      05  DTE-DFRL-EFCTV                    PIC 9(6).
+000200      05  DTE-DFRL-EXPRTN                   PIC 9(6).
+000300      05  DTE-DFRL-CNCLTN                   PIC 9(6).
+000400      05  STAT-DFRL                         PIC 9(1).
+000500      05  DTE-SET-ASIDE-EFCTV               PIC 9(6).
+000600      05  DTE-SET-ASIDE-EXPRTN              PIC 9(6).
+000700      05  DTE-SET-ASIDE-CNCLTN              PIC 9(6).
+000800      05  DEBT-SET-ASIDE-TTL-AMT            PIC S9(6)V99 COMP-3.
+000900      05  STAT-DEBT-SET-ASIDE               PIC 9(1).
+001000      05  DTE-MRTM-EFCTV-RH                 PIC 9(6).
+001100      05  DTE-MRTM-CNCLTN-RH                PIC 9(6).
+001200      05  MRTM-RENWL-NBR-RH                 PIC 9(1).
+001300      05  STAT-MRTM-RH                      PIC 9(1).
+001400      05  NBR-DFRL-RENWLS                   PIC 9(2).
+001500      05  DFRD-INT-TTL-AMT                  PIC S9(7)V99 COMP-3.
+001600      05  FILLER                            PIC X(0004).
+000050 01  FARMS-ALTMADJ.
+000100      05  ALTMT-LDGR-KEY.
+000200          10  VOU-DTE.
+000300              15  VOU-YR                    PIC 9(4).
+000400              15  VOU-MO                    PIC 99.
+000500              15  VOU-DAY                   PIC 99.
+000600          10  VOU-NBR                       PIC 9(5).
+000700      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+000800      05  BLK-NBR                           PIC 9(4).
+000900      05  DTE-BLK-PROC-CTRY                 PIC 9(8).
+001000      05  STAT-CDE                          PIC 9.
+001100      05  UPDTE-CDE-GL                      PIC X(01).
+001200      05  PREPR-INIT                        PIC X(04).
+001300      05  ADDTNL-RMRKS                      PIC X(48).
+001400      05  ADJMT-USER-ID                     PIC X(06).
+001500      05  FILLER                            PIC X(0023).
+001600      05  NBR-OF-OCCURS                     PIC S9(4) COMP.
+001700      05  ALTMT-LDGR-DTL    OCCURS 10 DEPENDING ON NBR-OF-OCCURS.
+001800          10  FY                            PIC 9(2).
+001900          10  ALTEE                         PIC 9.
+002000          10  ALTMT-KEY.
+002100              15  APROPTN-CDE               PIC 9(2).
+002200              15  MAJ-CLS                   PIC 9(2).
+002300              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+002400          10  PPB-OBLGN-EXPNTR-CDE.
+002500              15  PROG-PLANG-BDGTG-CDE.
+002600                  20  PPB-CDE-1ST           PIC 9.
+002700                  20  PPB-CDE-2-3           PIC 9(2).
+002800              15  OBLGN-EXPNTR-CDE.
+002900                  20  SBMSN-CDE             PIC 9(1).
+003000                  20  PURP-CDE              PIC 9(2).
+003100          10  NBR-LNS-ADJD                  PIC S9(06) COMP-3.
+003200          10  VOU-ADJMT-AMT                 PIC S9(09)V99 COMP-3.
+003300          10  OBLGN-TTL-AMT                 PIC S9(09)V99 COMP-3.
+003400          10  ALTMT                         PIC S9(10)V99 COMP-3.
+003500          10  GRP-OF-ALTMT-CDE              PIC X(3).
+003600          10  FILLER                        PIC X(0007).
+000050 01  FARMS-ALTMADJ-NEW.
+000100      05  AGCY-VOU-NBR.
+000200          10  AGCY                          PIC XX.
+000300          10  VOU-NBR                       PIC 9(5).
+000400      05  VOU-DTE.
+000500          10  VOU-YR                        PIC 9(4).
+000600          10  VOU-MO                        PIC 99.
+000700          10  VOU-DAY                       PIC 99.
+000800      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+000900      05  BLK-NBR                           PIC 9(4).
+001000      05  DTE-BLK-PROC-CTRY                 PIC 9(8).
+001100      05  STAT-CDE                          PIC 9.
+001200      05  PREPR-INIT                        PIC X(04).
+001300      05  ADDTNL-RMRKS                      PIC X(48).
+001400      05  ADJMT-USER-ID                     PIC X(06).
+001500      05  FILLER                            PIC X(0024).
+001600      05  NBR-OF-OCCURS                     PIC S9(4) COMP.
+001700      05  ALTMT-LDGR-ADJMT-DTL
+001750                            OCCURS 10 DEPENDING ON NBR-OF-OCCURS.
+001800          10  FY                            PIC 9(2).
+001900          10  ALTEE                         PIC 9.
+002000          10  ALTMT-KEY-EXPND.
+002100              15  APROPTN-CDE-EXPND         PIC 9(3).
+002200              15  GRP-OF-ALTMT-CDE          PIC X(3).
+002300              15  MAJ-CLS-EXPND             PIC 9(3).
+002400              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+002500          10  PPB-OBLGN-EXPNTR-CDE.
+002600              15  PROG-PLANG-BDGTG-CDE.
+002700                  20  PPB-CDE-1ST           PIC 9.
+002800                  20  PPB-CDE-2-3           PIC 9(2).
+002900              15  OBLGN-EXPNTR-CDE.
+003000                  20  SBMSN-CDE             PIC 9(1).
+003100                  20  PURP-CDE              PIC 9(2).
+003200          10  NBR-LNS-ADJD                  PIC S9(06) COMP-3.
+003300          10  VOU-AMT-ADJMT                 PIC S9(12)V99 COMP-3.
+003400          10  OBLGN-AMT-ADJMT               PIC S9(12)V99 COMP-3.
+003500          10  ALTMT-AMT-ADJMT               PIC S9(12)V99 COMP-3.
+003600          10  UPDTE-CDE-GL                  PIC X(01).
+003700          10  FILLER                        PIC X(0010).
+000050 01  FARMS-ALTMT.
+000100      05  ALTMT-KEY.
+000200          10  APROPTN-CDE                   PIC 9(2).
+000300          10  MAJ-CLS                       PIC 9(2).
+000400          10  OBJ-CLSFCTN-CDE               PIC 9(2).
+000500      05  FILLER                            PIC XX.
+000050 01  FARMS-AMORTD-CST.
+000100      05  DTE-OF-CHG-LST-PYMT               PIC 9(06).
+000200      05  PRIN-UNPD-EACH-CHG                PIC S9(5)V99 COMP-3.
+000300      05  RECVRBL-CST-MTLY-INSTLMT          PIC S9(5)V99 COMP-3.
+000400      05  MO-YR-1ST-INSTLMT                 PIC 9(4).
+000500      05  INSTLMTS-PD-CNT                   PIC 9(2).
+000600      05  AMORTN-PRD-AMORTD-CST             PIC 9(2).
+000700      05  FILLER                            PIC XX.
+000050 01  FARMS-APROPTN-LOOKUP.
+000100      05  APROPTN-LOOKUP-KEY.
+000200          10  APROPTN-MAJ-CLS-CDE.
+000300              15  APROPTN-CDE               PIC 9(2).
+000400              15  MAJ-CLS                   PIC 9(2).
+000500          10  PROG-PLANG-BDGTG-CDE.
+000600              15  PPB-CDE-1ST               PIC 9.
+000700              15  PPB-CDE-2-3               PIC 9(2).
+000800      05  APROPTN-SYM                       PIC X(14).
+000900      05  APROPTN-TITLE                     PIC X(54).
+001000      05  FILLER                            PIC X.
+000050 01  FARMS-ASSISTANCE.
+000100      05  INT-ASSTNC-CUM-AMT                PIC S9(7)V99 COMP-3.
+000200      05  YR-INT-ASSTNC-AGRMT-EXPRTN        PIC 9(1).
+000300      05  MO-INT-ASSTNC-AGRMT-EXPRTN        PIC 9(2).
+000400      05  FILLER                            PIC X.
+000500      05  INT-ASSTNC-RECPTR-CDE             PIC 9(1).
+000600      05  INT-ASSTNC-INSTLMT-NEXT-AMT       PIC S9(5)V99 COMP-3.
+000700      05  YR-NEXT-INT-ASSTNC-INSTLMT        PIC 9(2).
+000800      05  FILLER                            PIC X.
+000900      05  ASSTNC-SAVE-INSTLMTS              OCCURS 2.
+001000          10  YR-INSTLMT-DUE-SAVE           PIC 9(2).
+001100          10  INSTLMT-DUE-AMT-SAVE          PIC S9(06)V99 COMP-3.
+001200      05  FILLER                            PIC X.
+000050 01  FARMS-ASSOC-PRIN-BOND.
+000100      05  BOND-CDE                          PIC 9(1).
+000200      05  INT-UNPD-DUE-BOND-ACCTS           PIC S9(7)V99 COMP-3.
+000300      05  PRIN-UNPD-DUE-BOND-ACCTS          PIC S9(7)V99 COMP-3.
+000400      05  INT-NEXT-INSTLMT-BOND-ACCTS       PIC S9(7)V99 COMP-3.
+000500      05  PRIN-NEXT-INSTLMT-BOND-ACCTS      PIC S9(7)V99 COMP-3.
+000600      05  INT-ON-DELQ-PRIN                  PIC S9(7)V99 COMP-3.
+000700      05  FILLER                            PIC XX.
+000050 01  FARMS-CASE.
+000100      05  CASE-ID                           PIC X(15).
+000200      05  CASE-NBR                          REDEFINES CASE-ID.
+000300          10  ST-CDE-OBLR                   PIC X(2).
+000400          10  CTY-CDE-OBLR                  PIC X(3).
+000500          10  ID-NBR-OBLR                   PIC X(10).
+000600      05  FILLER                            PIC X(1) VALUE SPACE.
+000050 01  FARMS-CDEJUNC.
+000100      05  FD-2-KIND-CDE.
+000200          10  FD-CDE-2                      PIC 9(2).
+000300          10  KIND-CDE-BORR                 PIC 9(2).
+000400      05  FILLER                            PIC X(28).
+000050 01  FARMS-CDESTR.
+000100      05  SRC-FDS-TYP-ASSTNC-CDE.
+000200          10  SRC-FDS-CDE                   PIC 9(1).
+000300          10  ASSTNC-TYP-CDE                PIC 9(3).
+000400      05  APROPTN-MAJ-CLS-CDE.
+000500          10  APROPTN-CDE                   PIC 9(2).
+000600          10  MAJ-CLS                       PIC 9(2).
+000700      05  OBJ-CLSFCTN-CDE                   PIC 9(2).
+000800      05  PROG-PLANG-BDGTG-CDE.
+000900          10  PPB-CDE-1ST                   PIC 9.
+001000          10  PPB-CDE-2-3                   PIC 9(2).
+001100      05  PURP-TYP-CDES                     OCCURS 10.
+001200          10  TYP-PURP-CDE                  PIC 9(1).
+001300          10  PURP-CDE                      PIC 9(2).
+001400      05  SBSY-APROPTN-CDE                  PIC 99.
+001500      05  SBSY-PROG-PLANG-BDGTG-CDE         PIC 999.
+001600      05  CR-RFM-OBJ-CLS-CDE                PIC 9(2).
+001700      05  BDWN-INT-ASSTNC-APROPTN           PIC 9(02).
+001800      05  BDWN-INT-ASSTNC-MAJ-CLS           PIC 9(02).
+001900      05  BDWN-INT-ASSTNC-OBJ-CLS           PIC 9(02).
+002000      05  BDWN-INT-ASSTNC-PPB               PIC 9(03).
+002100      05  FINCG-SBSY-APROPTN-CDE            PIC 9(02).
+002200      05  NEG-SBSY-PURP-CDE                 PIC 9(02).
+002300      05  NEG-SBSY-OBJ-CLS                  PIC 9(02).
+002400      05  FILLER                            PIC X(0035).
+000050 01  FARMS-CHECKS.
+000100      05  CK-STAT-CDE                       PIC 9(1).
+000200      05  ADVNC-MULTI-AMT                   PIC S9(08)V99 COMP-3.
+000300      05  DTE-CK                            PIC 9(6).
+000400      05  ASSOC-ADVNC-CLSG-CDE              PIC 9(1).
+000500      05  DTE-CK-SORT                       PIC 9(6).
+000600      05  SBSY-AMT-DISBRSED                 PIC S9(8)V99 COMP-3.
+000700      05  CTRY-DIGIT                        PIC 9(1).
+000800      05  EFT-STAT-CDE                      PIC 9(1).
+000900      05  FILLER                            PIC X(0004).
+000050 01  FARMS-CK-CNTRL.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  CK-ISS-TTL                        PIC S9(10)V99 COMP-3.
+000300      05  FRADS-CK-TTL                      PIC S9(5) COMP-3.
+000400      05  CR-REPT-FEE-TTL              OCCURS 4 PIC S9(5) COMP-3.
+000500      05  RENTL-ASSTNC-LN-CK-TTL            PIC S9(10)V99 COMP-3.
+000600      05  DLY-LN-CK-TTL                     PIC S9(10)V99 COMP-3.
+000700      05  REFUND-CK-TTL                     PIC S9(10)V99 COMP-3.
+000800      05  FRADS-LN-CK-TTL                   PIC S9(10)V99 COMP-3.
+000050 01  FARMS-CK-INFO.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  FD-CDE-2                          PIC 9(2).
+000300      05  NME-FLDS-BORR-CNT                 PIC 9(1).
+000400      05  MAILG-OFC.
+000500          10  MAILG-LVL                     PIC X(1).
+000600                      88  ST-MAILG-LVL      VALUE 'S'.
+000700                      88  DST-MAILG-LVL     VALUE 'D'.
+000800                      88  CTY-MAILG-LVL     VALUE 'C'.
+000900                      88  CTY-SPECL-LVL     VALUE 'T'.
+001000                      88  DST-SPECL-LVL     VALUE 'U'.
+001100                      88  ST-SPECL-LVL      VALUE 'V'.
+001200          10  MAILG-CDE.
+001300              15  ST-OFC-MAILG              PIC 9(2).
+001400              15  CTY-OFC-MAILG             PIC 9(3).
+001500              15  DST-OFC-MAILG REDEFINES CTY-OFC-MAILG PIC 9(3).
+001600      05  CASE-NBR.
+001700          10  ST-CDE-OBLR                   PIC 9(2).
+001800          10  CTY-CDE-OBLR                  PIC 9(3).
+001900          10  ID-NBR-OBLR                   PIC 9(10).
+002000      05  LN-NBR                            PIC 9(2).
+002100      05  CR-REPT-FEE-CDE                   PIC 9(1).
+002200      05  NME-OBLR                          OCCURS 4 PIC X(19).
+002300      05  ADVNC-MULTI-AMT                   PIC S9(08)V99 COMP-3.
+002400      05  DTE-CK                            PIC 9(6).
+002500      05  APROPTN-CDE                       PIC 9(2).
+002600      05  GEOG-ST-CDE                       PIC 9(2).
+002700      05  FY                                PIC 9(2).
+002800      05  FILLER                            PIC X(0001).
+000050 01  FARMS-CK-INFO-FRADS.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  FD-CDE-2                          PIC 9(2).
+000300      05  MAILG-CDE.
+000400          10  ST-OFC-MAILG                  PIC 9(2).
+000500          10  CTY-OFC-MAILG                 PIC 9(3).
+000600          10  DST-OFC-MAILG     REDEFINES CTY-OFC-MAILG PIC 9(3).
+000700      05  CASE-NBR.
+000800          10  ST-CDE-OBLR                   PIC 9(2).
+000900          10  CTY-CDE-OBLR                  PIC 9(3).
+001000          10  ID-NBR-OBLR                   PIC 9(10).
+001100      05  LN-NBR                            PIC 9(2).
+001200      05  CR-REPT-FEE-CDE                   PIC 9(1).
+001300      05  NME-OBLR                          OCCURS 2 PIC X(19).
+001400      05  ADVNC-MULTI-AMT                   PIC S9(08)V99 COMP-3.
+001500      05  DTE-CK                            PIC 9(6).
+001600      05  APROPTN-CDE                       PIC 9(2).
+001700      05  GEOG-ST-CDE                       PIC 9(2).
+001800      05  FY                                PIC 9(2).
+001900      05  FED-RESV-ROUTE-NBR                PIC 9(8).
+002000      05  CK-DIGIT-ROUTE-NBR                PIC 9(1).
+002100      05  TYP-BANK-ACCT                     PIC X(1).
+002200      05  DPSTR-ACCT-NBR                    PIC X(17).
+002300      05  ENTY-CDE                          PIC 9(2).
+002400      05  CK-CNCLTN-CDE                     PIC 9(2).
+002500      05  FNL-ADVNC-CDE                     PIC 9(2).
+002600      05  DTE-LST-RGSTR-DTL                 PIC 9(06).
+002700      05  BLK-NBR                           PIC 9(4).
+002800      05  FILLER                            PIC XX.
+000050 01  FARMS-CLIENT.
+000100      05  CASE-NBR.
+000200          10  ST-CDE-OBLR                   PIC 9(2).
+000300          10  CTY-CDE-OBLR                  PIC 9(3).
+000400          10  ID-NBR-OBLR                   PIC 9(10).
+000500      05  CASE-NBR-OBLR                     REDEFINES CASE-NBR.
+000600          10  ST-CTY-OBLR                   PIC 9(5).
+000700          10  FILLER                        PIC X(0010).
+000800      05  MAILG-OFC-CLIENT.
+000900          10  MAILG-LVL-CLIENT              PIC X(1).
+001000                      88  ST-MAILG-LVL-CLIENT VALUE 'S'.
+001100                      88  DST-MAILG-LVL-CLIENT VALUE 'D'.
+001200                      88  CTY-MAILG-LVL-CLIENT VALUE 'C'.
+001300                      88  CTY-SPECL-LVL-CLIENT VALUE 'T'.
+001400                      88  DST-SPECL-LVL-CLIENT VALUE 'U'.
+001500                      88  ST-SPECL-LVL-CLIENT VALUE 'V'.
+001600          10  MAILG-CDE-CLIENT.
+001700              15  ST-OFC-MAILG-CLIENT       PIC 9(2).
+001800              15  CTY-OFC-MAILG-CLIENT      PIC 9(3).
+001900              15  DST-OFC-MAILG-CLIENT
+001950                         REDEFINES CTY-OFC-MAILG-CLIENT PIC 9(3).
+002000      05  NME-FLDS-BORR-CNT                 PIC 9(1).
+002100      05  ADRS-FLDS-BORR-CNT                PIC 9(1).
+002200      05  NME-OBLR-GRP-1.
+002300          10  NME-OBLR                      PIC X(19).
+002400          10  NME-ADRS-OBLR-1               PIC X(19).
+002500          10  NME-ADRS-OBLR-2               PIC X(19).
+002600      05  NME-OBLR-GRP-2                REDEFINES NME-OBLR-GRP-1.
+002700          10  NME-OBLR-KEY                  PIC X(20).
+002800          10  FILLER                        PIC X(0037).
+002900      05  NME-ADRS-OBLR-3                   PIC X(19).
+003000      05  NME-ADRS-OBLR-4                   PIC X(19).
+003100      05  ZIP-CDE                           PIC 9(5).
+003200      05  RACE-DESC-CDE                     PIC 9(1).
+003300      05  SEX-CDE                           PIC 9(1).
+003400      05  MRTL-STAT                         PIC 9(1).
+003500      05  TAX-EXEMPT-CDE                    PIC 9(1).
+003600      05  VET-CDE                           PIC 9(1).
+003700      05  DUE-DAY-PYMT                      PIC 9(2).
+003800      05  APPLT-TYP-CDE                     PIC 9(1).
+003900      05  NET-WORTH-AMT                     PIC S9(08) COMP-3.
+004000      05  LN-NBR-LST-ASGD                   PIC 9(2).
+004100      05  RCRD-LN-CNT                       PIC 9(2).
+004200      05  LN-CNT-EE                         PIC 9(1).
+004300      05  LN-CNT-OTC                        PIC 9(2).
+004400      05  LN-CNT-INSRD-FO                   PIC 9(1).
+004500      05  LN-CNT-DIR-FO                     PIC 9(1).
+004600      05  LN-CNT-INSRD-SW                   PIC 9(1).
+004700      05  LN-CNT-DIR-SW                     PIC 9(1).
+004800      05  LN-CNT-INSRD-RH                   PIC 9(1).
+004900      05  LN-CNT-DIR-RH                     PIC 9(1).
+005000      05  LN-CNT-INVSTR                     PIC 9(1).
+005100      05  LN-CNT-ASSOC                      PIC 9(1).
+005200      05  SUSP-CDE-ACCT                     PIC 9(1).
+005300      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+005400      05  RGSTR-TYP-LST-TRNSCTN             PIC 9(2).
+005500      05  SIS-TRF-CDE                       PIC X(1).
+005600      05  EMPL-RELTNSHP-CDE                 PIC X(01).
+005700      05  LRTF-SRVCG-CDE                    PIC 9.
+005800      05  MAILG-OFC-FSA.
+005900          10  MAILG-LVL-FSA                 PIC X(1).
+006000                      88  ST-MAILG-LVL-FSA  VALUE 'S'.
+006100                      88  DST-MAILG-LVL-FSA VALUE 'D'.
+006200                      88  CTY-MAILG-LVL-FSA VALUE 'C'.
+006300                      88  CTY-SPECL-LVL-FSA VALUE 'T'.
+006400                      88  DST-SPECL-LVL-FSA VALUE 'U'.
+006500                      88  ST-SPECL-LVL-FSA  VALUE 'V'.
+006600          10  MAILG-CDE-FSA.
+006700              15  ST-OFC-MAILG-FSA          PIC 9(2).
+006800              15  CTY-OFC-MAILG-FSA         PIC 9(3).
+006900              15  DST-OFC-MAILG-FSA
+006950                        REDEFINES CTY-OFC-MAILG-FSA PIC 9(3).
+007000      05  ORGZTN-CDE                        PIC X(01).
+007100      05  DTE-OAC-ESTBD                     PIC 9(06).
+007200      05  DTE-OAC-RSLVD                     PIC 9(06).
+007300      05  DTE-OAC-MRTM-EFCTV                PIC 9(06).
+007400      05  PREVL-INDCTR                      PIC X(01).
+007500      05  NBR-COMPLNTS                      PIC 9(2).
+007600      05  FILLER                            PIC X(0009).
+000050 01  FARMS-CLIENT-SFSI.
+000100      05  FP-CLSFCTN-CDE                    PIC 9(1).
+000200      05  FP-EST-LOSS-AMT                   PIC S9(8) COMP-3.
+000300      05  FP-DTE-LST-CLSFD                  PIC 9(6).
+000400      05  RH-CLSFCTN-CDE                    PIC 9(1).
+000500      05  RH-EST-LOSS-AMT                   PIC S9(8) COMP-3.
+000600      05  RH-DTE-LST-CLSFD                  PIC 9(6).
+000700      05  RH-SCRTY-CDE                      PIC X(1).
+000800      05  RH-SCRTY-VLU                      PIC S9(8) COMP-3.
+000900      05  SIS-TRF-DTE                       PIC 9(6).
+001000      05  SIS-TRF-ACTN-CDE                  PIC X(1).
+001100      05  TRNG-CDE                          PIC X(1).
+001200      05  DTE-TRNG-EFCTV                    PIC 9(6).
+001300      05  DTE-TRNG-EXPRTN                   PIC 9(6).
+001400      05  DTE-TRNG-COMPLTN                  PIC 9(6).
+001500      05  DTE-TRNG-CDE-PROCD                PIC 9(6).
+001600      05  CLIENT-FILL                       PIC X(34).
+000050 01  FARMS-COHORT.
+000100      05  COHORT-CDE                        PIC 9(3).
+000200      05  FILLER                            PIC X(0097).
+000050 01  FARMS-CRBUR.
+000100      05  CR-BUR-STAT-CDE                   PIC X(02).
+000200      05  DTE-LST-REPTD                     PIC 9(06).
+000300      05  PR-CR-BUR-STAT-CDE                PIC X(02).
+000400      05  LST-DTE-PR-STAT-CDE-REPTD         PIC 9(06).
+000500      05  DTE-INIT-REPT                     PIC 9(06).
+000600      05  DTE-PAST-DUE-LST                  PIC 9(06).
+000700      05  DTE-LST-RGSTR                     PIC 9(06).
+000800      05  DTE-LST-PYMT                      PIC 9(6).
+000900      05  AMT-PAST-DUE-CB                   PIC 9(07)V99 COMP-3.
+001000      05  UNPD-PRIN-AMT-CB                  PIC S9(07)V99 COMP-3.
+001100      05  UNPD-INT-AMT-CB                   PIC S9(07)V99 COMP-3.
+001200      05  STOP-CDE                          PIC 9(01).
+001300      05  DTE-LST-STOP-ESTBD                PIC 9(06).
+001400      05  NBR-STOPS-ESTBD                   PIC 9(02).
+001500      05  NBR-OF-60-DAY-NOTCS-SENT          PIC 9(02).
+001600      05  DTE-60-DAY-NOTC-SENT              PIC 9(06).
+001700      05  ADRS-CHNG-CDE                     PIC 9(01).
+001800      05  CR-BUR-TRNSCTN-TYP                PIC 9(01).
+001900      05  SPECL-CMMTS-CDE                   PIC X(01).
+002000      05  LGTH-OF-LN                        PIC 9(02).
+002100      05  DTE-OF-DSPT                       PIC 9(06).
+002200      05  NBR-OF-DSPTS                      PIC 9(02).
+002300      05  DTE-DSPT-RSLVD                    PIC 9(06).
+002400      05  ASSOC-CDE                         PIC X(01).
+002500      05  DLTN-CDE                          PIC 9(01).
+002600      05  DTE-DLTD                          PIC 9(06).
+002700      05  NBR-TIMES-DLTD                    PIC 9(02).
+002800      05  LN-AMT                            PIC S9(7)V99 COMP-3.
+002900      05  DTE-CLSG                          PIC 9(06).
+003000      05  CRDT-MTURTY-DTE                   PIC 9(06).
+003100      05  CRDT-PYMT-FREQ                    PIC X(01).
+003200      05  FILLER                            PIC X(0033).
+000050 01  FARMS-CRCLAIMS.
+000100      05  CRC-CLM-NBR                       PIC X(6).
+000200      05  ID-NBR-OBLR                       PIC 9(10).
+000300      05  NME-OBLR                          PIC X(19).
+000400      05  NME-ADRS-OBLR-1                   PIC X(19).
+000500      05  NME-ADRS-OBLR-2                   PIC X(19).
+000600      05  CITY-NME                          PIC X(25).
+000700      05  ST-ABBR.
+000800          10  ST-ABBR-1ST                   PIC A.
+000900          10  ST-ABBR-2ND                   PIC A.
+001000      05  ZIP-CDE-GRP.
+001100          10  ZIP-CDE                       PIC 9(5).
+001200          10  ZIP-CDE-LST-4                 PIC 9(4).
+001300      05  RACE-DESC-CDE                     PIC 9(1).
+001400      05  DTE-CRC-ADJDCTR-DECSN             PIC 9(6).
+001500      05  DTE-CRC-RCVD-OGC                  PIC 9(6).
+001600      05  DTE-CRC-RCVD-FLP                  PIC 9(6).
+001700      05  CRC-WRTF-INDCTR                   PIC X(1).
+001800      05  DTE-CRC-FO-LN-PRRTY-RQSTD         PIC 9(6).
+001900      05  CRC-FO-LN-RQSTD-ST-CTY            PIC 9(5).
+002000      05  DTE-CRC-FO-LN-SBMTD               PIC 9(6).
+002100      05  DTE-CRC-FO-LN-APPRVD              PIC 9(6).
+002200      05  DTE-CRC-FO-LN-DENIED              PIC 9(6).
+002300      05  CRC-FO-APPEAL-INDCTR              PIC X(1).
+002400      05  DTE-CRC-FO-LN-CLSG                PIC 9(6).
+002500      05  CRC-FO-LN-AMT                     PIC S9(9)V99 COMP-3.
+002600      05  DTE-CRC-OL-LN-PRRTY-RQSTD         PIC 9(6).
+002700      05  CRC-OL-LN-RQSTD-ST-CTY            PIC 9(5).
+002800      05  DTE-CRC-OL-LN-SBMTD               PIC 9(6).
+002900      05  DTE-CRC-OL-LN-APPRVD              PIC 9(6).
+003000      05  DTE-CRC-OL-LN-DENIED              PIC 9(6).
+003100      05  CRC-OL-APPEAL-INDCTR              PIC X(1).
+003200      05  DTE-CRC-OL-LN-CLSG                PIC 9(6).
+003300      05  CRC-OL-LN-AMT                     PIC S9(9)V99 COMP-3.
+003400      05  DTE-CRC-LSE-PURCH-RQSTD           PIC 9(6).
+003500      05  CRC-LSE-PURCH-ST-CTY              PIC 9(5).
+003600      05  DTE-CRC-LSE-PURCH-SBMTD           PIC 9(6).
+003700      05  DTE-CRC-LSE-PURCH-APPRVD          PIC 9(6).
+003800      05  DTE-CRC-LSE-PURCH-DENIED          PIC 9(6).
+003900      05  CRC-LSE-PURCH-INDCTR              PIC X(1).
+004000      05  DTE-CRC-LSE-PURCH-CLSG            PIC 9(6).
+004100      05  CRC-LSE-PURCH-AMT                 PIC S9(9)V99 COMP-3.
+004200      05  WRTF-CUM-AMT                      PIC S9(11)V99 COMP-3.
+004300      05  DTE-LST-UPDTE                     PIC 9(6).
+004400      05  USER-ID.
+004500          10  AUTHY-CDE-TRML-OPRTR          PIC X(1).
+004600          10  PRFCY-LVL-TRML-OPRTR          PIC X.
+004700                      88  NO-UP-AUTHTY-CDE  VALUE '0'.
+004800                      88  UP-AUTHTY-CDE     VALUE '1'.
+004900          10  FILLER                        PIC X(1).
+005000          10  ID-TRML-OPRTR                 PIC X(03).
+005100      05  PRRTY-ELGBLTY-CDE                 PIC X(01).
+005200      05  CRC-YR-TYP-DSCRMTN-CLMD           OCCURS 16.
+005300          10  CRC-YR-DSCRMTN-CLMD           PIC 9(02).
+005400          10  LN-TYP-ABBR                   OCCURS 4 PIC A(2).
+005500      05  DTE-CRC-PRRTY-LTR-PROCD           PIC 9(06).
+005600      05  DTE-CRC-FO-APPEAL-DECSN           PIC 9(6).
+005700      05  DTE-CRC-OL-APPEAL-DECSN           PIC 9(6).
+005800      05  DTE-CRC-LSE-APPEAL-DECSN          PIC 9(6).
+005900      05  FILLER                            PIC X(0017).
+000050 01  FARMS-CRRATE.
+000100      05  CR-RFM-DTE.
+000200          10  CR-RFM-YR                     PIC 9(2).
+000300          10  CR-RFM-MO                     PIC 9(2).
+000400          10  CR-RFM-DAY                    PIC 9(2).
+000500      05  CR-RFM-RATE                       PIC V9(6).
+000600      05  RCRD-TYP-CDE                      PIC X.
+000700      05  CTRY-DIGIT                        PIC 9(1).
+000800      05  FILLER                            PIC X(0010).
+000050 01  FARMS-CTY-LOOKUP.
+000100      05  ST-CDE-FMHA                       PIC 9(2).
+000200      05  CTY-CDE-FMHA                      PIC 9(3).
+000300      05  CTY-OFC-MAILG                     PIC 9(5).
+000400      05  SRVCG-OFC-CDE-CTY                 PIC 9(5).
+000500      05  FIPS-ST-CDE                       PIC 9(2).
+000600      05  FIPS-CTY-CDE                      PIC 9(3).
+000700      05  DST-SRVCG-CDE                     PIC 9(3).
+000800      05  DST-OFC-MAILG                     PIC 9(3).
+000900      05  NME-CTY                           PIC X(20).
+001000      05  HQ-TWN                            PIC X(20).
+001100      05  ST-ABBR                           PIC A(2).
+001200      05  ORGZTN-STRUC                      PIC 9(1).
+001300      05  CONG-DST-CDE-CTY                  PIC 9(9).
+001400      05  ADRS-MAILG-CTY-OFC                PIC X(36).
+001500      05  ZIP-CDE-CTY-OFC                   PIC 9(5).
+001600      05  FILLER                            PIC X.
+000050 01  FARMS-DALLOT.
+000100      05  DISTRBN-TTL-1ST-ACCTG-PRD         PIC S9(10)V99 COMP-3.
+000200      05  DISTRBN-TTL-2ND-ACCTG-PRD         PIC S9(10)V99 COMP-3.
+000300      05  DISTRBN-TTL-3RD-ACCTG-PRD         PIC S9(10)V99 COMP-3.
+000400      05  DISTRBN-TTL-4TH-ACCTG-PRD         PIC S9(10)V99 COMP-3.
+000500      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000600      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+000700      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+000800      05  FY-ACCTG                          PIC 9(2).
+000050 01  FARMS-DALLOT-DTL.
+000100      05  DALLOT-DTL-KEY.
+000200          10  APROPTN-CDE                   PIC 9(2).
+000300          10  MAJ-CLS                       PIC 9(2).
+000400          10  OBJ-CLSFCTN-CDE               PIC 9(2).
+000500          10  GEOG-ST-CDE                   PIC 9(2).
+000600          10  LVL-CDE                       PIC 9(1).
+000700          10  FY-ACCTG                      PIC 9(2).
+000800      05  MULTI-ELMT-CDE                    PIC 9(1).
+000900      05  OK-TO-PROC-CDE                    PIC 9(1).
+001000      05  DISTRBN-CUR                       PIC S9(10)V99 COMP-3.
+001100      05  DISTRBN-TYP-CDE                   PIC 9(1).
+001200      05  PRD-CDE                           PIC 9(1).
+001300      05  DISTRBN-ST-1ST-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001400      05  DISTRBN-ST-2ND-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001500      05  DISTRBN-ST-3RD-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001600      05  DISTRBN-ST-4TH-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001700      05  DISTRBN-SBSZD-RH-NEW              PIC S9(10)V99 COMP-3.
+001800      05  DISTRBN-SBSZD-RH-OLD              PIC S9(10)V99 COMP-3.
+001900      05  DISTRBN-SBSZD-RRH                 PIC S9(10)V99 COMP-3.
+002000      05  DISTRBN-UNSBSZD-HSG               PIC S9(10)V99 COMP-3.
+002100      05  DISTRBN-INSRD-OL                  PIC S9(10)V99 COMP-3.
+002200      05  DISTRBN-GUAR-OL                   PIC S9(10)V99 COMP-3.
+002300      05  DISTRBN-LMTD-RESRCS-OL            PIC S9(10)V99 COMP-3.
+002400      05  DISTRBN-INSRD-FO                  PIC S9(10)V99 COMP-3.
+002500      05  DISTRBN-GUAR-FO                   PIC S9(10)V99 COMP-3.
+002600      05  DISTRBN-LMTD-RESRCS-FO            PIC S9(10)V99 COMP-3.
+002700      05  DISTRBN-AMT             OCCURS 10 PIC S9(10)V99 COMP-3.
+002800      05  FILLER                            PIC X(0034).
+000050 01  FARMS-DALLOT-OBLGN.
+000100      05  PROG-PLANG-BDGTG-CDE.
+000200          10  PPB-CDE-1ST                   PIC 9.
+000300          10  PPB-CDE-2-3                   PIC 9(2).
+000400      05  OBLGN-EXPNTR-CDE.
+000500          10  SBMSN-CDE                     PIC 9(1).
+000600          10  PURP-CDE                      PIC 9(2).
+000700      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000800      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+000900      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+000050 01  FARMS-DALLOT-OTH.
+000100      05  FILLER                            PIC X(0004).
+000050 01  FARMS-DAPROC.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  RGSTR-TYP-CDE                     PIC 9(2).
+000300      05  VARBL-DATA                        PIC X(220).
+000050 01  FARMS-DISCRP.
+000100      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+000200      05  CASE-NBR.
+000300          10  ST-CDE-OBLR                   PIC X(2).
+000400          10  CTY-CDE-OBLR                  PIC X(3).
+000500          10  ID-NBR-OBLR                   PIC X(10).
+000600      05  TRNSCTN-VARBL-DATA                PIC X(57).
+000700      05  CARD-NBR                          PIC X(1).
+000800      05  CARD-TYP                          PIC X(01).
+000900      05  BLK-NBR                           PIC X(4).
+001000      05  FD-CDE-2                          PIC X(2).
+001100      05  LN-NBR                            PIC X(2).
+001200      05  DTE-EFCTV.
+001300          10  MO-GRGRN                      PIC X(2).
+001400          10  DAY-GRGRN                     PIC X(2).
+001500          10  YR                            PIC X(2).
+001600      05  DISCRP-CDE                        OCCURS 4 PIC X(2).
+001700      05  PROCG-SEQNC-NBR                   PIC X(3).
+001800      05  PROCG-SEQNC-NBR-ORIG              PIC X(3).
+001900      05  PROCG-TYP-CDE                     PIC X(1).
+002000      05  DLT-REAS-CDE                      PIC X(02).
+002100      05  ACTN-PNDG-CDE                     PIC X(02).
+002200      05  AUTHY-CDE                         PIC X(01).
+002300      05  RJCTD-REAS                        PIC X(02).
+002400      05  USER-BAL-AMT                      PIC S9(8)V99.
+002500      05  TRNSCTN-NBR-TIMES-RJCTED          PIC X(03).
+002600      05  BLK-NBR-ORIG                      PIC X(04).
+002700      05  PROC-DTE.
+002800          10  MO-GRGRN                      PIC X(2).
+002900          10  DAY-GRGRN                     PIC X(2).
+003000          10  YR                            PIC X(2).
+003100      05  PROC-DTE-ORIG                     PIC X(06).
+003200      05  PROC-DTE-JULIAN-ORIG              PIC X(05).
+003300      05  TRNSCTN-SEQNC-NBR                 PIC X(5).
+003400      05  USER-ID.
+003500          10  AUTHY-CDE-TRML-OPRTR          PIC X(1).
+003600          10  PRFCY-LVL-TRML-OPRTR          PIC X(01).
+003700                      88  NO-UP-AUTHTY-CDE  VALUE '0'.
+003800                      88  UP-AUTHTY-CDE     VALUE '1'.
+003900          10  FILLER                        PIC X(1).
+004000          10  ID-TRML-OPRTR                 PIC X(03).
+004100      05  JURDCTN-CDE.
+004200          10  JURDCTN-ST-CDE                PIC X(2).
+004300          10  JURDCTN-UNIT-CDE              PIC X(2).
+004400      05  MANUSCRIPT-CDE                    PIC X(01).
+004500      05  SYS-BAL-AMT                       PIC S9(8)V99.
+004600      05  PR-BLK-NBR                        PIC X(4).
+004700      05  DTE-LST-ACTV                      PIC 9(6).
+004800      05  FILLER                            PIC XX.
+000050 01  FARMS-DISCRP-MISC.
+000100      05  JURDCTN-CDE-PR                    PIC X(4).
+000200      05  BRNH-CDE                          PIC X(1).
+000300      05  CASE-NBR-OLD                      PIC 9(15).
+000400      05  POST-SWITCH                       PIC 9.
+000500      05  LAST-PROCG-CDE                    PIC X.
+000600      05  WORK-FIL                          PIC X(6).
+000050 01  FARMS-DSTR-SETASD.
+000100      05  DCLRD-NBR                         PIC X(5).
+000200      05  STAT-CDE                          PIC 9.
+000300      05  DTE-EFCTV                         PIC 9(6).
+000400      05  DTE-INSTLMT-DUE                   PIC 9(6).
+000500      05  DTE-CNCLTN.
+000600          10  CNCLTN-MO                     PIC 99.
+000700          10  CNCLTN-DAY                    PIC 99.
+000800          10  CNCLTN-YR                     PIC 99.
+000900      05  PRIN-AMT                          PIC S9(7)V99 COMP-3.
+001000      05  INT-AMT                           PIC S9(7)V99 COMP-3.
+001100      05  INT-FCL-LN                        PIC S9(7)V99 COMP-3.
+001200      05  UNPD-CHG-ADVNC-FD                 PIC S9(7)V99 COMP-3.
+001300      05  INT-ADVNC-FD                      PIC S9(7)V99 COMP-3.
+001400      05  INT-FCL-ADVNC-FD                  PIC S9(7)V99 COMP-3.
+001500      05  NON-CPTLZD-INT-INSTLMT            PIC S9(7)V99 COMP-3.
+001600      05  DFRD-NCPTLZD-INT-INSTLMT          PIC S9(07)V99 COMP-3.
+001700      05  DFRD-INT-INSTLMT                  PIC S9(6)V99 COMP-3.
+001800      05  PRIN-CR-LN                        PIC S9(7)V99 COMP-3.
+001900      05  INT-CR-LN                         PIC S9(7)V99 COMP-3.
+002000      05  PRIN-CR-ADVNC-FROM-FD             PIC S9(7)V99 COMP-3.
+002100      05  INT-CR-ADVNC-FROM-FD              PIC S9(7)V99 COMP-3.
+002200      05  NON-CPTLZD-INT-CR-AMT             PIC S9(7)V99 COMP-3.
+002300      05  CR-DFRD-NON-CPTLZD-INT            PIC S9(07)V99 COMP-3.
+002400      05  INT-CR-DFRD-LN                    PIC S9(6)V99 COMP-3.
+002500      05  UNPD-INSRNC-CHG                   PIC S9(7)V99 COMP-3.
+002600      05  PRIN-CR-INSRNC-CHG-CUM            PIC S9(5)V99 COMP-3.
+002700      05  DTE-LST-PYMT                      PIC 9(6).
+002800      05  UNAPL-INT                         PIC S9(7)V99 COMP-3.
+002900      05  UNAPL-NON-CPTLZD-INT              PIC S9(7)V99 COMP-3.
+003000      05  UNAPL-DFRD-NON-CPTLZD-INT         PIC S9(7)V99 COMP-3.
+003100      05  UNAPL-DFRD-INT                    PIC S9(7)V99 COMP-3.
+003200      05  CNCLD-TTL                         PIC S9(8)V99 COMP-3.
+003300      05  INSTLMT-TTL                       PIC S9(8)V99 COMP-3.
+003400      05  ORIG-UNAPL-INT                    PIC S9(7)V99 COMP-3.
+003500      05  ORIG-UNAPL-NON-CPTLZD-INT         PIC S9(7)V99 COMP-3.
+003600      05  ORIG-UNAPL-DFRD-INT               PIC S9(7)V99 COMP-3.
+003700      05  ORIG-UNAPL-DFRD-NONCAP            PIC S9(7)V99 COMP-3.
+003800      05  DTE-LST-NON-CSH-CR                PIC 9(06).
+003900      05  FILLER                            PIC X(0003).
+000050 01  FARMS-DTEREC.
+000100      05  DTE-COHORT.
+000200          10  DTE-CTRY-YR.
+000300              15  EFCTV-DTE-CTRY            PIC 9(02).
+000400              15  YR-GRGRN                  PIC 9(2).
+000500          10  MO-GRGRN                      PIC 9(2).
+000600          10  DAY-GRGRN                     PIC 9(2).
+000700      05  FILLER                            PIC X(0032).
+000050 01  FARMS-DTL-RATE.
+000100      05  DTL-KEY.
+000200          10  FY-OBLGN-OCCURD.
+000300              15  FY-OBLGN-1                PIC 9.
+000400              15  FY-OBLGN-2                PIC 9.
+000500          10  APROPTN-CDE                   PIC 9(2).
+000600          10  MAJ-CLS                       PIC 9(2).
+000700          10  ST-CDE                        PIC 9(2).
+000800      05  NBR-SBSY-LNS                      PIC S9(8) COMP-3.
+000900      05  FP-SBSY-AVG-CALC-ONE              PIC S9(14) COMP-3.
+001000      05  FP-SBSY-AVG-CALC-TWO              PIC S9(14) COMP-3.
+001100      05  SBSY-RATE                        PIC 9(08)V9999 COMP-3.
+001200      05  FILLER                            PIC X(0044).
+000050 01  FARMS-EASMNT.
+000100      05  ACRES-EASD-CROP                   PIC S9(05)V9 COMP-3.
+000200      05  ACRES-EASD-PSTR                   PIC S9(05)V9 COMP-3.
+000300      05  ACRES-EASD-WDLND                  PIC S9(05)V9 COMP-3.
+000400      05  ACRES-EASD-OTH                    PIC S9(05)V9 COMP-3.
+000500      05  FED-TYP-EASMNT                    PIC 9(02).
+000600      05  FED-PURP-EASMNT                   PIC 9(02).
+000700      05  FED-DTE-EASMNT                    PIC 9(06).
+000800      05  FED-EASMNT-APPRSL-AMT             PIC S9(07)V99 COMP-3.
+000900      05  FED-EASMNT-VLU                    PIC S9(07)V99 COMP-3.
+001000      05  ST-TYP-EASMNT                     PIC 9(02).
+001100      05  ST-PURP-EASMNT                    PIC 9(02).
+001200      05  ST-DTE-EASMNT                     PIC 9(06).
+001300      05  ST-EASMNT-APPRSL-AMT              PIC S9(07)V99 COMP-3.
+001400      05  ST-EASMNT-VLU                     PIC S9(07)V99 COMP-3.
+001500      05  LOC-TYP-EASMNT                    PIC 9(02).
+001600      05  LOC-PURP-EASMNT                   PIC 9(02).
+001700      05  LOC-DTE-EASMNT                    PIC 9(06).
+001800      05  LOC-EASMNT-APPRSL-AMT             PIC S9(07)V99 COMP-3.
+001900      05  LOC-EASMNT-VLU                    PIC S9(07)V99 COMP-3.
+002000      05  FILLER                            PIC X(20).
+000050 01  FARMS-EQTYRVRS.
+000100      05  DTE-TRNSCTN                       PIC 9(06).
+000200      05  LN-NBR                            PIC 9(2).
+000300      05  LN-NBR-NEW                        PIC 9(2).
+000400      05  FD-CDE-NEW-SHRD-APRCTN-LN.
+000500          10  FD-CDE-3.
+000600              15  FD-CDE-2                  PIC 9(2).
+000700              15  FD-CDE-3RD                PIC 9(1).
+000800          10  FD-CDE-4TH                    PIC 9(1).
+000900      05  AMORTN-AMT-CUM                    PIC S9(9)V99 COMP-3.
+001000      05  PRTL-SALE-RVRSL-DATA.
+001100          10  PRTL-SALE-LN-NBR              OCCURS 6 PIC 9(02).
+001200          10  PRTL-SALE-AMORTN-AMT  OCCURS 6 PIC S9(9)V99 COMP-3.
+001300      05  FILLER                            PIC X(40).
+000050 01  FARMS-EQUITY.
+000100      05  FD-CDE.
+000200          10  FD-CDE-3.
+000300              15  FD-CDE-2                  PIC 9(2).
+000400              15  FD-CDE-3RD                PIC 9(1).
+000500          10  FD-CDE-4TH                    PIC 9(1).
+000600      05  LN-NBR                            PIC 9(2).
+000700      05  TYP-PLAN-CDE                      PIC 9(01).
+000800      05  WRTDWN-AMT-SCRD-RE                PIC S9(09)V99 COMP-3.
+000900      05  WRTDWN-AMT-NOT-SCRD-RE            PIC S9(09)V99 COMP-3.
+001000      05  BEGNG-MKT-VLU                     PIC S9(09)V99 COMP-3.
+001100      05  ENDG-MKT-VLU                      PIC S9(09)V99 COMP-3.
+001200      05  NET-RECVRY-VLU                    PIC S9(09)V99 COMP-3.
+001300      05  POTL-RECPTR-AMT                   PIC S9(09)V99 COMP-3.
+001400      05  RCVB-AMT-DUE                      PIC S9(09)V99 COMP-3.
+001500      05  RCVB-AMT-PD                       PIC S9(09)V99 COMP-3.
+001600      05  DTE-EFCTV                         PIC 9(6).
+001700      05  DTE-MTURTY                        PIC 9(06).
+001800      05  DTE-LST-CSH                       PIC 9(06).
+001900      05  DTE-FNL-PYMT                      PIC 9(06).
+002000      05  DTE-LST-RGSTR-DTL                 PIC 9(06).
+002100      05  RGSTR-TYP-LST-TRNSCTN             PIC 9(2).
+002200      05  EQUITY-SALE-CONTR                 PIC 9(02).
+002300      05  STTLMT-CDE.
+002400          10  APPLTN-CDE                    PIC X(1).
+002500          10  FULLY-PD-CDE                  PIC X(2).
+002600      05  FNL-RCVB-CDE                      PIC 9(01).
+002700      05  DTE-SALE-PROP                     PIC 9(06).
+002800      05  DTE-COMPLD-SRVCG-APPLTN           PIC 9(6).
+002900      05  ASSTNC-TYP-CDE                    PIC 9(03).
+003000      05  DTE-OBLGN                         PIC 9(6).
+003100      05  CR-APPLD-NONCSH                   PIC S9(9)V99 COMP-3.
+003200      05  DTE-LST-NONCSH                    PIC 9(6).
+003300      05  SUSP-CDE                          PIC 9(1).
+003400      05  FILLER                            PIC X(0025).
+000050 01  FARMS-FD-SIDE.
+000100      05  ALTMT                             PIC S9(10)V99 COMP-3.
+000200      05  ALTMT-1ST-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000300      05  ALTMT-2ND-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000400      05  ALTMT-3RD-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000500      05  ALTMT-4TH-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000600      05  FILLER                            PIC X.
+000050 01  FARMS-FDCDE.
+000100      05  FD-2-KIND-CDE.
+000200          10  FD-CDE-2                      PIC 9(2).
+000300          10  KIND-CDE-BORR                 PIC 9(2).
+000400      05  FILLER                            PIC X(0036).
+000050 01  FARMS-GLBORR.
+000100      05  BORR-KEY.
+000200          10  CASE-NBR.
+000300              15  ST-CDE-OBLR               PIC 9(2).
+000400              15  CTY-CDE-OBLR              PIC 9(3).
+000500              15  ID-NBR-OBLR               PIC 9(10).
+000600          10  LN-NBR                        PIC 9(2).
+000700          10  RCVB-NBR                      PIC 9(02).
+000800          10  RCRD-TYP                      PIC 9(2).
+000900      05  BORR-RCRD-TYP-1.
+001000          10  NME-OBLR                      PIC X(19).
+001100          10  NME-ADRS-OBLR-1               PIC X(19).
+001200          10  NME-ADRS-OBLR-2               PIC X(19).
+001300          10  NME-ADRS-OBLR-3               PIC X(19).
+001400          10  NME-ADRS-OBLR-4               PIC X(19).
+001500          10  ZIP-CDE                       PIC 9(5).
+001600          10  LN-NBR-LST-ASGD               PIC 9(2).
+001700          10  DTE-LST-RGSTR-ACCT            PIC 9(06).
+001800          10  APPLT-TYP-CDE-GUARNTD         PIC 9(02).
+001900          10  SUSP-CDE-ACCT                 PIC 9(1).
+002000          10  SIS-TRF-CDE                   PIC X(1).
+002100          10  SIS-TRF-ACTN-CDE              PIC X(1).
+002200          10  SIS-TRF-DTE                   PIC 9(6).
+002300          10  EMPL-RELTNSHP-CDE             PIC X(01).
+002400          10  FILLER                        PIC X(0759).
+002500      05  BORR-RCRD-TYP-2              REDEFINES BORR-RCRD-TYP-1.
+002600          10  ASSTNC-TYP-CDE                PIC 9(3).
+002700          10  ABBR-LN-TYP                   PIC X(04).
+002800          10  FD-CDE.
+002900              15  FD-CDE-3.
+003000                  20  FD-CDE-2              PIC 9(2).
+003100                  20  FD-CDE-3RD            PIC 9(1).
+003200              15  FD-CDE-4TH                PIC 9(1).
+003300          10  KIND-CDE-BORR                 PIC 9(2).
+003400          10  DTE-OBLGN                     PIC 9(06).
+003500          10  FY-OBLGN-OCCURD.
+003600              15  FY-OBLGN-1                PIC 9.
+003700              15  FY-OBLGN-2                PIC 9.
+003800          10  OBLGN-TTL-AMT                 PIC S9(09)V99 COMP-3.
+003900          10  OBLGN-LN-NBR                  PIC 9(02).
+004000          10  APROPTN-CDE                   PIC 9(2).
+004100          10  SRC-FDS-CDE                   PIC 9(1).
+004200          10  DSTR-DCLRD-CDE-GUARNTD.
+004300              15  FY-DSTR-DCLRD             PIC 9(1).
+004400              15  DSTR-TYP-CDE              PIC 9(1).
+004500              15  DSTR-DCLRD-NBR            PIC 9(3).
+004600          10  LN-ORGN-CDE                   PIC 9(01).
+004700          10  SBMSN-CDE                     PIC 9(1).
+004800          10  2ND-OF-LN-RCRD.
+004900              15  GUARNTD-LN-AMT            PIC S9(08)V99 COMP-3.
+005000              15  ADVNCS-TO-DTE             PIC S9(08)V99 COMP-3.
+005100              15  PRIN-CR-GUARNTD-LN        PIC S9(08)V99 COMP-3.
+005200              15  ACCRD-INT-GUARNTD-LN      PIC S9(08)V99 COMP-3.
+005300              15  CLSG-ADJMT-AMT            PIC S9(08)V99 COMP-3.
+005400              15  DTE-CLSG                  PIC 9(06).
+005500              15  DTE-MTURTY                PIC 9(06).
+005600              15  DTE-GUAR-BEGN             PIC 9(6).
+005700              15  DTE-GUAR-END              PIC 9(6).
+005800              15  DTE-FNL-ADVNC             PIC 9(06).
+005900              15  BORR-INT-RATE             PIC S99V9999 COMP-3.
+006000              15  LNDR-INT-RATE             PIC S99V9999 COMP-3.
+006100              15  VARBL-INT-RATE-CDE        PIC 9(01).
+006200              15  INT-BAS                   PIC S9(03) COMP-3.
+006300              15  PCT-LOSS-GUAR             PIC S999V9999 COMP-3.
+006400              15  CNTRC-TYP-CDE             PIC 9(01).
+006500              15  LINE-OF-CR-CDE            PIC 9(01).
+006600              15  DBT-ADJMT-CDE             PIC 9(01).
+006700              15  ID-NBR-LNDR               PIC 9(10).
+006800              15  BRNH-NBR                  PIC 99.
+006900              15  ORIG-ID-NBR-LNDR          PIC 9(10).
+007000              15  ORIG-BRNH-NBR             PIC 9(02).
+007100              15  GUARNTD-LN-STAT-CDE       PIC 9(02).
+007200              15  GUARNTD-LN-SUSP-CDE       PIC 9(01).
+007300              15  NTCE-GUAR-EXPRTN          PIC 9(01).
+007400              15  NTCE-BDWN-EXPRTN          OCCURS 3 PIC 9(01).
+007500              15  NTCE-2ND-HALF-FEE         PIC 9(01).
+007600              15  FEE-PURP-CDE              PIC 9(01).
+007700              15  FEE-PD-AMT                PIC S9(06)V99 COMP-3.
+007800              15  FEES-CHGD-CUM             PIC S9(06)V99 COMP-3.
+007900              15  GUAR-FEE-RATE             PIC S99V9999 COMP-3.
+008000              15  DTE-DPST-FEE              PIC 9(06).
+008100              15  PYMT-STAT-CDE             PIC 9.
+008200              15  PAST-DUE-PRIN-GUARNTD     PIC S9(08)V99 COMP-3.
+008300              15  SCHED-STAT-AMT-GUARNTD    PIC S9(08)V99 COMP-3.
+008400              15  DTE-LST-STAT-REPT         PIC 9(06).
+008500              15  DTE-LST-RGSTR-DTL         PIC 9(06).
+008600              15  DTE-TRF-PROCD             PIC 9(06).
+008700              15  CASE-NBR-TRFOR.
+008800                  20  ST-CDE-TRFOR          PIC 9(2).
+008900                  20  CTY-CDE-TRFOR         PIC 9(3).
+009000                  20  ID-NBR-TRFOR          PIC 9(10).
+009100              15  ASUMPTN-AGRMT-CDE         PIC 9(1).
+009200              15  TRF-CDE                   PIC 9.
+009300              15  TRF-FEE-GUARNTD           PIC S9(08)V99 COMP-3.
+009400              15  DTE-DPST-TRF-FEE          PIC 9(06).
+009500              15  DTE-DLQCY-REPT            PIC 9(06).
+009600              15  DLQCY-CDE                 PIC 9(02).
+009700              15  INT-ASSTNC-CDE            PIC 9(1).
+009800          10  SBSY-AREA-OF-LN-RCRD          OCCURS 3.
+009900              15  BDWN-CDE                  PIC 9(01).
+010000              15  BDWN-DTE                  PIC 9(06).
+010100              15  BEGNG-CUR-SBSY-PRD        PIC 9(06).
+010200              15  END-LST-SBSY-PRD          PIC 9(06).
+010300              15  SBSY-BEGNG-PRIN           PIC S9(08)V99 COMP-3.
+010400              15  PRIN-ADVNC-CUR-PRD        PIC S9(08)V99 COMP-3.
+010500              15  PRIN-CR-CUR               PIC S9(08)V99 COMP-3.
+010600              15  SBSY-ENDG-PRIN            PIC S9(08)V99 COMP-3.
+010700              15  SBSY-BEGNG-INT            PIC S9(06)V99 COMP-3.
+010800              15  INT-CR-CUR                PIC S9(08)V99 COMP-3.
+010900              15  SBSY-ENDG-INT             PIC S9(06)V99 COMP-3.
+011000              15  DTE-LST-SBSY-PD           PIC 9(06).
+011100              15  SBSY-PD-LST-PRD           PIC S9(07)V99 COMP-3.
+011200              15  SBSY-PD-CUM               PIC S9(08)V99 COMP-3.
+011300          10  INT-ASSTNC-AREA-LN-RCRD.
+011400              15  DTE-INT-ASSTNC-CNCLTN     PIC 9(06).
+011500              15  CUR-INT-ASSTNC-RATE       PIC 9(2)V9999 COMP-3.
+011600              15  PYMTS-CUR-PRD             PIC S9(02).
+011700              15  DTE-OFFSET-ESTBD          PIC 9(06).
+011800              15  OFFSET-AMT                PIC S9(08)V99 COMP-3.
+011900              15  OFFSET-AMT-PD             PIC S9(08)V99 COMP-3.
+012000              15  OFFSET-AMT-MTLY           PIC S9(08)V99 COMP-3.
+012100              15  INT-ASSTNC-RECPTR-DUE     PIC S9(08)V99 COMP-3.
+012200              15  INT-ASSTNC-RECPTR-PD      PIC S9(08)V99 COMP-3.
+012300              15  DTE-INT-ASSTNC-RECPTR-PD  PIC 9(06).
+012400              15  INT-ASSTNC-TRMNTN-CDE     PIC 9(02).
+012500              15  DTE-ANL-REVW              PIC 9(6).
+012600              15  BEGNG-INT-ASSTNC-PRD      PIC 9(6).
+012700              15  END-INT-ASSTNC-PRD        PIC 9(6).
+012800              15  FP-BEGNG-PRIN             PIC S9(08)V99 COMP-3.
+012900              15  FP-AMT-ADVNC-CUR-PRD      PIC S9(08)V99 COMP-3.
+013000              15  FP-PRIN-CR-CUR-PRD        PIC S9(08)V99 COMP-3.
+013100              15  FP-ENDG-PRIN              PIC S9(08)V99 COMP-3.
+013200              15  FP-BEGNG-INT              PIC S9(06)V99 COMP-3.
+013300              15  FP-INT-CR-CUR-PRD         PIC S9(08)V99 COMP-3.
+013400              15  FP-ENDG-INT               PIC S9(06)V99 COMP-3.
+013500              15  DTE-LST-INT-ASSTNC-PD     PIC 9(06).
+013600              15  DTE-LST-INT-ASSTNC-FEE-PD PIC 9(06).
+013700              15  INT-ASSTNC-FEES-TTL       PIC S9(06)V99 COMP-3.
+013800              15  CUR-INT-ASSTNC-AMT        PIC S9(07)V99 COMP-3.
+013900              15  INT-ASSTNC-PD-CUR-PRD     PIC S9(07)V99 COMP-3.
+014000              15  INT-ASSTNC-PD-LST-PRD     PIC S9(07)V99 COMP-3.
+014100              15  INT-ASSTNC-PD-TTL         PIC S9(8)V99 COMP-3.
+014200              15  INT-ASSTNC-TERM           PIC 9(02).
+014300              15  FP-INT-ASSTNC-CLSG-DTE    PIC 9(06).
+014400          10  LQDTN-AREA-OF-LN-RCRD.
+014500              15  DTE-LQDTN-RSPNSBLTY       PIC 9(06).
+014600              15  PRTCTVE-ADVNCS            PIC S9(07)V99 COMP-3.
+014700              15  APPRSL-FEE-PYMT           PIC S9(07)V99 COMP-3.
+014800              15  APPRSL-FEE-REPYMT         PIC S9(07)V99 COMP-3.
+014900              15  DTE-APPRSL-FEE-PYMT       PIC 9(06).
+015000              15  DTE-REORGN-END            PIC 9(06).
+015100              15  DTE-REDCTN-EXPRTN         PIC 9(06).
+015200              15  ORIG-MKT-VLU-GUARNTD      PIC S9(08)V99 COMP-3.
+015300          10  LOSS-AREA-OF-LN-RCRD          OCCURS 3.
+015400              15  LOSS-TYP                  PIC X(01).
+015500              15  LOSS-PYMT-TYP             PIC 9(01).
+015600              15  DTE-LOSS-PYMT             PIC 9(06).
+015700              15  LOSS-PYMT-AMT             PIC S9(08)V99 COMP-3.
+015800              15  INT-LOSS-PYMT-AMT         PIC S9(08)V99 COMP-3.
+015900              15  INT-EARNED-REFUND         PIC S9(07)V99 COMP-3.
+016000              15  DTE-RECVRY-LOSS           PIC 9(06).
+016100              15  RECVRY-LOSS-AMT           PIC S9(08)V99 COMP-3.
+016200              15  DTE-RECPTR-PYMT           PIC 9(06).
+016300              15  RECPTR-PYMT-AMT           PIC S9(08)V99 COMP-3.
+016400              15  GUAR-LOSS-PCT-PD          PIC S999V9999 COMP-3.
+016500          10  CERTFD-LN                     PIC X(01).
+016600          10  LNDR-INT-RATE-NON-GUARNTD     PIC S99V9(04) COMP-3.
+016700          10  AVG-PRIN-BAL                  PIC S9(6)V99 COMP-3.
+016800          10  FILLER                        PIC X(0038).
+016900      05  BORR-RCRD-TYP-3              REDEFINES BORR-RCRD-TYP-1.
+017000          10  ID-NBR-HLDR                   PIC 9(10).
+017100          10  NME-HLDR-1                    PIC X(22).
+017200          10  NME-ADRS-HLDR-2               PIC X(22).
+017300          10  NME-ADRS-HLDR-3               PIC X(22).
+017400          10  NME-ADRS-HLDR-4               PIC X(22).
+017500          10  NME-ADRS-HLDR-5               PIC X(22).
+017600          10  ZIP-CDE-HLDR                  PIC 9(5).
+017700          10  LN-AMT-PURCHD-BY-HLDR         PIC S9(08)V99 COMP-3.
+017800          10  DTE-PURCHD                    PIC 9(06).
+017900          10  PURCHD-REAS                   PIC 9(01).
+018000          10  PRIN-PD-HLDR                  PIC S9(08)V99 COMP-3.
+018100          10  INT-PD-HLDR                   PIC S9(07)V99 COMP-3.
+018200          10  DTE-LST-INT-PD-BY-LNDR        PIC 9(06).
+018300          10  SRVC-FEE-PCT                  PIC S99V9999 COMP-3.
+018400          10  PRIN-CRS-RCVB                 PIC S9(08)V99 COMP-3.
+018500          10  INT-CRS-RCVB                  PIC S9(07)V99 COMP-3.
+018600          10  DTE-INT-PD-THRU-TO-FMHA       PIC 9(06).
+018700          10  LST-PRIN-PYMT-DTE             PIC 9(06).
+018800          10  INT-ACCRD-TO-LST-PRIN-DTE     PIC S9(08)V99 COMP-3.
+018900          10  DFRD-INT-CRS                  PIC S9(08)V99 COMP-3.
+019000          10  DFRD-PRIN                     PIC S9(08)V99 COMP-3.
+019100          10  DFRD-PRIN-CRS                 PIC S9(08)V99 COMP-3.
+019200          10  DFRD-INT                      PIC S9(08)V99 COMP-3.
+019300          10  DTE-DFRL-EFCTV                PIC 9(6).
+019400          10  DTE-DFRL-CNCLTN               PIC 9(6).
+019500          10  DFRD-INT-INCM                 PIC S9(08)V99 COMP-3.
+019600          10  DFRD-PRIN-CDE                 PIC X(01).
+019700          10  ACCRD-LOST-INCM               PIC S9(08)V99 COMP-3.
+019800          10  DTE-DFRD-PRIN-LST-PD          PIC 9(06).
+019900          10  DFRD-INT-RATE                 PIC S99V9999 COMP-3.
+020000          10  DTE-DMND                      PIC 9(06).
+020100          10  SRVC-FEE-AMT                  PIC S9(08)V99 COMP-3.
+020200          10  SRVC-FEE-PD                   PIC S9(08)V99 COMP-3.
+020300          10  DTE-PREV-INT-PYMT             PIC 9(06).
+020400          10  DTE-PREV-PRIN-PYMT            PIC 9(06).
+020500          10  DTE-DFRD-INT                  PIC 9(06).
+020600          10  UNEARND-SBSY                  PIC S9(06)V99 COMP-3.
+020700          10  DTE-DMND-FMHA                 PIC 9(06).
+020800          10  INT-ACCRL-TRMNTN-CDE          PIC X(01).
+020900          10  FILLER                        PIC X(0584).
+021000      05  BORR-RCRD-TYP-4              REDEFINES BORR-RCRD-TYP-1.
+021100          10  BORR-RCRD-TYP-4A.
+021200              15  FILLER                    PIC X(0036).
+021300              15  RUN-NBR-CTRL              PIC 9(02).
+021400              15  DTE-UPDTE                 PIC 9(06).
+021500              15  DTE-PREV-UPDTE            PIC 9(06).
+021600              15  FILE-PROC-FLAG            PIC X(01).
+021700          10  BORR-RCRD-TYP-4B        REDEFINES BORR-RCRD-TYP-4A.
+021800              15  FILLER                    PIC X(0051).
+021900          10  GUARNTD-LN-CNT-CUM            PIC S9(06) COMP-3.
+022000          10  LN-AMT-CUM                    PIC S9(12)V99 COMP-3.
+022100          10  PRIN-CR-CUM                   PIC S9(12)V99 COMP-3.
+022200          10  ACCRD-INT-CUM                 PIC S9(12)V99 COMP-3.
+022300          10  GUAR-FEE-CHGD-CUM             PIC S9(10)V99 COMP-3.
+022400          10  GUAR-FEE-PD-CUM               PIC S9(10)V99 COMP-3.
+022500          10  GUARNTD-LN-SBSY-CUM           PIC S9(10)V99 COMP-3.
+022600          10  ADVNCS-BY-FMHA-CUM            PIC S9(08)V99 COMP-3.
+022700          10  LOSS-PYMT-AMT-CUM             PIC S9(12)V99 COMP-3.
+022800          10  RECPTR-RCVD-CUM               PIC S9(10)V99 COMP-3.
+022900          10  PRIN-RCVB-CUM                 PIC S9(10)V99 COMP-3.
+023000          10  INT-RCVB-CUM                  PIC S9(10)V99 COMP-3.
+023100          10  INT-ASSTNC-PD-CUM             PIC S9(10)V99 COMP-3.
+023200          10  INT-ASSTNC-FEE-PD-CUM         PIC S9(10)V99 COMP-3.
+023300          10  FILLER                        PIC X(0730).
+000050 01  FARMS-GLLNDR.
+000100      05  LNDR-KEY.
+000200          10  ID-NBR-LNDR                   PIC 9(10).
+000300          10  BRNH-NBR                      PIC 99.
+000400          10  RCRD-TYP                      PIC 9(2).
+000500      05  LNDR-RCRD-TYP-1.
+000600          10  NME-LNDR-1                    PIC X(22).
+000700          10  NME-ADRS-LNDR-2               PIC X(22).
+000800          10  NME-ADRS-LNDR-3               PIC X(22).
+000900          10  NME-ADRS-LNDR-4               PIC X(22).
+001000          10  NME-ADRS-LNDR-5               PIC X(22).
+001100          10  ZIP-CDE                       PIC 9(5).
+001200          10  LNDR-TYP                      PIC XX.
+001300          10  SRVCG-OFC-CDE-CTY             PIC 9(5).
+001400          10  GUARNTD-LN-SUSP-CDE           PIC 9(01).
+001500          10  LNDR-STAT-CDE                 PIC 9(01).
+001600          10  OL-LNS-CNT-TTL                PIC S9(04) COMP-3.
+001700          10  FO-LNS-CNT-TTL                PIC S9(04) COMP-3.
+001800          10  EM-LNS-CNT-TTL                PIC S9(04) COMP-3.
+001900          10  RH-LNS-CNT-TTL                PIC S9(04) COMP-3.
+002000          10  EL-LNS-CNT-TTL                PIC S9(04) COMP-3.
+002100          10  EE-LNS-CNT-TTL                PIC S9(04) COMP-3.
+002200          10  BI-LNS-CNT-TTL                PIC S9(04) COMP-3.
+002300          10  CF-LNS-CNT-TTL                PIC S9(04) COMP-3.
+002400          10  WW-LNS-CNT-TTL                PIC S9(04) COMP-3.
+002500          10  OL-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+002600          10  FO-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+002700          10  EM-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+002800          10  RH-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+002900          10  EL-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+003000          10  EE-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+003100          10  BI-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+003200          10  CF-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+003300          10  WW-LNS-AMT-TTL                PIC S9(10)V99 COMP-3.
+003400          10  OL-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+003500          10  FO-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+003600          10  EM-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+003700          10  RH-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+003800          10  EL-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+003900          10  EE-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+004000          10  BI-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+004100          10  CF-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+004200          10  WW-LNS-OUTSTG-BAL             PIC S9(10)V99 COMP-3.
+004300          10  OL-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+004400          10  FO-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+004500          10  EM-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+004600          10  RH-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+004700          10  EL-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+004800          10  EE-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+004900          10  BI-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+005000          10  CF-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+005100          10  WW-LNS-GUAR-TRMTD-CNT         PIC S9(04) COMP-3.
+005200          10  OL-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005300          10  FO-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005400          10  EM-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005500          10  RH-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005600          10  EL-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005700          10  EE-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005800          10  BI-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+005900          10  CF-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+006000          10  WW-LNS-GUAR-TRMTD-AMT         PIC S9(10)V99 COMP-3.
+006100          10  OL-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006200          10  FO-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006300          10  EM-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006400          10  RH-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006500          10  EL-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006600          10  EE-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006700          10  BI-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006800          10  CF-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+006900          10  WW-LNS-DELQ-CNT               PIC S9(04) COMP-3.
+007000          10  OL-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007100          10  FO-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007200          10  EM-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007300          10  RH-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007400          10  EL-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007500          10  EE-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007600          10  BI-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007700          10  CF-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007800          10  WW-LNS-DELQ-AMT               PIC S9(10)V99 COMP-3.
+007900          10  OL-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008000          10  FO-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008100          10  EM-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008200          10  RH-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008300          10  EL-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008400          10  EE-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008500          10  BI-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008600          10  CF-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008700          10  WW-LNS-DELQ-OUTSTG-BAL        PIC S9(10)V99 COMP-3.
+008800          10  OL-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+008900          10  FO-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009000          10  EM-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009100          10  RH-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009200          10  EL-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009300          10  EE-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009400          10  BI-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009500          10  CF-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009600          10  WW-LNS-LOSS-PD-CNT            PIC S9(04) COMP-3.
+009700          10  OL-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+009800          10  FO-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+009900          10  EM-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010000          10  RH-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010100          10  EL-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010200          10  EE-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010300          10  BI-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010400          10  CF-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010500          10  WW-LNS-LOSS-PD-AMT            PIC S9(10)V99 COMP-3.
+010600          10  DTE-LST-RGSTR-DTL             PIC 9(06).
+010700          10  DTE-CERTFTN-EFCTV             PIC 9(06).
+010800          10  DTE-CERTFTN-EXPRTN            PIC 9(06).
+010900          10  CERTFTN-CNT                   PIC 9(01).
+011000          10  DTE-REVCTN                    PIC 9(06).
+011100          10  REVCTN-CDE                    PIC X(02).
+011200          10  REVCTN-CNT                    PIC 9(01).
+011300          10  NOTC-CERTFD-LNDR-PROG-CDE     PIC X(01).
+011400          10  FILLER                        PIC X(0147).
+011500      05  LNDR-RCRD-TYP-2              REDEFINES LNDR-RCRD-TYP-1.
+011600          10  LNDR-RCRD-CNT                 PIC S9(06) COMP-3.
+011700          10  RUN-NBR-CTRL                  PIC 9(02).
+011800          10  DTE-UPDTE                     PIC 9(06).
+011900          10  DTE-PREV-UPDTE                PIC 9(06).
+012000          10  FILE-PROC-FLAG                PIC X(01).
+012100          10  FILLER                        PIC X(0767).
+000050 01  FARMS-IMCASE.
+000100      05  CASE-ID                           PIC X(15).
+000200      05  CASE-NBR                          REDEFINES CASE-ID.
+000300          10  ST-CDE-OBLR                   PIC 9(2).
+000400          10  CTY-CDE-OBLR                  PIC 9(3).
+000500          10  ID-NBR-OBLR                   PIC 9(10).
+000600      05  FILLER                           PIC X(15) VALUE SPACE.
+000050 01  FARMS-INITMAN.
+000100      05  JURDCTN-CDE.
+000200          10  JURDCTN-ST-CDE                PIC X(2).
+000300          10  JURDCTN-UNIT-CDE              PIC X(2).
+000400      05  CMMTS                             PIC X(78).
+000500      05  BUS-FUNCTN-GRP.
+000600          10  MENU-SLCTN-2-MFH              PIC 9(2).
+000700          10  SUBMENU-OPTN                  PIC 9(02).
+000800      05  DTE-TRNSCTN-EFCTV.
+000900          10  EFCTV-DTE-CTRY                PIC 9(02).
+001000          10  YR                            PIC 9(2).
+001100          10  EFCTV-DTE-MO                  PIC 9(2).
+001200          10  EFCTV-DTE-DAY                 PIC 9(2).
+001300      05  LN-NBR                            PIC 9(2).
+001400      05  TRNSCTN-CNTRL-AMT-MFH             PIC S9(9)V99 COMP-3.
+001500      05  DTE-MANUSCRIPT-ORIG.
+001600          10  DTE-VIEWD-CTRY                PIC 9(02).
+001700          10  DTE-VIEWD-YR                  PIC 9(2).
+001800          10  DTE-VIEWD-MO                  PIC 9(2).
+001900          10  DTE-VIEWD-DAY                 PIC 9(2).
+002000      05  DTE-MANUSCRIPT-PR.
+002100          10  DTE-LST-REVW-CTRY             PIC 9(02).
+002200          10  DTE-LST-REVW-YR               PIC 9(02).
+002300          10  DTE-LST-REVW-MO               PIC 9(02).
+002400          10  DTE-LST-REVW-DAY              PIC 9(02).
+002500      05  USER-ID.
+002600          10  AUTHY-CDE-TRML-OPRTR          PIC X(1).
+002700          10  PRFCY-LVL-TRML-OPRTR          PIC X.
+002800                      88  NO-UP-AUTHTY-CDE  VALUE '0'.
+002900                      88  UP-AUTHTY-CDE     VALUE '1'.
+003000          10  FILLER                        PIC X(1).
+003100          10  ID-TRML-OPRTR                 PIC X(03).
+003200      05  USER-ID-PR.
+003300          10  AUTHY-CDE-PR                  PIC X(01).
+003400          10  ID-PR                         PIC X(05).
+003500      05  TRNSCTN-AVLBL-INDCTR-MFH          PIC X(1).
+003600      05  NBR-OF-OCCURS                     PIC S9(4) COMP.
+003700      05  FILLER                            PIC X(0031).
+003800      05  TRNSCTN-ELMT-GRP.
+003900          10  TRNSCTN-ELMT-FLD OCCURS 1800
+003950                             DEPENDING ON NBR-OF-OCCURS PIC X(1).
+000050 01  FARMS-INSRNC-AUTHY.
+000100      05  PROG-PLANG-BDGTG-CDE.
+000200          10  PPB-CDE-1ST                   PIC 9.
+000300          10  PPB-CDE-2-3                   PIC 9(2).
+000400      05  OBLGN-EXPNTR-CDE.
+000500          10  SBMSN-CDE                     PIC 9(1).
+000600          10  PURP-CDE                      PIC 9(2).
+000700      05  ALTMT                             PIC S9(10)V99 COMP-3.
+000800      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000900      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+001000      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+001100      05  ALTMT-1ST-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001200      05  ALTMT-2ND-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001300      05  ALTMT-3RD-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001400      05  ALTMT-4TH-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001500      05  FILLER                            PIC X.
+000050 01  FARMS-INSTALLMENT.
+000100      05  INSTLMT-OC-DATA                   OCCURS 5.
+000200          10  DTE-INSTLMT-DUE               PIC 9(6).
+000300          10  INSTLMT-DUE-AMT               PIC S9(06)V99 COMP-3.
+000400          10  INSTLMT-TYP-CDE               PIC 9(1).
+000500          10  MTURD-CDE-DIR-RE              PIC 9(1).
+000600      05  FILLER                            PIC XXX.
+000050 01  FARMS-INSURANCE.
+000100      05  CHG-TYP-CDE                       PIC 9(1).
+000200      05  INSRNC-CHGS-CUM-AMT               PIC S9(5)V99 COMP-3.
+000300      05  PRIN-CR-INSRNC-CHG-CUM            PIC S9(5)V99 COMP-3.
+000400      05  INSRNC-CHG-MTURD-CUR-YR           PIC S9(5)V99 COMP-3.
+000500      05  FILLER                            PIC XXX.
+000050 01  FARMS-INT-ASSTNC.
+000100      05  TAX-1ST-YR-CDE                    PIC 9(1).
+000200      05  INSRNC-PROP                       PIC S9(04) COMP-3.
+000300      05  TXS-ON-PROP-1ST-YR-INT-ASSTNC     PIC S9(04) COMP-3.
+000400      05  TXS-ON-PROP-2ND-YR-INT-ASSTNC     PIC S9(04) COMP-3.
+000500      05  INT-ASSTNC-DIFF-1ST-YR            PIC S9(06) COMP-3.
+000600      05  INT-ASSTNC-DIFF-2ND-YR            PIC S9(06) COMP-3.
+000700      05  FILLER                            PIC XX.
+000050 01  FARMS-INT-BDWN.
+000100      05  COMPTN-AMT-BDWN                   PIC S9(8)V99 COMP-3.
+000200      05  INT-RATE-BDWN                     PIC 9(2)V9(4).
+000300      05  TERM-OF-BDWN                      PIC 9(02).
+000400      05  OBLGN-AMT-BDWN                    PIC S9(8)V99 COMP-3.
+000500      05  OBLGN-DTE-BDWN                    PIC 9(6).
+000600      05  SUSP-CDE-BDWN                     PIC 9(1).
+000700      05  MAX-SBSY-DUE-BDWN                 PIC S9(8)V99 COMP-3.
+000800      05  DTE-APPRVL-BDWN                   PIC 9(6).
+000900      05  BORR-RATE-BDWN                    PIC 99V9999.
+001000      05  FY-OBLGN-OCCURD-BDWN              PIC 9(02).
+001100      05  CUR-YR-INT-ASSTNC                 PIC S9(06)V99 COMP-3.
+001200      05  INT-ASSTNC-MAX-AMT                PIC S9(06)V99 COMP-3.
+001300      05  PURP-CDE-BDWN                     PIC 9(02).
+001400      05  SBMSN-CDE-BDWN                    PIC 9(01).
+001500      05  SRC-FDS-CDE                       PIC 9(1).
+001600      05  FILLER                            PIC X(0019).
+000050 01  FARMS-INVSTR-DTL.
+000100      05  INT-RATE-INVSTR                   PIC 9(2)V9(4).
+000200      05  INT-RATE-CDE                      PIC 9(2).
+000300      05  FD-CDE-INVSTMT.
+000400          10  FD-CDE-3-INVSTMT.
+000500              15  FD-CDE-2-INVSTMT          PIC 9(2).
+000600              15  FD-CDE-3RD-INVSTMT        PIC 9(1).
+000700          10  FD-CDE-4TH-INVSTMT            PIC 9(1).
+000800      05  PRIN-CR-LN-CUM-INVSTR             PIC S9(07)V99 COMP-3.
+000900      05  INT-CR-LN-CUM-INVSTR              PIC S9(07)V99 COMP-3.
+001000      05  INT-FCL-LN-INVSTR                 PIC S9(7)V99 COMP-3.
+001100      05  ANL-CHG-RTND                      PIC S9(07)V99 COMP-3.
+001200      05  INT-PREM-CUM-AMT                  PIC S9(07)V99 COMP-3.
+001300      05  ANL-PYMT-DUE-INVSTR               PIC S9(07)V99 COMP-3.
+001400      05  INT-UNPD-LN-SALE                  PIC S9(07)V99 COMP-3.
+001500      05  FULLY-PD-CDE-INVSTMT              PIC 9(1).
+001600      05  DTE-SALE-INVSTR                   PIC 9(06).
+001700      05  DTE-INVSTR-LST-PD-INVSTMT         PIC 9(06).
+001800      05  FULLY-PD-CDE-SLD-LN               PIC 9(1).
+001900      05  FIXD-PRD-CDE                      PIC X(1).
+002000      05  DTE-CUR-PRD-AGRMT-EX              PIC 9(06).
+002100      05  FIXD-PRD-CUR-LGTH                 PIC 9(4).
+002200      05  YR-INIT-FIXD-PRD-EXPRTN           PIC 9(4).
+002300      05  DTE-NEXT-ANL-PYMT-INVSTR          PIC 9(06).
+002400      05  INT-ASSTNC-LIAB                   PIC S9(05) COMP-3.
+002500      05  SUSP-CDE-INVSTMT                  PIC 9(1).
+002600      05  DTE-LST-RGSTR-DTL-INVSTR          PIC 9(06).
+002700      05  RGSTR-TYP-LST-CHNG-INVSTR         PIC 9(2).
+002800      05  LN-AMT-INVSTR                     PIC S9(7)V99 COMP-3.
+002900      05  INSTLMT-DUE-INVSTR                PIC S9(6)V99 COMP-3.
+000050 01  FARMS-INVSTR-INFO.
+000100      05  ID-NBR-INVSTR                     PIC 9(5).
+000200      05  ST-CDE-INVSTR                     PIC 9(2).
+000300      05  MULTI-ACCT-INVSTR                 PIC 9(3).
+000400      05  NME-INVSTR-1                      PIC X(22).
+000500      05  NME-ADRS-INVSTR-2                 PIC X(22).
+000600      05  NME-ADRS-INVSTR-3                 PIC X(22).
+000700      05  NME-ADRS-INVSTR-4                 PIC X(22).
+000800      05  NME-ADRS-INVSTR-5                 PIC X(22).
+000900      05  NME-ADRS-INVSTR-6                 PIC X(15).
+001000      05  ZIP-CDE-INVSTR                    PIC 9(5).
+001100      05  PRIN-UNPD-BLK-SALE-INVSTR         PIC S9(09)V99 COMP-3.
+001200      05  INT-PYMT-DUE-BLK-SALE             PIC S9(09)V99 COMP-3.
+001300      05  PRIN-REDCTN-INVSTR                PIC S9(07)V99 COMP-3.
+001400      05  PRIN-REMTNC-INVSTR                PIC S9(4)V99 COMP-3.
+001500      05  CNTRC-NBR-BLK-SALE                PIC 9(4).
+001600      05  SERIES-NBR                        PIC X(1).
+001700      05  INT-RATE-INVSTR-BLK-SALE          PIC 9(2)V9(4).
+001800      05  DTE-INVSTR-LST-PD                 PIC 9(06).
+001900      05  INVSTR-TTL-LNS-CNT                PIC S9(5) COMP-3.
+002000      05  EXCH-CDE-INVSTMT                  PIC 9(1).
+002100      05  NATL-LOC-CDE-INVSTR               PIC 9(1).
+002200      05  INVSTR-TYP-CDE                    PIC 9(1).
+002300      05  SUSP-CDE-INVSTR-ACCT              PIC 9(1).
+002400      05  FILLER                            PIC XXX.
+000050 01  FARMS-INVSTR-INFO-MISC.
+000100      05  TAX-ID-TYP-INVSTR                 PIC 9(1).
+000200      05  TAX-ID-NBR-INVSTR                 PIC 9(9).
+000300      05  FILLER                            PIC X(0014).
+000050 01  FARMS-JDGMT-3RD-PARTY.
+000100      05  NME-FLDS-3RD-PARTY-JDGMT-CNT      PIC 9(1).
+000200      05  ADRS-FLDS-3RD-PARTY-JDGMT-CNT     PIC 9(1).
+000300      05  NME-3RD-PARTY-JDGMT               PIC X(19).
+000400      05  NME-ADRS-3RD-PARTY-JDGMT-1        PIC X(19).
+000500      05  NME-ADRS-3RD-PARTY-JDGMT-2        PIC X(19).
+000600      05  NME-ADRS-3RD-PARTY-JDGMT-3        PIC X(19).
+000700      05  NME-ADRS-3RD-PARTY-JDGMT-4        PIC X(19).
+000800      05  ZIP-CDE-3RD-PARTY-JDGMT           PIC 9(5).
+000900      05  FILLER                            PIC XX.
+000050 01  FARMS-JOB-RESTART.
+000100      05  PROG-ID                           PIC X(8).
+000200      05  PROG-START-DTE                    PIC 9(06).
+000300      05  PROG-START-TIME                   PIC 9(8).
+000400      05  FILLER                            PIC XX.
+000050 01  FARMS-JURDCTN.
+000100      05  JURDCTN-CDE.
+000200          10  JURDCTN-ST-CDE                PIC X(2).
+000300          10  JURDCTN-UNIT-CDE              PIC X(2).
+000400      05  JURDCTN-NEXT-KEY                  PIC S9(08) COMP.
+000050 01  FARMS-LESSEE.
+000100      05  CASE-NBR-LSEE.
+000200          10  ST-CDE-LSEE                   PIC 9(2).
+000300          10  CTY-CDE-LSEE                  PIC 9(3).
+000400          10  ID-LSEE                       PIC 9(10).
+000500      05  NME-FLDS-LSEE-CNT                 PIC 9(1).
+000600      05  ADRS-FLDS-LSEE-CNT                PIC 9(1).
+000700      05  NME-LSEE                          PIC X(19).
+000800      05  NME-ADRS-LSEE-1                   PIC X(19).
+000900      05  NME-ADRS-LSEE-2                   PIC X(19).
+001000      05  NME-ADRS-LSEE-3                   PIC X(19).
+001100      05  NME-ADRS-LSEE-4                   PIC X(19).
+001200      05  ZIP-CDE-LSEE                      PIC 9(5).
+001300      05  LSEE-TYP-CDE                      PIC 9(02).
+001400      05  LSEE-RACE-CDE                     PIC 9(01).
+001500      05  FILLER                            PIC X(20).
+000050 01  FARMS-LN-AID.
+000100      05  DEBT-SET-ASIDE-LN-AMT             PIC S9(6)V99 COMP-3.
+000200      05  DEBT-SET-ASIDE-LN-CNCLD           PIC S9(6)V99 COMP-3.
+000300      05  DEBT-SET-ASIDE-LN-OFFSET          PIC S9(6)V99 COMP-3.
+000400      05  DTE-DFRL-CNCLTN-LN                PIC 9(6).
+000500      05  DTE-DFRL-EFCTV-LN                 PIC 9(6).
+000600      05  INT-CR-DFRD-LN                    PIC S9(6)V99 COMP-3.
+000700      05  DFRD-INT-INSTLMT                  PIC S9(6)V99 COMP-3.
+000800      05  DFRD-INT-LN-AMT                   PIC S9(6)V99 COMP-3.
+000900      05  DFRD-NON-CPTLZD-INT-AMT           PIC S9(07)V99 COMP-3.
+001000      05  DFRD-NCPTLZD-INT-INSTLMT          PIC S9(07)V99 COMP-3.
+001100      05  CR-DFRD-NON-CPTLZD-INT            PIC S9(07)V99 COMP-3.
+001200      05  DFRD-PRIN-LN-AMT                  PIC S9(07)V99 COMP-3.
+001300      05  FILLER                            PIC X(0006).
+000050 01  FARMS-LN-NO-INT.
+000100      05  NON-CPTLZD-INT-LN-AMT             PIC S9(7)V99 COMP-3.
+000200      05  NON-CPTLZD-INT-CR-AMT             PIC S9(7)V99 COMP-3.
+000300      05  NON-CPTLZD-INT-INSTLMT            PIC S9(7)V99 COMP-3.
+000400      05  FILLER                            PIC X(0017).
+000050 01  FARMS-LNRATE.
+000100      05  DTE-EFCTV                         PIC 9(6).
+000200      05  INT-RATE-BORR                   OCCURS 6 PIC 9(2)V9(4).
+000300      05  NON-PROG-INT-RATE               OCCURS 6 PIC 9(2)V9(4).
+000400      05  CTRY-DIGIT                        PIC 9(1).
+000500      05  FILLER                            PIC X(0017).
+000050 01  FARMS-LOAN.
+000100      05  INT-RATE-BORR                     PIC 9(2)V9(4).
+000200      05  INT-RATE-BORR-1ST    REDEFINES INT-RATE-BORR PIC V9(6).
+000300      05  STTLMT-CDE.
+000400          10  APPLTN-CDE                    PIC X(1).
+000500          10  FULLY-PD-CDE                  PIC X(2).
+000600      05  FULLY-MTURD-CDE                   PIC 9(1).
+000700      05  ADVNC-UNCLSD-CDE                  PIC 9(1).
+000800      05  ACT-COLLCTN-ONLY-CDE              PIC 9(1).
+000900      05  ASSOC-TYP-NOTE-CDE                PIC 9(1).
+001000      05  PURCH-CDE                         PIC X(1).
+001100      05  NBR-PYMTS-AMORTN                  PIC 9(3).
+001200      05  INSTLMTS-INT-ONLY-CNT             PIC 9(1).
+001300      05  SALE-STAT-CDE                     PIC 9(1).
+001400      05  FIXD-PRD-INIT-LGTH                PIC 9(2).
+001500      05  MORT-HLDR-CDE                     PIC 9(2).
+001600      05  YR-LN-CLSD                        PIC 9(2).
+001700      05  DTE-LN-SLD-OR-PLDGD               PIC 9(06).
+001800      05  FMHA-DIR-TO-INSRD-CDE             PIC 9(1).
+001900      05  DTE-CLSG                          PIC 9(06).
+002000      05  DTE-LN-EXPRTN                     PIC 9(2).
+002100      05  LN-AMT                            PIC S9(7)V99 COMP-3.
+002200      05  RECVRBL-CST-CHGS                  PIC S9(7)V99 COMP-3.
+002300      05  PRIN-CR-LN                        PIC S9(7)V99 COMP-3.
+002400      05  INT-CR-LN                         PIC S9(7)V99 COMP-3.
+002500      05  INT-FCL-LN                        PIC S9(7)V99 COMP-3.
+002600      05  SCHED-STAT                        PIC S9(7)V99 COMP-3.
+002700      05  PYMT-EXTRA-AMT-CUM                PIC S9(7)V99 COMP-3.
+002800      05  CR-NON-CSH-APPLTN-TYP-CDE         PIC X(1).
+002900      05  CR-NON-CSH-LST-AMT-APPLD          PIC S9(7)V99 COMP-3.
+003000      05  DTE-LST-NON-CSH-CR                PIC 9(06).
+003100      05  DTE-LST-CSH-CR                    PIC 9(6).
+003200      05  DTE-NEXT-INSTLMT-DUE              PIC 9(06).
+003300      05  INSTLMT-DUE-NEXT-AMT              PIC S9(06)V99 COMP-3.
+003400      05  INSTLMT-NEXT-TYP-CDE              PIC 9(1).
+003500      05  INSTLMT-OC-DATA                   OCCURS 2.
+003600          10  DTE-INSTLMT-DUE               PIC 9(6).
+003700          10  INSTLMT-DUE-AMT               PIC S9(06)V99 COMP-3.
+003800          10  INSTLMT-TYP-CDE               PIC 9(1).
+003900          10  MTURD-CDE-DIR-RE              PIC 9(1).
+004000      05  SUSP-CDE-LN                       PIC 9(1).
+004100      05  DTE-LST-RGSTR-DTL                 PIC 9(06).
+004200      05  RGSTR-TYP-LST-CHNG                PIC 9(2).
+004300      05  LN-NBR-OLD                        PIC 9(2).
+004400      05  INT-ASSTNC-CDE                    PIC 9(1).
+004500      05  WRTF-CDE                          PIC X(01).
+000050 01  FARMS-LOAN-DRE.
+000100      05  CIV-RHTS-CDE                      PIC 9(2).
+000200      05  FY-PLDGD-GNMA                     PIC 9(2).
+000300      05  INT-DFRD-UNMTURD-AMT-RMNG         PIC S9(3)V99 COMP-3.
+000400      05  INT-DFRD-ANL-INSTLMT              PIC S9(3)V99 COMP-3.
+000500      05  INT-DFRD-INSTLMT-MTURTY-YR        PIC 9(2).
+000050 01  FARMS-LOAN-OTC.
+000100      05  FY-PLDGD-GNMA-OTC                 PIC 9(2).
+000200      05  CIV-RHTS-CDE-OTC                  PIC 9(2).
+000300      05  INT-RATE-VARBL-CDE                PIC 9(1).
+000400      05  AMORTN-PRD                        PIC 9(2).
+000500      05  EM-MULTI-ORIG-LN-NBR              PIC 9(2).
+000600      05  EM-CDE                            PIC 9(1).
+000700      05  INT-BILLD-UNPD-PR-STMT            PIC S9(7)V99 COMP-3.
+000800      05  INT-BILLD-UNPD-OTC-AMT            PIC S9(7)V99 COMP-3.
+000900      05  PRIN-DUE-OTC-AMT                  PIC S9(7)V99 COMP-3.
+001000      05  PYMT-PR-TO-APPLTN-INT             PIC S9(7)V99 COMP-3.
+001100      05  PYMT-PR-TO-APPLTN-PRIN            PIC S9(7)V99 COMP-3.
+001200      05  FILLER                            PIC X.
+000050 01  FARMS-LOAN-SFSI.
+000100      05  DTE-LST-REVW.
+000200          10  DTE-LST-REVW-YR               PIC 9(02).
+000300          10  DTE-LST-REVW-MO               PIC 9(02).
+000400          10  DTE-LST-REVW-DAY              PIC 9(02).
+000500      05  CP-CLSFCTN-CDE                    PIC 9(1).
+000600      05  CP-DTE-LST-CLSFD                  PIC 9(6).
+000700      05  CP-EST-LOSS-AMT                   PIC S9(8) COMP-3.
+000800      05  LN-FILL                           PIC X(22).
+000050 01  FARMS-LSE-INFO.
+000100      05  LSE-NBR                           PIC 9(2).
+000200      05  FD-CDE-LSE.
+000300          10  FD-CDE-3-LSE.
+000400              15  FD-CDE-2-LSE              PIC 9(2).
+000500              15  FD-CDE-3RD-LSE            PIC 9(1).
+000600          10  FD-CDE-4TH-LSE                PIC 9(1).
+000700      05  LSE-TYP-CDE                       PIC 9(2).
+000800      05  DTE-LSE-EFCTV                     PIC 9(06).
+000900      05  DTE-LSE-ENDS                      PIC 9(06).
+001000      05  LSE-TTL-AMT                       PIC S9(08)V99 COMP-3.
+001100      05  INCM-LSE                          PIC S9(08)V99 COMP-3.
+001200      05  DTE-LST-CSH-CR-LSE                PIC 9(6).
+001300      05  STAT-CDE-LSE                      PIC 9(1).
+001400      05  LSE-CNCLD-AMT                     PIC S9(08)V99 COMP-3.
+001500      05  WRTF-LSE-AMT                      PIC S9(08)V99 COMP-3.
+001600      05  SUSP-CDE-LSE                      PIC 9(1).
+001700      05  DTE-LST-RGSTR-DTL-LSE             PIC 9(06).
+001800      05  RGSTR-TYP-LST-CHNG-LSE            PIC 9(2).
+001900      05  LSEE-KIND-CDE                     PIC 9(02).
+002000      05  LSEE-RELTNSHP-CDE                 PIC 9(2).
+002100      05  INSTLMT-DUE-AMT-LSE-1             PIC S9(06)V99 COMP-3.
+002200      05  DTE-INSTLMT-DUE-LSE-1             PIC 9(06).
+002300      05  INSTLMT-DUE-AMT-LSE-2             PIC S9(06)V99 COMP-3.
+002400      05  DTE-INSTLMT-DUE-LSE-2             PIC 9(06).
+002500      05  INSTLMT-DUE-AMT-LSE-3             PIC S9(06)V99 COMP-3.
+002600      05  DTE-INSTLMT-DUE-LSE-3             PIC 9(06).
+002700      05  INSTLMT-DUE-AMT-LSE-4             PIC S9(06)V99 COMP-3.
+002800      05  DTE-INSTLMT-DUE-LSE-4             PIC 9(06).
+002900      05  INSTLMT-DUE-AMT-LSE-5             PIC S9(06)V99 COMP-3.
+003000      05  DTE-INSTLMT-DUE-LSE-5             PIC 9(06).
+003100      05  LSE-TERMS-AMT                     PIC S9(5)V99 COMP-3.
+003200      05  FILLER                            PIC X(0037).
+000050 01  FARMS-MALLOT.
+000100      05  APROPTN-CDE                       PIC 9(2).
+000200      05  MAJ-CLS                           PIC 9(2).
+000300      05  OBJ-CLSFCTN-CDE                   PIC 9(2).
+000400      05  FY-ACCTG                          PIC 9(2).
+000500      05  ACCT-TYP-CDE                      PIC 9(1).
+000600      05  MULTI-ELMT-CDE                    PIC 9(1).
+000700      05  OK-TO-PROC-CDE                    PIC 9(1).
+000800      05  APRTNMTS-CUR-DTL                  PIC S9(10)V99 COMP-3.
+000900      05  ALTMT-CUR                         PIC S9(10)V99 COMP-3.
+001000      05  APRTNMT-TYP                       PIC 9(1).
+001100      05  ALTMT-TYP                         PIC 9(1).
+001200      05  PRD-CDE                           PIC 9(1).
+001300      05  APRTNMTS-1ST-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001400      05  APRTNMTS-2ND-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001500      05  APRTNMTS-3RD-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001600      05  APRTNMTS-4TH-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+000050 01  FARMS-MALLOT-OBLGN.
+000100      05  OBLGN-EXPNTR-CDE.
+000200          10  SBMSN-CDE                     PIC 9(1).
+000300          10  PURP-CDE                      PIC 9(2).
+000400      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000500      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+000600      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+000700      05  PROG-PLANG-BDGTG-CDE.
+000800          10  PPB-CDE-1ST                   PIC 9.
+000900          10  PPB-CDE-2-3                   PIC 9(2).
+000050 01  FARMS-MALLOT-OTH.
+000100      05  FILLER                            PIC X(0004).
+000050 01  FARMS-MSTR-RATE.
+000100      05  MSTR-KEY.
+000200          10  FY-OBLGN-OCCURD.
+000300              15  FY-OBLGN-1                PIC 9.
+000400              15  FY-OBLGN-2                PIC 9.
+000500          10  APROPTN-CDE                   PIC 9(2).
+000600          10  MAJ-CLS                       PIC 9(2).
+000700      05  NBR-SBSY-LNS                      PIC S9(8) COMP-3.
+000800      05  FP-SBSY-AVG-CALC-ONE              PIC S9(14) COMP-3.
+000900      05  FP-SBSY-AVG-CALC-TWO              PIC S9(14) COMP-3.
+001000      05  SBSY-RATE                        PIC 9(08)V9999 COMP-3.
+001100      05  FILLER                            PIC X(0046).
+000050 01  FARMS-NOTIFY.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  ST-CDE-INVSTR                     PIC 9(2).
+000300      05  ID-NBR-INVSTR                     PIC 9(5).
+000400      05  CASE-NBR.
+000500          10  ST-CDE-OBLR                   PIC 9(2).
+000600          10  CTY-CDE-OBLR                  PIC 9(3).
+000700          10  ID-NBR-OBLR                   PIC 9(10).
+000800      05  LN-NBR                            PIC 9(2).
+000900      05  NME-OBLR                          PIC X(19).
+001000      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+001100      05  FD-CDE.
+001200          10  FD-CDE-3.
+001300              15  FD-CDE-2                  PIC 9(2).
+001400              15  FD-CDE-3RD                PIC 9(1).
+001500          10  FD-CDE-4TH                    PIC 9(1).
+001600      05  INT-RATE-INVSTR                   PIC 9(2)V9(4).
+001700      05  INT-RATE-BORR                     PIC 9(2)V9(4).
+001800      05  PYMT-CDE-INVSTR                   PIC 9(1).
+001900      05  ANL-CHG-RTND                      PIC S9(07)V99 COMP-3.
+002000      05  INT-PD-INVSTR                     PIC S9(07)V99 COMP-3.
+002100      05  PRIN-PD-INVSTR                    PIC S9(07)V99 COMP-3.
+002200      05  PRIN-UNPD-INVSTR                  PIC S9(07)V99 COMP-3.
+002300      05  FED-RESV-CDE                      PIC 9(1).
+002400      05  FIXD-PRD-CDE                      PIC X(1).
+002500      05  DTE-CUR-PRD-AGRMT-EX              PIC 9(06).
+002600      05  DTE-CK                            PIC 9(6).
+002700      05  MORT-HLDR-CDE                     PIC 9(2).
+002800      05  NOTE-APPLD-AMT                    PIC S9(07)V99 COMP-3.
+002900      05  DTE-EFCTV                         PIC 9(06).
+003000      05  DTE-CLSG                          PIC 9(06).
+003100      05  FULLY-PD-CDE-INVSTMT              PIC 9(1).
+003200      05  BLK-NBR                           PIC 9(4).
+003300      05  FILLER                            PIC XX.
+000050 01  FARMS-NOTIFY-CNTRL.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  PYMT-AMT-TTL                      PIC S9(10)V99 COMP-3.
+000300      05  FILLER                            PIC XXX.
+000050 01  FARMS-OBLGN.
+000100      05  RCRD-TYP                          PIC 9(2).
+000200      05  ADRS-CARD-CDE                     PIC 9(1).
+000300      05  INT-ASSTNC-AGRMT-FORM-COMPL       PIC 9(1).
+000400      05  SALE-CR-ASUMPTN-CDE               PIC 9(1).
+000500      05  FY-OBLGN-OCCURD.
+000600          10  FY-OBLGN-1                    PIC 9.
+000700          10  FY-OBLGN-2                    PIC 9.
+000800      05  APROPTN-MAJ-CLS-CDE.
+000900          10  APROPTN-CDE                   PIC 9(2).
+001000          10  MAJ-CLS                       PIC 9(2).
+001100      05  SRVCG-OFC-CDE-ST                  PIC 9(2).
+001200      05  OBLGN-EXPNTR-CDE.
+001300          10  SBMSN-CDE                     PIC 9(1).
+001400          10  PURP-CDE                      PIC 9(2).
+001500      05  OBLGN-TO-BORR-TTL-AMT             PIC S9(08)V99 COMP-3.
+001600      05  DTE-OBLGN                         PIC 9(06).
+001700      05  VOU-UNCLSD-AMT                    PIC S9(08)V99 COMP-3.
+001800      05  LN-CNT-CDE                        PIC 9(1).
+001900      05  FEE-CR-REPT-CDE                   PIC 9(1).
+002000      05  ASSTNC-REPAIR-REHBLTN             PIC 9(1).
+002100      05  INCM-FAM-ADJD                     PIC S9(06) COMP-3.
+002200      05  DWL-TYP-CDE                       PIC 9(02).
+002300      05  VOU-NBR                           PIC 9(5).
+002400      05  GUAR-LN-FACE-VLU-AMT              PIC S9(8)V99 COMP-3.
+002500      05  ADVNC-MULTI-TTL-AMT               PIC S9(08)V99 COMP-3.
+002600      05  INT-CPTLZD-CDE                    PIC 9(1).
+002700      05  REPYMT-PRD                        PIC 9(2).
+002800      05  PROG-PLANG-BDGTG-CDE.
+002900          10  PPB-CDE-1ST                   PIC 9.
+003000          10  PPB-CDE-2-3                   PIC 9(2).
+003100      05  SPLIT-CMBN-RCRD-ASSOC-CDE         PIC 9(1).
+003200      05  INCM-CTGRY-CDE                    PIC 9(1).
+003300      05  FEE-INSPCTN-CDE                   PIC 9(1).
+003400      05  DTE-APPRVL-LN-GRT                 PIC 9(06).
+003500      05  DRGHT-CDE                         PIC 9(1).
+003600      05  GUAR-LOSS-PCT                     PIC 9(03).
+003700      05  SUSP-CDE-OBLGN                    PIC 9(1).
+003800      05  SRC-FDS-CDE                       PIC 9(1).
+003900      05  INIT-INT-ASSTNC-RATE             PIC 9(02)V9999 COMP-3.
+004000      05  HIGH-CST-AREA                     PIC X(01).
+004100      05  AMT-INSRD-DEBT-REFIN              PIC S9(08)V99 COMP-3.
+004200      05  BORR-HIST-CDE                     PIC 9(02).
+004300      05  DTE-LST-RGSTR-DTL-OBLGN           PIC 9(06).
+004400      05  RGSTR-TYP-LST-CHNG-OBLGN          PIC 9(2).
+004500      05  SBSY-AMT-OBLGN                    PIC S9(8)V99 COMP-3.
+004600      05  SBSY-APROPTN-CDE                  PIC 99.
+004700      05  SBSY-PROG-PLANG-BDGTG-CDE         PIC 999.
+004800      05  FILLER                            PIC X(0007).
+000050 01  FARMS-ORDERS.
+000100      05  CASE-ID                           PIC X(15).
+000200      05  CASE-NBR                          REDEFINES CASE-ID.
+000300          10  ST-CDE-OBLR                   PIC X(2).
+000400          10  CTY-CDE-OBLR                  PIC X(3).
+000500          10  ID-NBR-OBLR                   PIC X(10).
+000600      05  LOOKD-CNT                         PIC 9.
+000050 01  FARMS-ORGZTN-LOOKUP.
+000100      05  MAILG-CDE-LVL2.
+000200          10  MAILG-LVL-LVL2                PIC X(1).
+000300                      88  ST-MAILG-LVL-LVL2 VALUE 'S'.
+000400                      88  DST-MAILG-LVL-LVL2 VALUE 'D'.
+000500                      88  CTY-MAILG-LVL-LVL2 VALUE 'C'.
+000600                      88  CTY-SPECL-LVL-LVL2 VALUE 'T'.
+000700                      88  DST-SPECL-LVL-LVL2 VALUE 'U'.
+000800                      88  ST-SPECL-LVL-LVL2 VALUE 'V'.
+000900          10  ST-OFC-MAILG-LVL2             PIC 9(2).
+001000          10  CTY-OFC-MAILG-LVL2            PIC 9(3).
+001100      05  MAILG-CDE-LVL3.
+001200          10  MAILG-LVL-LVL3                PIC X(1).
+001300                      88  ST-MAILG-LVL-LVL3 VALUE 'S'.
+001400                      88  DST-MAILG-LVL-LVL3 VALUE 'D'.
+001500                      88  CTY-MAILG-LVL-LVL3 VALUE 'C'.
+001600                      88  CTY-SPECL-LVL-LVL3 VALUE 'T'.
+001700                      88  DST-SPECL-LVL-LVL3 VALUE 'U'.
+001800                      88  ST-SPECL-LVL-LVL3 VALUE 'V'.
+001900          10  ST-OFC-MAILG-LVL3             PIC 9(2).
+002000          10  CTY-OFC-MAILG-LVL3            PIC 9(3).
+002100      05  FILLER                            PIC X(0048).
+000050 01  FARMS-OVFLO.
+000100      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+000200      05  CASE-NBR.
+000300          10  ST-CDE-OBLR                   PIC X(2).
+000400          10  CTY-CDE-OBLR                  PIC X(3).
+000500          10  ID-NBR-OBLR                   PIC X(10).
+000600      05  TRNSCTN-VARBL-DATA                PIC X(57).
+000700      05  CARD-NBR                          PIC X(1).
+000800      05  CARD-TYP                          PIC X(01).
+000900      05  BLK-NBR                           PIC X(4).
+000050 01  FARMS-PD-ACCT-RVRSL.
+000100      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+000200      05  FD-CDE.
+000300          10  FD-CDE-3.
+000400              15  FD-CDE-2                  PIC 9(2).
+000500              15  FD-CDE-3RD                PIC 9(1).
+000600          10  FD-CDE-4TH                    PIC 9(1).
+000700      05  KIND-CDE-LN                       PIC 9(2).
+000800      05  BOND-CDE                          PIC 9(1).
+000900      05  ASSOC-TYP-NOTE-CDE                PIC 9(1).
+001000      05  INT-RATE-BORR                     PIC 9(2)V9(4).
+001100      05  INT-RATE-BORR-1ST    REDEFINES INT-RATE-BORR PIC V9(6).
+001200      05  DTE-CLSG                          PIC 9(06).
+001300      05  ACT-COLLCTN-ONLY-CDE              PIC 9(1).
+001400      05  SUSP-CDE-LN                       PIC 9(1).
+001500      05  FULLY-MTURD-CDE                   PIC 9(1).
+001600      05  FIXD-PRD-INIT-LGTH                PIC 9(2).
+001700      05  LN-AMT                            PIC S9(7)V99 COMP-3.
+001800      05  INT-ASSTNC-CUM-AMT                PIC S9(7)V99 COMP-3.
+001900      05  RECVRBL-CST-CHGS                  PIC S9(7)V99 COMP-3.
+002000      05  PRIN-CR-LN                        PIC S9(7)V99 COMP-3.
+002100      05  INT-CR-LN                         PIC S9(7)V99 COMP-3.
+002200      05  INT-FCL-LN                        PIC S9(7)V99 COMP-3.
+002300      05  PYMT-EXTRA-AMT-CUM                PIC S9(7)V99 COMP-3.
+002400      05  SCHED-STAT                        PIC S9(7)V99 COMP-3.
+002500      05  DTE-LST-RGSTR-DTL                 PIC 9(06).
+002600      05  RGSTR-TYP-LST-CHNG                PIC 9(2).
+002700      05  DTE-LST-NON-CSH-CR                PIC 9(06).
+002800      05  CR-NON-CSH-LST-AMT-APPLD          PIC S9(7)V99 COMP-3.
+002900      05  CR-NON-CSH-APPLTN-TYP-CDE         PIC X(1).
+003000      05  STTLMT-CDE.
+003100          10  APPLTN-CDE                    PIC X(1).
+003200          10  FULLY-PD-CDE                  PIC X(2).
+003300      05  DTE-TRNSCTN                       PIC 9(06).
+003400      05  MORT-HLDR-CDE                     PIC 9(2).
+003500      05  TO-OR-FROM-CDE                    PIC 9(1).
+003600      05  CASE-NBR.
+003700          10  ST-CDE-OBLR                   PIC 9(2).
+003800          10  CTY-CDE-OBLR                  PIC 9(3).
+003900          10  ID-NBR-OBLR                   PIC 9(10).
+004000      05  BLK-NBR                           PIC 9(4).
+004100      05  FILLER                            PIC XX.
+000050 01  FARMS-PLEREP.
+000100      05  FRM-MORT-DATA                     OCCURS 8.
+000200          10  RGN-CDE-PLEREP                PIC 9(1).
+000300          10  MORTS-FRM-GOVT-OWND-CNT       PIC S9(7) COMP-3.
+000400          10  MORTS-FRM-OWND-GOVT-AMT       PIC S9(12)V99 COMP-3.
+000500          10  MORT-FRM-ACQD-CUR-QTR-CNT     PIC S9(05) COMP-3.
+000600          10  MORTS-ACQD-ON-FRMS-AMT        PIC S9(08)V99 COMP-3.
+000700          10  PRIN-INCR-FRM-MORT-OWND       PIC S9(08)V99 COMP-3.
+000800          10  MORTS-FRM-FULLY-PD-CNT        PIC S9(05) COMP-3.
+000900          10  PYMT-FNL-FRM-MORT-TTL-AMT     PIC S9(08)V99 COMP-3.
+001000          10  PRIN-PYMT-ON-OTH-FRM-MORT     PIC S9(08)V99 COMP-3.
+001100          10  MORTS-FRM-ACQD-FRCL-CNT       PIC S9(05) COMP-3.
+001200          10  MORTS-FRM-ACQD-FRCL-AMT       PIC S9(08)V99 COMP-3.
+001300          10  RH-INIT-LNS-1-PCT-CNT         PIC S9(04) COMP-3.
+001400          10  RH-INIT-LNS-1-PCT-AMT         PIC S9(07) COMP-3.
+001500          10  RH-INIT-LNS-3-PCT-CNT         PIC S9(04) COMP-3.
+001600          10  RH-INIT-LNS-3-PCT-AMT         PIC S9(07) COMP-3.
+001700          10  RH-INIT-LNS-6-PCT-CNT         PIC S9(04) COMP-3.
+001800          10  RH-INIT-LNS-6-PCT-AMT         PIC S9(07) COMP-3.
+001900          10  FO-INIT-LNS-3-PCT-CNT         PIC S9(04) COMP-3.
+002000          10  FO-INIT-LNS-3-PCT-AMT         PIC S9(07) COMP-3.
+002100          10  FO-INIT-LNS-5-PCT-CNT         PIC S9(04) COMP-3.
+002200          10  FO-INIT-LNS-5-PCT-AMT         PIC S9(07) COMP-3.
+002300          10  PURCH-RE-QTR                  PIC S9(07) COMP-3.
+002400          10  LN-REFIN-RE-PRTN-FO-RH        PIC S9(07) COMP-3.
+002500          10  LN-REFIN-NON-RE-PRTN-FO-RH    PIC S9(07) COMP-3.
+002600          10  LN-FO-RH-LAND-BLDG-PRTN       PIC S9(07) COMP-3.
+002700          10  FEES-OTH-KNOWN                PIC S9(07) COMP-3.
+002800          10  PYMT-DWN-INIT-LNS-TTL-AMT     PIC S9(07) COMP-3.
+002900      05  PLDGD-LN-DATA                     OCCURS 4.
+003000          10  FY-PLDGD-GNMA-PLEREP          PIC 9(2).
+003100          10  LN-ACCT-CDE                   PIC 9(1).
+003200          10  PLDG-ORIG-AMT                 PIC S9(11)V99 COMP-3.
+003300          10  LNS-IN-ORIG-PLDG-CNT          PIC S9(08) COMP-3.
+003400          10  LN-AMT-ADDD-CUM               PIC S9(11)V99 COMP-3.
+003500          10  LNS-ADDD-CUM-CNT              PIC S9(08) COMP-3.
+003600          10  ADVNC-ADDTNL-CUM-AMT          PIC S9(11)V99 COMP-3.
+003700          10  LNS-CNCLD-CUM-AMT             PIC S9(11)V99 COMP-3.
+003800          10  LNS-CNCLD-CUM-CNT             PIC S9(08) COMP-3.
+003900          10  PRIN-NOT-FULLY-PD-CUM         PIC S9(11)V99 COMP-3.
+004000          10  INT-NOT-FULLY-PD-CUM          PIC S9(11)V99 COMP-3.
+004100          10  PRIN-FULLY-PD-CUM             PIC S9(11)V99 COMP-3.
+004200          10  INT-FULLY-PD-CUM-AMT          PIC S9(11)V99 COMP-3.
+004300          10  LNS-FULLY-PD-CUM-CNT          PIC S9(08) COMP-3.
+004400          10  FRCL-JDGMT-CUM-AMT            PIC S9(11)V99 COMP-3.
+004500          10  FRCL-JDGMT-CUM-CNT            PIC S9(08) COMP-3.
+004600          10  WRTF-CUM-AMT                  PIC S9(11)V99 COMP-3.
+004700          10  WRTF-CUM                      PIC S9(08) COMP-3.
+004800          10  LN-AMT-ADDD-MTD               PIC S9(08)V99 COMP-3.
+004900          10  LNS-ADDD-MTD-CNT              PIC S9(05) COMP-3.
+005000          10  ADVNC-ADDTNL-AMT-MTD          PIC S9(08)V99 COMP-3.
+005100          10  LNS-CNCLD-MTD-AMT             PIC S9(08)V99 COMP-3.
+005200          10  LNS-CNCLD-MTD-CNT             PIC S9(05) COMP-3.
+005300          10  PRIN-NOT-FULLY-PD-MTD         PIC S9(08)V99 COMP-3.
+005400          10  INT-NOT-FULLY-PD-MTD          PIC S9(08)V99 COMP-3.
+005500          10  PRIN-FULLY-PD-MTD             PIC S9(08)V99 COMP-3.
+005600          10  INT-FULLY-PD-MTD              PIC S9(08)V99 COMP-3.
+005700          10  LNS-FULLY-PD-MTD-CNT          PIC S9(05) COMP-3.
+005800          10  PRIN-FRCL-JDGMT-MTD           PIC S9(08)V99 COMP-3.
+005900          10  LNS-FRCL-JDGMT-MTD            PIC S9(05) COMP-3.
+006000          10  WRTF-UNPD-PRIN-MTD            PIC S9(08)V99 COMP-3.
+006100          10  LNS-WRTF-MTD-CNT              PIC S9(05) COMP-3.
+006200          10  PRIN-UNPD-PLDGD-LNS           PIC S9(11)V99 COMP-3.
+006300          10  LNS-OUTSTG-CNT                PIC S9(08) COMP-3.
+000050 01  FARMS-PROG-SAVE.
+000100      05  PROG-DATA                         PIC X(500).
+000050 01  FARMS-PRTLSALE.
+000100      05  PRTL-SALE-LN-NBR                  PIC 9(02).
+000200      05  PRTL-NET-RECVRY-VLU            PIC S9(09)V9(02) COMP-3.
+000300      05  PRTL-BEGNG-MKT-VLU             PIC S9(09)V9(02) COMP-3.
+000400      05  PRTL-ENDG-MKT-VLU              PIC S9(09)V9(02) COMP-3.
+000500      05  PRTL-RCVB-AMT-DUE              PIC S9(09)V9(02) COMP-3.
+000600      05  PRTL-RCVB-AMT-PD               PIC S9(09)V9(02) COMP-3.
+000700      05  PRTL-DTE-SALE-MTURTY              PIC 9(06).
+000800      05  DTE-LST-CSH-PRTL                  PIC 9(6).
+000900      05  PRTL-STTLMT-CDE-GRP.
+001000          10  PRTL-APPLTN-CDE               PIC X(01).
+001100          10  PRTL-FULLY-PD-CDE             PIC X(02).
+001200      05  CR-APPLD-NONCSH-PRTL              PIC S9(9)V99 COMP-3.
+001300      05  DTE-LST-NONCSH-PRTL               PIC 9(6).
+001400      05  FILLER                            PIC X(0053).
+000050 01  FARMS-RDA-ALTMT.
+000100      05  ALTMT-KEY.
+000200          10  APROPTN-CDE                   PIC 9(2).
+000300          10  MAJ-CLS                       PIC 9(2).
+000400          10  OBJ-CLSFCTN-CDE               PIC 9(2).
+000500      05  FILLER                            PIC X(0002).
+000050 01  FARMS-RDA-AREA-DALLOT.
+000100      05  RDA-AREA-DALLOT-KEY.
+000200          10  FY                            PIC 9(2).
+000300          10  RDA-RGN-CDE                   PIC 9(2).
+000400          10  GEOG-ST-CDE                   PIC 9(2).
+000500          10  RDA-AREA-CDE                  PIC 9(03).
+000600          10  ALTMT-KEY.
+000700              15  APROPTN-CDE               PIC 9(2).
+000800              15  MAJ-CLS                   PIC 9(2).
+000900              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+001000      05  MULTI-ELMT-CDE                    PIC 9(1).
+001100      05  OK-TO-PROC-CDE                    PIC 9(1).
+001200      05  DISTRBN-CUR                       PIC S9(10)V99 COMP-3.
+001300      05  DISTRBN-TYP-CDE                   PIC 9(1).
+001400      05  PRD-CDE                           PIC 9(1).
+001500      05  DISTRBN-ST-1ST-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001600      05  DISTRBN-ST-2ND-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001700      05  DISTRBN-ST-3RD-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001800      05  DISTRBN-ST-4TH-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001900      05  DISTRBN-GUAR                      PIC S9(10)V99 COMP-3.
+002000      05  DISTRBN-INSRD                     PIC S9(10)V99 COMP-3.
+002100      05  DISTRBN-DIR                       PIC S9(10)V99 COMP-3.
+002200      05  DISTRBN-GRT                       PIC S9(10)V99 COMP-3.
+002300      05  DISTRBN-AMT             OCCURS 10 PIC S9(10)V99 COMP-3.
+002400      05  FILLER                            PIC X(16).
+000050 01  FARMS-RDA-AREA-OBLGN.
+000100      05  PPB-OBLGN-EXPNTR-CDE.
+000200          10  PROG-PLANG-BDGTG-CDE.
+000300              15  PPB-CDE-1ST               PIC 9.
+000400              15  PPB-CDE-2-3               PIC 9(2).
+000500          10  OBLGN-EXPNTR-CDE.
+000600              15  SBMSN-CDE                 PIC 9(1).
+000700              15  PURP-CDE                  PIC 9(2).
+000800      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000900      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+001000      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+000050 01  FARMS-RDA-DALLOT-DTL.
+000100      05  RDA-DALLOT-DTL-KEY.
+000200          10  FY                            PIC 9(2).
+000300          10  DALLOT-DTL-SRT-KEY.
+000400              15  RDA-RGN-CDE               PIC 9(2).
+000500              15  GEOG-ST-CDE               PIC 9(2).
+000600          10  ALTMT-KEY.
+000700              15  APROPTN-CDE               PIC 9(2).
+000800              15  MAJ-CLS                   PIC 9(2).
+000900              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+001000      05  MULTI-ELMT-CDE                    PIC 9(1).
+001100      05  OK-TO-PROC-CDE                    PIC 9(1).
+001200      05  DISTRBN-CUR                       PIC S9(10)V99 COMP-3.
+001300      05  DISTRBN-TYP-CDE                   PIC 9(1).
+001400      05  PRD-CDE                           PIC 9(1).
+001500      05  DISTRBN-ST-1ST-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001600      05  DISTRBN-ST-2ND-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001700      05  DISTRBN-ST-3RD-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001800      05  DISTRBN-ST-4TH-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001900      05  DISTRBN-GUAR                      PIC S9(10)V99 COMP-3.
+002000      05  DISTRBN-INSRD                     PIC S9(10)V99 COMP-3.
+002100      05  DISTRBN-DIR                       PIC S9(10)V99 COMP-3.
+002200      05  DISTRBN-GRT                       PIC S9(10)V99 COMP-3.
+002300      05  DISTRBN-AMT             OCCURS 10 PIC S9(10)V99 COMP-3.
+002400      05  FILLER                            PIC X(0011).
+000050 01  FARMS-RDA-DALLOT-OBLGN.
+000100      05  PPB-OBLGN-EXPNTR-CDE.
+000200          10  PROG-PLANG-BDGTG-CDE.
+000300              15  PPB-CDE-1ST               PIC 9.
+000400              15  PPB-CDE-2-3               PIC 9(2).
+000500          10  OBLGN-EXPNTR-CDE.
+000600              15  SBMSN-CDE                 PIC 9(1).
+000700              15  PURP-CDE                  PIC 9(2).
+000800      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000900      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+001000      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+000050 01  FARMS-RDA-FD-SIDE.
+000100      05  ALTMT                             PIC S9(10)V99 COMP-3.
+000200      05  ALTMT-1ST-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000300      05  ALTMT-2ND-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000400      05  ALTMT-3RD-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000500      05  ALTMT-4TH-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+000600      05  FILLER                            PIC X(0005).
+000050 01  FARMS-RDA-INSRNC-AUTHY.
+000100      05  PPB-OBLGN-EXPNTR-CDE.
+000200          10  PROG-PLANG-BDGTG-CDE.
+000300              15  PPB-CDE-1ST               PIC 9.
+000400              15  PPB-CDE-2-3               PIC 9(2).
+000500          10  OBLGN-EXPNTR-CDE.
+000600              15  SBMSN-CDE                 PIC 9(1).
+000700              15  PURP-CDE                  PIC 9(2).
+000800      05  ALTMT                             PIC S9(10)V99 COMP-3.
+000900      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+001000      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+001100      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+001200      05  ALTMT-1ST-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001300      05  ALTMT-2ND-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001400      05  ALTMT-3RD-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001500      05  ALTMT-4TH-ACCTG-PRD               PIC S9(10)V99 COMP-3.
+001600      05  FILLER                            PIC X(0005).
+000050 01  FARMS-RDA-MALLOT.
+000100      05  RDA-MALLOT-KEY.
+000200          10  FY                            PIC 9(2).
+000300          10  ALTMT-KEY.
+000400              15  APROPTN-CDE               PIC 9(2).
+000500              15  MAJ-CLS                   PIC 9(2).
+000600              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+000700      05  ACCT-TYP-CDE                      PIC 9(1).
+000800      05  MULTI-ELMT-CDE                    PIC 9(1).
+000900      05  OK-TO-PROC-CDE                    PIC 9(1).
+001000      05  APRTNMTS-CUR-DTL                  PIC S9(10)V99 COMP-3.
+001100      05  ALTMT-CUR                         PIC S9(10)V99 COMP-3.
+001200      05  APRTNMT-TYP                       PIC 9(1).
+001300      05  ALTMT-TYP                         PIC 9(1).
+001400      05  PRD-CDE                           PIC 9(1).
+001500      05  APRTNMTS-1ST-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001600      05  APRTNMTS-2ND-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001700      05  APRTNMTS-3RD-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001800      05  APRTNMTS-4TH-ACCTG-PRD            PIC S9(10)V99 COMP-3.
+001900      05  FILLER                            PIC X(0008).
+000050 01  FARMS-RDA-MALLOT-OBLGN.
+000100      05  PPB-OBLGN-EXPNTR-CDE.
+000200          10  PROG-PLANG-BDGTG-CDE.
+000300              15  PPB-CDE-1ST               PIC 9.
+000400              15  PPB-CDE-2-3               PIC 9(2).
+000500          10  OBLGN-EXPNTR-CDE.
+000600              15  SBMSN-CDE                 PIC 9(1).
+000700              15  PURP-CDE                  PIC 9(2).
+000800      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+000900      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+001000      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+000050 01  FARMS-RDA-RGN-DTL.
+000100      05  RDA-RGN-DTL-KEY.
+000200          10  FY                            PIC 9(2).
+000300          10  RDA-RGN-CDE                   PIC 9(2).
+000400          10  ALTMT-KEY.
+000500              15  APROPTN-CDE               PIC 9(2).
+000600              15  MAJ-CLS                   PIC 9(2).
+000700              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+000800      05  ACCT-TYP-CDE                      PIC 9(1).
+000900      05  MULTI-ELMT-CDE                    PIC 9(1).
+001000      05  OK-TO-PROC-CDE                    PIC 9(1).
+001100      05  DISTRBN-CUR                       PIC S9(10)V99 COMP-3.
+001200      05  DISTRBN-TYP-CDE                   PIC 9(1).
+001300      05  PRD-CDE                           PIC 9(1).
+001400      05  FILLER                            PIC X(0010).
+000050 01  FARMS-RDA-RGN-OBLGN.
+000100      05  PPB-OBLGN-EXPNTR-CDE.
+000200          10  PROG-PLANG-BDGTG-CDE.
+000300              15  PPB-CDE-1ST               PIC 9.
+000400              15  PPB-CDE-2-3               PIC 9(2).
+000500          10  OBLGN-EXPNTR-CDE.
+000600              15  SBMSN-CDE                 PIC 9(1).
+000700              15  PURP-CDE                  PIC 9(2).
+000800      05  DISTRBN-CUR                       PIC S9(10)V99 COMP-3.
+000900      05  OBLGNS-AMT-CUM                    PIC S9(10)V99 COMP-3.
+001000      05  OBLGNS-CNT-CUM                    PIC S9(6) COMP-3.
+001100      05  VOU-AMT                           PIC S9(10)V99 COMP-3.
+001200      05  DISTRBN-ST-1ST-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001300      05  DISTRBN-ST-2ND-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001400      05  DISTRBN-ST-3RD-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001500      05  DISTRBN-ST-4TH-ACCTG-PRD          PIC S9(10)V99 COMP-3.
+001600      05  FILLER                            PIC X(0005).
+000050 01  FARMS-REJECT-TRNSCTN.
+000100      05  MULTI-CARD-DATA-LGTH              PIC S9(4) COMP.
+000200      05  REJECT-TRNSCTN-DATA.
+000300          10  FIRST-CARD-DATA               PIC X(150).
+000400          10  MULTI-CARD-DATA OCCURS 1850
+000450                      DEPENDING ON MULTI-CARD-DATA-LGTH PIC X(1).
+000050 01  FARMS-RENTL-CNTRL.
+000100      05  GEOG-ST-CDE-RENTL-CNTRL           PIC 9(2).
+000200      05  NEXT-PROJ-NBR                     PIC 9(5).
+000300      05  PYMT-FCTR-NEW                     PIC S9(6) COMP-3.
+000400      05  PYMT-FCTR-EXSTG                   PIC S9(6) COMP-3.
+000500      05  ALTMT-UNITS-NEW                   PIC S9(6) COMP-3.
+000600      05  OBLGD-UNITS-NEW                   PIC S9(6) COMP-3.
+000700      05  ALTMT-UNITS-EXSTG                 PIC S9(6) COMP-3.
+000800      05  OBLGD-UNITS-EXSTG                 PIC S9(6) COMP-3.
+000900      05  OBLGN-LONG-TERM-CNTRL             PIC S9(12)V99 COMP-3.
+001000      05  PYMTS-RENTL                       PIC S9(11)V99 COMP-3.
+001100      05  OBLGNS-UNLGDTD-CNTRL              PIC S9(11)V99 COMP-3.
+001200      05  FAM-UNIT-OBLGD-TTL                PIC S9(8) COMP-3.
+001300      05  SR-CITS-UNIT-OBLGD-TTL            PIC S9(8) COMP-3.
+001400      05  FILLER                            PIC X.
+000050 01  FARMS-RENTL-DTL.
+000100      05  PROJ-NBR                          PIC 9(6).
+000200      05  PROJ-TYP-CDE                      PIC 9(1).
+000300      05  LN-TYP-CDE                        PIC 9(2).
+000400      05  FY-PLDGD-PROJ                     PIC 99.
+000500      05  FAM-UNITS-OBLGD                   PIC S9(4) COMP-3.
+000600      05  SR-CITS-UNITS-OBLGD               PIC S9(4) COMP-3.
+000700      05  UNITS-PROJ-TTL                    PIC S9(4) COMP-3.
+000800      05  UNITS-LST-PYMT                    PIC S9(4) COMP-3.
+000900      05  UNITS-CUR-FY-PD                   PIC S9(4) COMP-3.
+001000      05  LST-PYMT-AMT                      PIC S9(7)V99 COMP-3.
+001100      05  PYMTS-CUR-FY                      PIC S9(7)V99 COMP-3.
+001200      05  PYMTS-CUM                         PIC S9(7)V99 COMP-3.
+001300      05  OBLGN-CUR-FY                      PIC S9(8)V99 COMP-3.
+001400      05  OBLGN-LONG-TERM                   PIC S9(8)V99 COMP-3.
+001500      05  OBLGNS-UNLGDTD                    PIC S9(8)V99 COMP-3.
+001600      05  DTE-OBLGN-RENTL                   PIC 9(06).
+001700      05  DTE-OBLGN-RGSTR                   PIC 9(06).
+001800      05  DTE-LST-CK                        PIC 9(06).
+001900      05  DTE-LST-CK-RGSTR                  PIC 9(06).
+002000      05  DTE-INT-ASSTNC                    PIC 9(06).
+002100      05  RGSTR-TYP-LST-CHNG-RENTL          PIC 9(2).
+002200      05  DTE-LST-RGSTR-DTL-RENTL           PIC 9(06).
+002300      05  FULLY-DISBRSD-CDE                 PIC X(3).
+000050 01  FARMS-RENTL-FY-UNIT.
+000100      05  FY-UNITS-OBLGD                    PIC 9(2).
+000200      05  FAM-UNITS-OBLGD-FY                PIC S9(4) COMP-3.
+000300      05  SR-CITS-UNITS-FY                  PIC S9(4) COMP-3.
+000050 01  FARMS-RENTL-TTL.
+000100      05  TYP-DATA-RENTL-TTL                PIC X(03).
+000200      05  RENTL-TTL-DATA                    OCCURS 3.
+000300          10  OBLGD-FAM-AMT                 PIC S9(10)V99 COMP-3.
+000400          10  OBLGD-SR-CITS-AMT             PIC S9(8)V99 COMP-3.
+000500          10  PYMT-RCVD-AMT                 PIC S9(10)V99 COMP-3.
+000600          10  OBLGD-FAM-UNITS               PIC S9(6) COMP-3.
+000700          10  OBLGD-SR-CITS-UNITS           PIC S9(4) COMP-3.
+000800          10  UNITS-PD-CUR-YR               PIC S9(6) COMP-3.
+000900          10  PROJS-TTL                     PIC S9(5) COMP-3.
+001000      05  FILLER                            PIC XXX.
+000050 01  FARMS-RESCHEDULE.
+000100      05  DTE-RVSD-PYMT-AGRMT-EFCTV         PIC 9(06).
+000200      05  DELQ-AMT-AS-OF-RESCHED-AGRMT      PIC S9(7)V99 COMP-3.
+000300      05  RVSD-PYMT-INSTLMT-AMT             PIC S9(5)V99 COMP-3.
+000400      05  FILLER                            PIC X.
+000050 01  FARMS-RH-DFRL.
+000100      05  RH-DFRD-MORT-CDE                  PIC 9(1).
+000200      05  PR-DFRD-AMT                       PIC S9(5)V99 COMP-3.
+000300      05  CUR-MO-DFRD-AMT                   PIC S9(5)V99 COMP-3.
+000400      05  CUR-ANL-DFRD-AMT                  PIC S9(5)V99 COMP-3.
+000500      05  DTE-INIT-DFRL                     PIC 9(6).
+000600      05  DTE-CUR-DFRL                      PIC 9(6).
+000700      05  DTE-CUR-DFRL-EXPRTN               PIC 9(6).
+000800      05  DTE-LST-CNCLTN                    PIC 9(6).
+000900      05  CUM-DFRD-PRIN-CR-AMT              PIC S9(5)V99 COMP-3.
+001000      05  CUM-DFRD-DUE-RCVB-AMT             PIC S9(5)V99 COMP-3.
+001100      05  DFRD-PRIN-PD-AMT                  PIC S9(5)V99 COMP-3.
+001200      05  CUM-DFRD-INT-CR-AMT               PIC S9(5)V99 COMP-3.
+001300      05  DFRD-INT-PD-AMT                   PIC S9(5)V99 COMP-3.
+001400      05  ACCRD-INT-PD-AMT                  PIC S9(5)V99 COMP-3.
+001500      05  CUR-DFRD-MORT-INSTLMT-AMT         PIC S9(5)V99 COMP-3.
+001600      05  DTE-LST-CSH-CR                    PIC 9(6).
+001700      05  NON-CSH-CR-AMT                    PIC S9(5)V99 COMP-3.
+001800      05  SCHED-STAT-DFRL                   PIC S9(5)V99 COMP-3.
+001900      05  CR-NON-CSH-APPLTN-TYP-CDE         PIC X(1).
+002000      05  DTE-LST-NON-CSH-CR                PIC 9(06).
+002100      05  INT-FCL-LN-DFRL                   PIC S9(5)V99 COMP-3.
+002200      05  FILLER                            PIC X(0034).
+000050 01  FARMS-SRCFDS.
+000100      05  SRC-FDS-CDE                       PIC 9(1).
+000200      05  FILLER                            PIC X(0099).
+000050 01  FARMS-ST-LOOKUP.
+000100      05  ST-CDE-FMHA                       PIC 9(2).
+000200      05  SRVCG-OFC-CDE-ST                  PIC 9(2).
+000300      05  NME-ST                            PIC X(14).
+000400      05  ST-ABBR                           PIC A(2).
+000500      05  HQ-TWN                            PIC X(20).
+000600      05  RGN-CDE                           PIC 9(1).
+000700      05  ST-OFC-CNTRL-CDE                  PIC 9(1).
+000800      05  FILLER                            PIC XX.
+000050 01  FARMS-STAT.
+000100      05  STAT-COURT-ACTN-PNDG              PIC 9(1).
+000200      05  STAT-FRCL-ACTN-PNDG               PIC 9(1).
+000300      05  STAT-BANKRUPTCY                   PIC 9(1).
+000400      05  STAT-3RD-PARTY-JDGMT              PIC 9(1).
+000500      05  STAT-TRF-PNDG                     PIC 9(1).
+000600      05  STAT-SUBJ-TO-ADJMT                PIC 9(1).
+000700      05  STAT-MRTM                         PIC 9(1).
+000800      05  DTE-FRCL-OR-CNVYNC-ACTN           PIC 9(4).
+000900      05  STAT-ACCLTN                       PIC X(1).
+000050 01  FARMS-STOPPER.
+000100      05  FILLER                            PIC X(0200).
+000050 01  FARMS-SUBSIDY.
+000100      05  CUR-SBSY-AMT                      PIC S9(5) COMP-3.
+000200      05  PR-SBSY-AMT                       PIC S9(5) COMP-3.
+000300      05  PRIN-CR-SBSY                      PIC S9(7)V99 COMP-3.
+000400      05  INT-CR-SBSY                       PIC S9(7)V99 COMP-3.
+000500      05  INT-ASSTNC-CUM-AMT                PIC S9(7)V99 COMP-3.
+000600      05  SBSY-RECPTR-CDE                   PIC 9.
+000700      05  EFCTV-DTE-SBSY-AGRMT.
+000800          10  EFCTV-MO-SBSY-AGRMT           PIC 9(2).
+000900          10  EFCTV-DAY-SBSY-AGRMT          PIC 9(2).
+001000          10  EFCTV-YR-SBSY-AGRMT           PIC 9(2).
+001100      05  EXPRTN-DTE-SBSY-AGRMT.
+001200          10  EXPRTN-MO-SBSY-AGRMT          PIC 9(2).
+001300          10  EXPRTN-DAY-SBSY-AGRMT         PIC 9(2).
+001400          10  EXPRTN-YR-SBSY-AGRMT          PIC 9(2).
+001500      05  DTE-SBSY-CNVSN.
+001600          10  MO-SBSY-CNVSN                 PIC 9(2).
+001700          10  DAY-SBSY-CNVSN                PIC 9(2).
+001800          10  YR-SBSY-CNVSN                 PIC 9(2).
+001900      05  PRIN-REDCTN-SBSY                  PIC S9(7)V99 COMP-3.
+002000      05  UNPD-PRIN-CNVSN                   PIC S9(7)V99 COMP-3.
+002100      05  FILLER                            PIC X(0006).
+000050 01  FARMS-SUBSRC.
+000100      05  COHORT-CDE                        PIC 9(3).
+000200      05  SRC-FDS-CDE                       PIC 9(1).
+000300      05  FILLER                            PIC X(20).
+000050 01  FARMS-TRNSCTN-CNTRL.
+000100      05  TRNSCTN-CNTRL-KEY                 PIC X(2).
+000200      05  FILLER                            PIC XX.
+000050 01  FARMS-TRNSCTN-RVRSL.
+000100      05  TRNSCTN-CDE-UPDTE                 PIC X(2).
+000200      05  LN-AMT                            PIC S9(7)V99 COMP-3.
+000300      05  RECVRBL-CST-CHGS                  PIC S9(7)V99 COMP-3.
+000400      05  PRIN-CR-LN                        PIC S9(7)V99 COMP-3.
+000500      05  INT-CR-LN                         PIC S9(7)V99 COMP-3.
+000600      05  INT-FCL-LN                        PIC S9(7)V99 COMP-3.
+000700      05  CHGS-ADVNC-FROM-FD                PIC S9(7)V99 COMP-3.
+000800      05  PRIN-CR-ADVNC-FROM-FD             PIC S9(7)V99 COMP-3.
+000900      05  INT-CR-ADVNC-FROM-FD              PIC S9(7)V99 COMP-3.
+001000      05  INT-FCL-FROM-ADVNC-DTE            PIC S9(7)V99 COMP-3.
+001100      05  INSRNC-CHGS-CUM-AMT               PIC S9(5)V99 COMP-3.
+001200      05  PRIN-CR-INSRNC-CHG-CUM            PIC S9(5)V99 COMP-3.
+001300      05  CASE-NBR-TRFEE.
+001400          10  ST-CDE-TRFEE                  PIC 9(2).
+001500          10  CTY-CDE-TRFEE                 PIC 9(3).
+001600          10  ID-NBR-TRFEE                  PIC 9(10).
+001700      05  FD-CDE.
+001800          10  FD-CDE-3.
+001900              15  FD-CDE-2                  PIC 9(2).
+002000              15  FD-CDE-3RD                PIC 9(1).
+002100          10  FD-CDE-4TH                    PIC 9(1).
+002200      05  LN-NBR                            PIC 9(2).
+002300      05  PROCG-TYP-CDE                     PIC X(1).
+002400      05  DFRD-INT-LN-AMT                   PIC S9(6)V99 COMP-3.
+002500      05  NON-CPTLZD-INT-LN-AMT             PIC S9(7)V99 COMP-3.
+002600      05  DFRD-NON-CPTLZD-INT-AMT           PIC S9(07)V99 COMP-3.
+002700      05  CPTLZD-INT                        PIC S9(7)V99 COMP-3.
+002800      05  FILLER                            PIC X(0003).
+000050 01  FARMS-TRRATE.
+000100      05  TRSRY-RATE-KEY.
+000200          10  TRSRY-YR                      PIC 9(04).
+000300          10  MTURTY-RNGE-CDE               PIC 9(01).
+000400      05  QTR-RATE                          OCCURS 4 PIC V9(04).
+000500      05  FILLER                            PIC X(0027).
+000050 01  FARMS-TRSTR.
+000100      05  TRSRY-CALC-KEY.
+000200          10  TRSRY-YR                      PIC 9(04).
+000300          10  MTURTY-RNGE-CDE               PIC 9(01).
+000400          10  TRSRY-SYM-CDE                 PIC X(07).
+000500          10  COHORT-CDE                    PIC 9(3).
+000600      05  FILLER                            PIC X(0025).
+000050 01  FARMS-USER-AUTHY.
+000100      05  TRNSCTN-AUTHY-CDE                 PIC XX.
+000200      05  TRNSCTN-CNT                       PIC X(3).
+000300      05  TRNSCTN-CDE-UPDTE                 OCCURS 200 PIC X(2).
+000400      05  FILLER                            PIC X(0011).
+000050 01  FARMS-USER-DOMAIN.
+000100      05  DTE-LST-UPDTE                     PIC 9(6).
+000200      05  ST-CTY-CDE-FMHA.
+000300          10  ST-CDE-FMHA                   PIC 9(2).
+000400          10  CTY-CDE-FMHA                  PIC 9(3).
+000500      05  NME-CTY                           PIC X(20).
+000600      05  FILLER                            PIC X.
+000050 01  FARMS-USER-STATCS.
+000100      05  RPT-RQST-CDE                      PIC X(1).
+000200      05  LST-LGN-DTE                       PIC 9(6).
+000300      05  TRNSCTN-TTL-CNT                   PIC 9(7) COMP-3.
+000400      05  TIME-START.
+000500          10  HR-START                      PIC 99.
+000600          10  MIN-START                     PIC 99.
+000700      05  OPTN-CDE                          PIC X(1).
+000800      05  OPTN-CLS                          OCCURS 2.
+000900          10  ACCMLTD-TIME-DTD              PIC 9(4)V99.
+001000          10  TRNSCTN-TTL-CNT-DTD           PIC 9(7) COMP-3.
+001100          10  ACCMLTD-TIME-MTD              PIC 9(4)V99.
+001200          10  TRNSCTN-TTL-CNT-MTD           PIC 9(7) COMP-3.
+001300          10  ACCMLTD-TIME-YTD              PIC 9(4)V99.
+001400          10  TRNSCTN-TTL-CNT-YTD           PIC 9(7) COMP-3.
+000050 01  FARMS-USERS.
+000100      05  USER-ID.
+000200          10  AUTHY-CDE-TRML-OPRTR          PIC X(1).
+000300          10  PRFCY-LVL-TRML-OPRTR          PIC X.
+000400                      88  NO-UP-AUTHTY-CDE  VALUE '0'.
+000500                      88  UP-AUTHTY-CDE     VALUE '1'.
+000600          10  FILLER                        PIC X(1).
+000700          10  ID-TRML-OPRTR                 PIC X(03).
+000800      05  USER-ID-ALT                 REDEFINES USER-ID PIC X(6).
+000900      05  SRVCG-OFC-CDE-CTY                 PIC 9(5).
+001000      05  ORGZTN-STRUC                      PIC 9(1).
+001100      05  SCRTY-INDCTR-CDE                  PIC 9(1).
+001200      05  TRNSCTN-AUTHY-CDE                 PIC XX.
+001300      05  FILLER                            PIC X.
+000050 01  FDBDGT.
+000100      05  FY-YR-MO.
+000200          10  FY                            PIC 9(2).
+000300          10  FY-MO                         PIC 9(02).
+000400      05  FILLER                            PIC X(0036).
+000050 01  FHARREC.
+000100      05  LOCTN-KEY-2.
+000200          10  LOCTN-LVL                     PIC X(1).
+000300                      88  ST-LOCTN-LVL      VALUE 'S'.
+000400                      88  DST-LOCTN-LVL     VALUE 'D'.
+000500                      88  CTY-LOCTN-LVL     VALUE 'C'.
+000600          10  ST-CDE-FMHA                   PIC 9(2).
+000700          10  CTY-CDE-FMHA                  PIC 9(3).
+000800          10  DST-CDE-FMHA                  PIC 9(3).
+000900          10  YR-MO.
+001000              15  YR                        PIC 9(2).
+001100              15  MO-GRGRN                  PIC 9(2).
+001200      05  MULTI-CARD-DATA-LGTH              PIC S9(4) COMP.
+001300      05  FRM-HSG-ACTV-GRP OCCURS 1500
+001350                          DEPENDING ON MULTI-CARD-DATA-LGTH-106.
+001400          10  LN-PROG-KEY                   PIC 9(2).
+001500          10  UPDTE-CDE                     PIC 9(01).
+001600          10  RACE-SEX-DESC-CDE             PIC 9(2).
+001700          10  TBL-ELMT-CNT                  PIC S9(03).
+000050 01  FIELD-HN.
+000100      05  FLD-NME-SCRTY                     PIC X(20).
+000200      05  BFOR-VLU-SCRTY                    PIC X(53).
+000300      05  AFTR-VLU-SCRTY                    PIC X(53).
+000400      05  FILLER                            PIC X(0026).
+000050 01  GL-MSTACCT.
+000100      05  RD-TAX-ID                         PIC S9(9) COMP.
+000200      05  RD-ACCT-NBR                       PIC S9(9) COMP.
+000050 01  GLACCT.
+000100      05  ACCT-NBR                          PIC 9(4).
+000200      05  LINE-NBR-CDE.
+000300          10  PRFX-LINE-NBR                 PIC 99.
+000400          10  SFX-LINE-NBR                  PIC X.
+000500          10  SUB-SFX-LINE-NBR              PIC 9.
+000600      05  MINOR-CDE-FLAG                    PIC 9.
+000700      05  ACCT-TITLE                        PIC X(50).
+000800      05  BAL-CDE                           PIC 9.
+000900      05  ENTY                              OCCURS 99 PIC 9.
+001000      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+001100      05  FILLER                            PIC X(0035).
+000050 01  GLACCTC.
+000100      05  GL-CNTRL-KEY                      PIC 99 VALUE 01.
+000200      05  RCRD-CNT                          PIC 9(5).
+000300      05  DTE-LST-RGSTRCT                   PIC 9(06).
+000400      05  FILLER                            PIC XXX.
+000050 01  GLBLKC.
+000100      05  ENTY-BLK-NBR.
+000200          10  FY                            PIC 9(2).
+000300          10  ENTY-CDE                      PIC 9(2).
+000400          10  BLK-NBR-5                     PIC 9(5).
+000500      05  SBSDRY-ACCT-HASH-TTL              PIC S9(5) COMP-3.
+000600      05  ACCT-NBRS-HASH-TTL                PIC S9(7) COMP-3.
+000700      05  MINOR-CDE-HASH-TTL                PIC S9(5) COMP-3.
+000800      05  DR-AMT-INDIV-GL-ACCTS             PIC S9(13)V99 COMP-3.
+000900      05  CR-AMT-INDIV-GL-ACCTS             PIC S9(13)V99 COMP-3.
+001000      05  USER-INITS                        PIC X(3).
+001100      05  FILLER                            PIC X(0002).
+000050 01  GLBLKD.
+000100      05  ACCT-NBR                          PIC 9(4).
+000200      05  MINOR-CDE                         PIC 9(3).
+000300      05  FD-CDE.
+000400          10  FD-CDE-3.
+000500              15  FD-CDE-2                  PIC 9(2).
+000600              15  FD-CDE-3RD                PIC 9(1).
+000700          10  FD-CDE-4TH                    PIC 9(1).
+000800      05  TRNSCTN-CDE                       PIC 999.
+000900      05  DTE-END-OF-MO                     PIC 9(6).
+001000      05  PURP-CDE-1                        PIC 9.
+001100      05  DR-AMT-INDIV-GL-ACCTS             PIC S9(13)V99 COMP-3.
+001200      05  CR-AMT-INDIV-GL-ACCTS             PIC S9(13)V99 COMP-3.
+001300      05  MO-ACTV                           PIC 99.
+001400      05  RGSTR-TYP-CDE                     PIC 99.
+001500      05  TIME-STNDS-DATA                   PIC 9(4).
+001600      05  USER-INITS                        PIC X(3).
+001700      05  FILLER                            PIC X(0004).
+000050 01  GLCNTRL.
+000100      05  GL-CNTRL-KEY                      PIC 99 VALUE 01.
+000200      05  ENTRY-TRNSCTNS-CNTRL-TTL          PIC S9(10) COMP-3.
+000300      05  ENTRY-FUNDS-CNTRL-TTL             PIC S9(10) COMP-3.
+000400      05  MINOR-CDES-CNTRL-TTL              PIC S9(10) COMP-3.
+000500      05  ACCT-TITLES-CNTRL-TTL             PIC S9(10) COMP-3.
+000600      05  DLY-RGSTR-DRS                     PIC S9(12)V99 COMP-3.
+000700      05  DLY-RGSTR-CRS                     PIC S9(12)V99 COMP-3.
+000800      05  FILLER                            PIC X(0006).
+000050 01  GLENTRY.
+000100      05  ASSOC-TRNSCTN-CDE.
+000200          10  INDIV-ASSOC-CDE               PIC 9.
+000300          10  TRNSCTN-CDE                   PIC 999.
+000400          10  FD-CDE-2                      PIC 9(2).
+000500      05  POS-NEG-CDE                       PIC 9.
+000600      05  DR-INT                            OCCURS 5 PIC 9(7).
+000700      05  CR-INT                            OCCURS 5 PIC 9(7).
+000800      05  DR-PRIN                           OCCURS 5 PIC 9(7).
+000900      05  CR-PRIN                           OCCURS 5 PIC 9(7).
+001000      05  DR-RTND-INT                       OCCURS 2 PIC 9(7).
+001100      05  CR-RTND-INT                       OCCURS 2 PIC 9(7).
+001200      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+001300      05  FILLER                            PIC X(0019).
+000050 01  GLENTTL.
+000100      05  FY-ENTY-CDE.
+000200          10  FY                            PIC 9(2).
+000300          10  ENTY-CDE                      PIC 9(2).
+000400      05  ACCT-NBRS-CNTRL-TTL               PIC S9(8) COMP-3.
+000500      05  MINOR-CDE-CNTRL-TTL               PIC S9(7) COMP-3.
+000600      05  CUR-ACCT-BAL-TTL-DRS              PIC S9(13)V99 COMP-3.
+000700      05  CUR-ACCT-BAL-TTL-CRS              PIC S9(13)V99 COMP-3.
+000800      05  PR-YR-ENDG-BAL-CNTRL-TTL          PIC S9(13)V99 COMP-3.
+000900      05  CUR-PROC-MO                       PIC 99.
+001000      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+001100      05  ENTY-TITLE                        PIC X(60).
+001200      05  AGCY-TITLE                        PIC X(50).
+001300      05  ENTY-SUB-TITLE                    PIC X(35).
+001400      05  FILLER                            PIC X(0034).
+000050 01  GLMNCDE.
+000100      05  MINOR-CDE                         PIC 999.
+000200      05  ENTY                              OCCURS 99 PIC 9.
+000300      05  MINOR-CDE-TITLE                   PIC X(50).
+000400      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+000500      05  FILLER                            PIC X(0012).
+000050 01  GLMNCDEC.
+000100      05  GL-CNTRL-KEY                      PIC 99 VALUE 01.
+000200      05  RCRD-CNT                          PIC 9(5).
+000300      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+000400      05  FILLER                            PIC XXX.
+000050 01  GLMSTR.
+000100      05  ENTY-ACCT-MINOR-CDE.
+000200          10  FY                            PIC 9(2).
+000300          10  ENTY-CDE                      PIC 9(2).
+000400          10  ACCT-NBR                      PIC 9(4).
+000500          10  MINOR-CDE                     PIC 999.
+000600      05  CUR-MO-CDE                        PIC 99.
+000700      05  CUR-ACCT-BAL                      PIC S9(13)V99 COMP-3.
+000800      05  PR-YR-ENDG-BAL                    PIC S9(13)V99 COMP-3.
+000900      05  GL-MO-ACTV              OCCURS 12 PIC S9(13)V99 COMP-3.
+001000      05  CLSG-ENTRIES                      PIC S9(13)V99 COMP-3.
+001100      05  CUR-MO-PR-YR-ACTV                 PIC S9(13)V99 COMP-3.
+001200      05  SUBQ-MO-PR-YR-ACTV       OCCURS 3 PIC S9(13)V99 COMP-3.
+001300      05  MEMO-ACCT-BAL                     PIC S9(13)V99 COMP-3.
+001400      05  PREV-BAL-CNTR                     PIC S9(13)V99 COMP-3.
+001500      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+001600      05  RGSTR-TYP-CDE                     PIC 9(2).
+001700      05  CTRY-DIGIT                        PIC 9(1).
+001800      05  FILLER                            PIC X(0010).
+000050 01  GLNTRYC.
+000100      05  BLK-NBR-5                         PIC 9(5).
+000200      05  TRNSCTN-CDES-HASH-TTL             PIC S9(5) COMP-3.
+000300      05  FD-CDES-HASH-TTL                  PIC S9(4) COMP-3.
+000400      05  USER-INITS                        PIC X(3).
+000500      05  UPDTR-INITS                       PIC X(3).
+000600      05  TIME-STNDS-DATA                   PIC 9(4).
+000700      05  FILLER                            PIC 9(0007).
+000050 01  GLNTRYD.
+000100      05  INDIV-ASSOC-CDE                   PIC 9.
+000200      05  TRNSCTN-CDE                       PIC 9(3).
+000300      05  FD-CDE-3RD-4TH                    PIC 9(2).
+000400      05  RCRD-CNTRL-CDE                    PIC 9(1).
+000500      05  SIGN-1                            PIC X(1).
+000600      05  INSRNC-CHG-CDE                    PIC 9.
+000700      05  DR-AMT-INT-PRIN-RTND         OCCURS 5 PIC S9(7) COMP-3.
+000800      05  CR-AMT-INT-PRIN-RTND         OCCURS 5 PIC S9(7) COMP-3.
+000900      05  DR-REMVL-INDCTR                   PIC X.
+001000      05  CR-REMVL-INDCTR                   PIC X.
+001100      05  FILLER                            PIC X(0005).
+000050 01  GLOVA.
+000100      05  GL-ACCTS-ENTRY-KEY-EXPND.
+000200          10  FY                            PIC 9(2).
+000300          10  APROPTN-CDE-EXPND             PIC 9(3).
+000400          10  PROG-PLANG-BDGTG-CDE.
+000500              15  PPB-CDE-1ST               PIC 9.
+000600              15  PPB-CDE-2-3               PIC 9(2).
+000700          10  MAJ-CLS-EXPND                 PIC 9(3).
+000800          10  OBLGN-EXPNTR-CDE.
+000900              15  SBMSN-CDE                 PIC 9(1).
+001000              15  PURP-CDE                  PIC 9(2).
+001100          10  TRNSCTN-CDE-UPDTE             PIC X(2).
+001200          10  GRP-OF-ALTMT-CDE              PIC X(3).
+001300      05  ENTY-CDE                          PIC 9(2).
+001400      05  OBLGN-ACCTS-DR-ODR                OCCURS 5.
+001500          10  ACCT-NBR-ODR                  PIC 9(4).
+001600          10  MINOR-CDE-ODR                 PIC 999.
+001700      05  OBLGN-ACCTS-CR-OCR                OCCURS 5.
+001800          10  ACCT-NBR-OCR                  PIC 9(4).
+001900          10  MINOR-CDE-OCR                 PIC 999.
+002000      05  VOU-ACCTS-DR-VDR                  OCCURS 5.
+002100          10  ACCT-NBR-VDR                  PIC 9(4).
+002200          10  MINOR-CDE-VDR                 PIC 999.
+002300      05  VOU-ACCTS-CR-VCR                  OCCURS 5.
+002400          10  ACCT-NBR-VCR                  PIC 9(4).
+002500          10  MINOR-CDE-VCR                 PIC 999.
+002600      05  ALTMT-ACCTS-DR-ADR                OCCURS 5.
+002700          10  ACCT-NBR-ADR                  PIC 9(4).
+002800          10  MINOR-CDE-ADR                 PIC 999.
+002900      05  ALTMT-ACCTS-CR-ACR                OCCURS 5.
+003000          10  ACCT-NBR-ACR                  PIC 9(4).
+003100          10  MINOR-CDE-ACR                 PIC 999.
+003200      05  DTE-LST-UPDTE                     PIC 9(6).
+003300      05  USER-ID.
+003400          10  AUTHY-CDE-TRML-OPRTR          PIC X(1).
+003500          10  PRFCY-LVL-TRML-OPRTR          PIC X.
+003600                      88  NO-UP-AUTHTY-CDE  VALUE '0'.
+003700                      88  UP-AUTHTY-CDE     VALUE '1'.
+003800          10  FILLER                        PIC X(1).
+003900          10  ID-TRML-OPRTR                 PIC X(03).
+004000      05  FILLER                            PIC X(0057).
+000050 01  HEAROFC.
+000100      05  HEARG-OFC-GRP.
+000200          10  HEARG-OFC-AREA-ID             PIC X.
+000300          10  HEARG-OFC-ID                  PIC X(05).
+000400      05  OFC-ADDR.
+000500          10  OFC-ADDR-GRP.
+000600              15  OFC-STREET-CITY-1         PIC X(25).
+000700              15  OFC-STREET-CITY-2         PIC X(25).
+000800          10  OFC-ST                        PIC X(02).
+000900          10  OFC-ZIP.
+001000              15  OFC-ZIP-1                 PIC X(05).
+001100              15  OFC-ZIP-2                 PIC X(04).
+001200      05  FILLER                            PIC X(0021).
+000050 01  LOCTN-LOOKUP.
+000100      05  LOCTN-KEY.
+000200          10  LOCTN-LVL                     PIC X(1).
+000300                      88  ST-LOCTN-LVL      VALUE 'S'.
+000400                      88  DST-LOCTN-LVL     VALUE 'D'.
+000500                      88  CTY-LOCTN-LVL     VALUE 'C'.
+000600          10  ST-CDE-FMHA                   PIC 9(2).
+000700          10  CTY-CDE-FMHA                  PIC 9(3).
+000800          10  DST-CDE-FMHA       REDEFINES CTY-CDE-FMHA PIC 9(3).
+000900      05  SRVCG-OFC.
+001000          10  OFC-LVL                       PIC X.
+001100                      88  ST-LVL            VALUE 'S'.
+001200                      88  DST-LVL           VALUE 'D'.
+001300                      88  CTY-LVL           VALUE 'C'.
+001400                      88  RDA-RGN-LVL       VALUE 'R'.
+001500                      88  RDA-AREA-LVL      VALUE 'A'.
+001600          10  ST-CDE-SRVCG                  PIC 9(2).
+001700          10  CTY-CDE-SRVCG                 PIC 9(3).
+001800          10  DST-CDE-SRVCG     REDEFINES CTY-CDE-SRVCG PIC 9(3).
+001900      05  MAILG-OFC.
+002000          10  MAILG-LVL                     PIC X(1).
+002100                      88  ST-MAILG-LVL      VALUE 'S'.
+002200                      88  DST-MAILG-LVL     VALUE 'D'.
+002300                      88  CTY-MAILG-LVL     VALUE 'C'.
+002400                      88  CTY-SPECL-LVL     VALUE 'T'.
+002500                      88  DST-SPECL-LVL     VALUE 'U'.
+002600                      88  ST-SPECL-LVL      VALUE 'V'.
+002700          10  MAILG-CDE.
+002800              15  ST-OFC-MAILG              PIC 9(2).
+002900              15  CTY-OFC-MAILG             PIC 9(3).
+003000              15  DST-OFC-MAILG REDEFINES CTY-OFC-MAILG PIC 9(3).
+003100      05  FIPS-ST-CTY-CDE.
+003200          10  FIPS-ST-CDE                   PIC 9(2).
+003300          10  FIPS-CTY-CDE                  PIC 9(3).
+003400      05  PRIM-ST-CDE                       PIC 9(2).
+003500      05  LOCTN-NME                         PIC X(20).
+003600      05  ST-ABBR.
+003700          10  ST-ABBR-1ST                   PIC A.
+003800          10  ST-ABBR-2ND                   PIC A.
+003900      05  RGN-CDE                           PIC 9(1).
+004000      05  ST-OFC-CNTRL-CDE                  PIC 9(1).
+004100      05  SRVCG-DST-OFC.
+004200          10  DST-OFC-LVL                   PIC X(1).
+004300          10  ST-CDE-DST                    PIC 9(2).
+004400          10  SRVCG-DST.
+004500              15  DST-SRVCG-CDE-1ST         PIC 9(1).
+004600              15  DST-SRVCG-CDE             PIC 9(2).
+004700      05  CONG-DST-CDE-CTY                  OCCURS 4 PIC 9(2).
+004800      05  ORGZTN-STRUC-CTY                  PIC 9(5).
+004900      05  DTE-UPDTED                        PIC 9(06).
+005000      05  UPDTE-SLCTN-CDE                   PIC X(1).
+005100      05  SRVCG-SIS-OFC.
+005200          10  SIS-OFC-LVL                   PIC X(01).
+005300          10  ST-CDE-SIS                    PIC 9(02).
+005400          10  SRVCG-SIS.
+005500              15  SIS-SRVCG-CDE-1ST         PIC 9(01).
+005600              15  SIS-SRVCG-CDE             PIC 9(02).
+005700      05  MAILG-CDE-AMAS.
+005800          10  MAILG-LVL-AMAS                PIC X(1).
+005900                      88  ST-MAILG-LVL-AMAS VALUE 'S'.
+006000                      88  DST-MAILG-LVL-AMAS VALUE 'D'.
+006100                      88  CTY-MAILG-LVL-AMAS VALUE 'C'.
+006200                      88  CTY-SPECL-LVL-AMAS VALUE 'T'.
+006300                      88  DST-SPECL-LVL-AMAS VALUE 'U'.
+006400                      88  ST-SPECL-LVL-AMAS VALUE 'V'.
+006500          10  ST-OFC-MAILG-AMAS             PIC 9(2).
+006600          10  CTY-OFC-MAILG-AMAS            PIC 9(3).
+006700      05  FILLER                            PIC X(0097).
+000050 01  NATIONAL.
+000100      05  NATL-OFC-ID                       PIC X(05).
+000200      05  OFC-ADDR.
+000300          10  OFC-ADDR-GRP.
+000400              15  OFC-STREET-CITY-1         PIC X(25).
+000500              15  OFC-STREET-CITY-2         PIC X(25).
+000600          10  OFC-ST                        PIC X(02).
+000700          10  OFC-ZIP.
+000800              15  OFC-ZIP-1                 PIC X(05).
+000900              15  OFC-ZIP-2                 PIC X(04).
+001000      05  LST-APPEAL-LOG-NBR.
+001100          10  LST-APPEAL-FY                 PIC 9(02).
+001200          10  LST-APPEAL-SEQNC-NBR          PIC 9(06).
+001300      05  NAS-USER-ID-LOG-NBR               PIC 9(05).
+001400      05  FILLER                            PIC X(0025).
+000050 01  NHEAROFC.
+000100      05  NATL-HEARG-OFC-ID                 PIC X(05).
+000200      05  OFC-ADDR.
+000300          10  OFC-ADDR-GRP.
+000400              15  OFC-STREET-CITY-1         PIC X(25).
+000500              15  OFC-STREET-CITY-2         PIC X(25).
+000600          10  OFC-ST                        PIC X(02).
+000700          10  OFC-ZIP.
+000800              15  OFC-ZIP-1                 PIC X(05).
+000900              15  OFC-ZIP-2                 PIC X(04).
+001000      05  FILLER                            PIC X(0014).
+000050 01  OBLGCTRL.
+000100      05  OBLGN-KEY.
+000200          10  ALTEE                         PIC 9.
+000300          10  FY                            PIC 9(2).
+000400          10  FY-MO                         PIC 9(02).
+000500      05  FILLER                            PIC X(0035).
+000050 01  OBLGDTL.
+000100      05  SOC-CDE.
+000200          10  MAJ-CLS                       PIC 9(2).
+000300          10  OBJ-CLSFCTN-CDE               PIC 9(2).
+000400      05  OFC-CDE                           PIC 9(02).
+000500      05  PROJD-AMT                         PIC S9(10) COMP-3.
+000600      05  ACTL-OBLGN-AMT-1                  PIC S9(10) COMP-3.
+000700      05  MO-PLAN-AMT-1                     PIC S9(10) COMP-3.
+000800      05  ANL-PLAN-AMT                      PIC S9(10) COMP-3.
+000900      05  FILLER                            PIC X(0026).
+000050 01  OFCSPC.
+000100      05  OFC-SPC-TYP-SRVC                  PIC X.
+000200      05  OFC-SPC-MAIL-CDE                  PIC 9(05).
+000300      05  OFC-SPC-TYP                       PIC X.
+000400      05  OFC-SPC-LSE-EXPRD-DTE             PIC 9(06).
+000500      05  OFC-SPC-SQFT-RQRMT                OCCURS 3 PIC 9(06).
+000600      05  OFC-SPC-CST                 OCCURS 3 PIC S9(10) COMP-3.
+000700      05  OFC-SPC-DESC                      PIC X(30).
+000800      05  OFC-SPC-FREQ-CLN                  PIC X(30).
+000900      05  FILLER                            PIC X(0035).
+000050 01  PRESBDGT.
+000100      05  BDGT-SLRYS-AMT                    PIC S9(10) COMP-3.
+000200      05  BDGT-TRVL-AMT                     PIC S9(10) COMP-3.
+000300      05  BDGT-NATL-AMT                     PIC S9(10) COMP-3.
+000400      05  BDGT-FLD-AMT                      PIC S9(10) COMP-3.
+000500      05  FILLER                            PIC X(16).
+000050 01  PROJHDR.
+000100      05  FY                                PIC 9(2).
+000200      05  PROJ-HDR                          OCCURS 14 PIC X(12).
+000300      05  OLD-PROJ-HDR                      OCCURS 14 PIC X(12).
+000400      05  LST-UPDTE-DTE                     PIC 9(06).
+000500      05  FILLER                            PIC X(0056).
+000050 01  PROJREC.
+000100      05  MISC-PROJ-KEY.
+000200          10  FY                            PIC 9(2).
+000300          10  SRMP-PROJ-CDE.
+000400              15  SOC-CDE.
+000500                  20  MAJ-CLS               PIC 9(2).
+000600                  20  OBJ-CLSFCTN-CDE       PIC 9(2).
+000700              15  SRMP-ALTEE                PIC 9(02).
+000800              15  PROJ-SEQNC-NBR            PIC 9(02).
+000900      05  PROJ-DESC                         PIC X(40).
+001000      05  PROJD-AMT                  OCCURS 14 PIC S9(10) COMP-3.
+001100      05  OLD-PROJD-AMT              OCCURS 14 PIC S9(10) COMP-3.
+001200      05  PROJ-RMRKS                        PIC X(30).
+001300      05  LST-UPDTE-DTE                     PIC 9(06).
+001400      05  FILLER                            PIC X(0026).
+000050 01  PSTNFIL.
+000100      05  JOB-CDE                           PIC 9(06).
+000200      05  NBR-FTIME-EMPLS            OCCURS 12 PIC S9(05) COMP-3.
+000300      05  NBR-PTIME-EMPLS            OCCURS 12 PIC S9(05) COMP-3.
+000400      05  NBR-TEMP-EMPLS             OCCURS 12 PIC S9(05) COMP-3.
+000500      05  NBR-EM-TEMP-EMPLS          OCCURS 12 PIC S9(05) COMP-3.
+000600      05  NBR-COOPS-STDNT-TRNEE      OCCURS 12 PIC S9(05) COMP-3.
+000700      05  NBR-WAE-EMPLS              OCCURS 12 PIC S9(05) COMP-3.
+000800      05  NBR-NON-CEILG-PSTN         OCCURS 12 PIC S9(05) COMP-3.
+000900      05  DTE-UPDTED                        PIC 9(06).
+001000      05  FILLER                            PIC X(40).
+000050 01  RDADATA.
+000100      05  RDA-KEY.
+000200          10  SRVCG-OFC-CDE-ST              PIC 9(2).
+000300          10  SRVCG-OFC-CDE-RGN             PIC 9(03).
+000400          10  SRVCG-OFC-CDE-AREA REDEFINES SRVCG-OFC-CDE-RGN PIC 9(03).
+000500          10  YR-DTE                        PIC 99.
+000600          10  MO-DTE                        PIC 99.
+000700      05  CF-HRS.
+000800          10  HRS-TRVL-CF                   PIC S9(5) COMP-3.
+000900          10  TRNG-HRS-CF                   PIC S9(5) COMP-3.
+001000          10  TTL-HRS-WORK-CF               PIC S9(5) COMP-3.
+001100      05  WW-HRS.
+001200          10  HRS-TRVL-WW                   PIC S9(5) COMP-3.
+001300          10  TRNG-HRS-WW                   PIC S9(5) COMP-3.
+001400          10  TTL-HRS-WORK-WW               PIC S9(5) COMP-3.
+001500      05  BI-HRS.
+001600          10  HRS-TRVL-BI                   PIC S9(5) COMP-3.
+001700          10  TRNG-HRS-BI                   PIC S9(5) COMP-3.
+001800          10  TTL-HRS-WORK-BI               PIC S9(5) COMP-3.
+001900      05  ADM-GEN-HRS.
+002000          10  HRS-TRVL-ADM-GEN              PIC S9(5) COMP-3.
+002100          10  TRNG-HRS-ADM-GEN              PIC S9(5) COMP-3.
+002200          10  TTL-HRS-WORK-ADM-GEN          PIC S9(5) COMP-3.
+002300      05  OTH-HRS.
+002400          10  HRS-TRVL-OTH                  PIC S9(5) COMP-3.
+002500          10  TRNG-HRS-OTH                  PIC S9(5) COMP-3.
+002600          10  TTL-HRS-WORK-OTH              PIC S9(5) COMP-3.
+002700      05  FILLER                            PIC X(0026).
+000050 01  RECORD-HN.
+000100      05  RCRD-CDE-SCRTY                    PIC X(4).
+000200      05  CHNG-TYP-CDE                      PIC X(1).
+000300      05  FILLER                            PIC X(0011).
+000050 01  RMSADRS.
+000100      05  SDC-KEY.
+000200          10  OFC-LVL                       PIC X.
+000300                      88  ST-LVL            VALUE 'S'.
+000400                      88  DST-LVL           VALUE 'D'.
+000500                      88  CTY-LVL           VALUE 'C'.
+000600                      88  RDA-RGN-LVL       VALUE 'R'.
+000700                      88  RDA-AREA-LVL      VALUE 'A'.
+000800          10  SRVCG-OFC-CDE-ST              PIC 9(2).
+000900          10  SRVCG-OFC-CDE-DST             PIC 9(2).
+001000          10  SRVCG-CDE-OFC-CTY             PIC 9(2).
+001100      05  ST-CDE-FMHA                       PIC 9(2).
+001200      05  OFC-NME                           PIC X(30).
+001300      05  NME-ST                            PIC X(14).
+001400      05  MAILG-ADRS.
+001500          10  STREET-ADRS                   OCCURS 2 PIC X(30).
+001600          10  CITY                          PIC X(28).
+001700          10  ST-ABBR.
+001800              15  ST-ABBR-1ST               PIC A.
+001900              15  ST-ABBR-2ND               PIC A.
+002000          10  ZIP-CDE                       PIC 9(5).
+002100      05  TLPHN.
+002200          10  COMMRCL                       PIC X(12).
+002300          10  EXTENSION                     PIC X(4).
+002400          10  FTS                           PIC X(12).
+002500      05  KEEP                              PIC X(1).
+002600      05  DUMMY-DST                         PIC X(1).
+002700      05  DTE-RMS-OFC-CRTD                  PIC 9(4) COMP-3.
+002800      05  STAT-OF-WEEKS-UPDTE-ALL           PIC X(48).
+002900      05  STAT-OF-WEEKS-UPDTE
+002950              REDEFINES STAT-OF-WEEKS-UPDTE-ALL OCCURS 48 PIC X.
+003000      05  STAT-OF-WEEKS-UPDTE-BY-QTR
+003050           REDEFINES STAT-OF-WEEKS-UPDTE-ALL OCCURS 4 PIC X(12).
+003100      05  STAT-OF-WEEKS-UPDTE-BY-MO
+003150           REDEFINES STAT-OF-WEEKS-UPDTE-ALL OCCURS 12 PIC X(4).
+003200      05  STAT-OF-MTLY-UPDTE-ALL            PIC X(12).
+003300      05  STAT-OF-MTLY-UPDTE
+003350               REDEFINES STAT-OF-MTLY-UPDTE-ALL OCCURS 12 PIC X.
+003400      05  STAT-OF-MTLY-UPDTE-BY-QTR
+003450               REDEFINES STAT-OF-MTLY-UPDTE-ALL OCCURS 4 PIC X(3).
+003500      05  USER-FLD-1                        PIC X(7).
+003600      05  DTE-OF-LST-EXTRCT                 PIC S9(7) COMP-3.
+003700      05  DTE-OF-LST-CHG                    PIC S9(7) COMP-3.
+003800      05  FILLER                            PIC X(0008).
+000050 01  RMSDATA.
+000100      05  YR-MO.
+000200          10  YR                            PIC 9(2).
+000300          10  MO-GRGRN                      PIC 9(2).
+000400      05  EARNED-TIME-NEW                   PIC S9(5) COMP-3.
+000500      05  PRDCTVTY-INDEX-NEW                PIC S9(5) COMP-3.
+000600      05  LN-ACTV-1ST-WEEK.
+000700          10  LN-PROGS-1ST-WEEK             OCCURS 7.
+000800              15  FUNCTN-CNT-1ST-WEEK  OCCURS 9 PIC S9(5) COMP-3.
+000900      05  INIT-SERIAL-NBR-1ST-WEEK          PIC S9(5) COMP-3.
+001000      05  SUBQ-SERIAL-NBR-1ST-WEEK          PIC S9(5) COMP-3.
+001100      05  CHNG-CDE-1ST-WEEK                 PIC X.
+001200      05  LN-ACTV-2ND-WEEK.
+001300          10  LN-PROGS-2ND-WEEK             OCCURS 7.
+001400              15  FUNCTN-CNT-2ND-WEEK  OCCURS 9 PIC S9(5) COMP-3.
+001500      05  INIT-SERIAL-NBR-2ND-WEEK          PIC S9(5) COMP-3.
+001600      05  SUBQ-SERIAL-NBR-2ND-WEEK          PIC S9(5) COMP-3.
+001700      05  CHNG-CDE-2ND-WEEK                 PIC X.
+001800      05  LN-ACTV-3RD-WEEK.
+001900          10  LN-PROGS-3RD-WEEK             OCCURS 7.
+002000              15  FUNCTN-CNT-3RD-WEEK  OCCURS 9 PIC S9(5) COMP-3.
+002100      05  INIT-SERIAL-NBR-3RD-WEEK          PIC S9(5) COMP-3.
+002200      05  SUBQ-SERIAL-NBR-3RD-WEEK          PIC S9(5) COMP-3.
+002300      05  CHNG-CDE-3RD-WEEK                 PIC X.
+002400      05  LN-ACTV-4TH-WEEK.
+002500          10  LN-PROGS-4TH-WEEK             OCCURS 7.
+002600              15  FUNCTN-CNT-4TH-WEEK  OCCURS 9 PIC S9(5) COMP-3.
+002700      05  INIT-SERIAL-NBR-4TH-WEEK          PIC S9(5) COMP-3.
+002800      05  SUBQ-SERIAL-NBR-4TH-WEEK          PIC S9(5) COMP-3.
+002900      05  CHNG-CDE-4TH-WEEK                 PIC X.
+003000      05  LN-ACTV-MTD-WEEK.
+003100          10  LN-PROGS-MTD-WEEK             OCCURS 7.
+003200              15  FUNCTN-CNT-MTD-WEEK  OCCURS 9 PIC S9(5) COMP-3.
+003300      05  INIT-SERIAL-NBR-MTLY              PIC S9(5) COMP-3.
+003400      05  SUBQ-SERIAL-NBR-MTLY              PIC S9(5) COMP-3.
+003500      05  CHNG-CDE-MTLY                     PIC X.
+003600      05  PRELIM-CNTCT                OCCURS 12 PIC S9(5) COMP-3.
+003700      05  PRELIM-APPLTNS-RCVD         OCCURS 12 PIC S9(5) COMP-3.
+003800      05  ENVRNMTL-ASMT               OCCURS 12 PIC S9(5) COMP-3.
+003900      05  ELGBL-DETMNT                OCCURS 12 PIC S9(5) COMP-3.
+004000      05  APPLTNS-RCVD                OCCURS 16 PIC S9(5) COMP-3.
+004100      05  APPLTNS-UNPROCD             OCCURS 16 PIC S9(5) COMP-3.
+004200      05  APPLTNS-IN-PROCS            OCCURS 16 PIC S9(5) COMP-3.
+004300      05  LNS-APPRVD-UNCLSD           OCCURS 16 PIC S9(5) COMP-3.
+004400      05  APPLTNS-RJCTD               OCCURS 16 PIC S9(5) COMP-3.
+004500      05  APPLTNS-WTHDRWN             OCCURS 16 PIC S9(5) COMP-3.
+004600      05  LNS-CLSD                    OCCURS 16 PIC S9(5) COMP-3.
+004700      05  APPRSL                      OCCURS 12 PIC S9(5) COMP-3.
+004800      05  INSPCTN                     OCCURS 12 PIC S9(5) COMP-3.
+004900      05  CNSTRTN-INSPCTN             OCCURS 12 PIC S9(5) COMP-3.
+005000      05  SUPVSR-VSTS                 OCCURS 12 PIC S9(5) COMP-3.
+005100      05  SCRTY-SRVCS                 OCCURS 12 PIC S9(5) COMP-3.
+005200      05  SUPVSR-CNFNC                OCCURS 12 PIC S9(5) COMP-3.
+005300      05  BANK-SRVCS                  OCCURS 12 PIC S9(5) COMP-3.
+005400      05  DELQ-ACCT-SRVCS             OCCURS 12 PIC S9(5) COMP-3.
+005500      05  PYMT-AGRMT                  OCCURS 12 PIC S9(5) COMP-3.
+005600      05  RPTS-EVAL                   OCCURS 12 PIC S9(5) COMP-3.
+005700      05  PYMT-IN-FULL                OCCURS 12 PIC S9(5) COMP-3.
+005800      05  LN-QDTN-ACTNS               OCCURS 12 PIC S9(5) COMP-3.
+005900      05  PROP-MNGNT-ACTNS            OCCURS 12 PIC S9(5) COMP-3.
+006000      05  SALE-INVT-PROP              OCCURS 12 PIC S9(5) COMP-3.
+006100      05  APLS-CASES                  OCCURS 12 PIC S9(5) COMP-3.
+006200      05  LNS-GRT-OUTSTG              OCCURS 12 PIC S9(5) COMP-3.
+006300      05  DELQ-LNS-OUTSTG             OCCURS 12 PIC S9(5) COMP-3.
+006400      05  PRE-APPLTNS-ON-HAND         OCCURS 12 PIC S9(5) COMP-3.
+006500      05  APPLTNS-ON-HAND             OCCURS 12 PIC S9(5) COMP-3.
+006600      05  BORRS-PROJ-OUTSTG           OCCURS 12 PIC S9(5) COMP-3.
+006700      05  DELQ-BORRS-PROJ-OUTSTG      OCCURS 12 PIC S9(5) COMP-3.
+006800      05  PROPS-INVT                  OCCURS 12 PIC S9(5) COMP-3.
+006900      05  BORRS-REVWD-GRDTN           OCCURS 12 PIC S9(5) COMP-3.
+007000      05  BORRS-RQSTD-GRDTN           OCCURS 12 PIC S9(5) COMP-3.
+007100      05  BORRS-GRDTN                 OCCURS 12 PIC S9(5) COMP-3.
+007200      05  LNS-IN-GRDTN-RQST           OCCURS 12 PIC S9(9) COMP-3.
+007300      05  LNS-IN-GRDTN                OCCURS 12 PIC S9(9) COMP-3.
+007400      05  UNDUP-BORRS-REVWD                 PIC S9(5) COMP-3.
+007500      05  UNDUP-BORRS-RQSTD                 PIC S9(5) COMP-3.
+007600      05  UNDUP-BORRS-GRDTN                 PIC S9(5) COMP-3.
+007700      05  CFS-BORRS-NEW                     PIC S9(5) COMP-3.
+007800      05  CFS-BORRS-EXSTG                   PIC S9(5) COMP-3.
+007900      05  CFS-BORRS-CONT                    PIC S9(5) COMP-3.
+008000      05  CFS-BORRS-TTL                     PIC S9(5) COMP-3.
+008100      05  ACT-FRM-BORRS-UNDUP               PIC S9(5) COMP-3.
+008200      05  FRM-BORRS-OFF-SCHED-UNDUP         PIC S9(5) COMP-3.
+008300      05  SBORDNTN-SCRTY-INT-FO-NBR         PIC S9(5) COMP-3.
+008400      05  SBORDNTN-SCRTY-INT-FO-AMT         PIC S9(9) COMP-3.
+008500      05  SBORDNTN-SCRTY-INT-OL-NBR         PIC S9(5) COMP-3.
+008600      05  SBORDNTN-SCRTY-INT-OL-AMT         PIC S9(9) COMP-3.
+008700      05  CNDTNL-CMITMTS-ISSD-PRD           PIC S9(5) COMP-3.
+008800      05  CNDTNL-CMITMTS-END-OF-PRD         PIC S9(5) COMP-3.
+008900      05  RH-MRTMS-APPRVD-INIT              PIC S9(5) COMP-3.
+009000      05  RH-MRTMS-APPRVD-RENWL-2           PIC S9(5) COMP-3.
+009100      05  RH-MRTMS-APPRVD-RENWL-3           PIC S9(5) COMP-3.
+009200      05  RH-MRTMS-APPRVD-RENWL-4           PIC S9(5) COMP-3.
+009300      05  RH-MRTMS-APPRVD-RENWL-5           PIC S9(5) COMP-3.
+009400      05  RH-MRTMS-APPRVD-RENWL-6           PIC S9(5) COMP-3.
+009500      05  RH-MRTMS-IN-FORCE                 PIC S9(5) COMP-3.
+009600      05  HRS-TRVL                          PIC S9(5) COMP-3.
+009700      05  TRNG-HRS                          PIC S9(5) COMP-3.
+009800      05  TTL-HRS-WORK                      PIC S9(5) COMP-3.
+009900      05  BORRS-FP-DFRLS-IN-FORCE           PIC S9(5) COMP-3.
+010000      05  BORRS-NOT-FRMG-VLNTY              PIC S9(5) COMP-3.
+010100      05  BORRS-NOT-FRMG-TRF                PIC S9(5) COMP-3.
+010200      05  BORRS-NOT-FRMG-SALE               PIC S9(5) COMP-3.
+010300      05  DST-REVW-CTY-OFC-WORK             PIC S9(5) COMP-3.
+010400      05  ACT-BORRS                         PIC S9(5) COMP-3.
+010500      05  PROP-ACQD-VLNTY-TTL-GRP      OCCURS 3 PIC S9(5) COMP-3.
+010600      05  PROP-ACQD-FRCL-FMHA-TTL      OCCURS 3 PIC S9(5) COMP-3.
+010700      05  PROP-ACQD-FRCL-OTH-TTL       OCCURS 3 PIC S9(5) COMP-3.
+010800      05  PROP-SLD-CSH-TTL-GRP         OCCURS 3 PIC S9(5) COMP-3.
+010900      05  PROP-SLD-ELGBL-TERMS-TTL     OCCURS 3 PIC S9(5) COMP-3.
+011000      05  PROP-SLD-INELGBL-TERMS       OCCURS 3 PIC S9(5) COMP-3.
+011100      05  PROP-LSE-TTL-GRP             OCCURS 3 PIC S9(5) COMP-3.
+011200      05  PROP-INVT-SUTBL-TTL-GRP      OCCURS 3 PIC S9(5) COMP-3.
+011300      05  PROP-INVT-UNSUTBL-TTL-GRP    OCCURS 3 PIC S9(5) COMP-3.
+011400      05  ACRES-INVT-TTL-GRP           OCCURS 3 PIC S9(5) COMP-3.
+011500      05  MKT-VLU-INVT-TTL-GRP         OCCURS 3 PIC S9(9) COMP-3.
+011600      05  SUPVSD-BANK-ACCTS-NBR        OCCURS 2 PIC S9(5) COMP-3.
+011700      05  SUPVSD-BANK-ACCTS-AMT        OCCURS 2 PIC S9(9) COMP-3.
+011800      05  BORRS-WITH-CKS-ON-HAND       OCCURS 2 PIC S9(5) COMP-3.
+011900      05  YR-END-ANLYS-COMPLD          OCCURS 2 PIC S9(5) COMP-3.
+012000      05  GUIDE-LTR-SENT               OCCURS 2 PIC S9(5) COMP-3.
+012100      05  LNS-RESCHED-CNSLDTD          OCCURS 2 PIC S9(5) COMP-3.
+012200      05  DFRLS-PRIN-INIT              OCCURS 2 PIC S9(5) COMP-3.
+012300      05  ACCLTN-LTR-SENT              OCCURS 2 PIC S9(5) COMP-3.
+012400      05  CHAT-LQDTN-APPRVD            OCCURS 2 PIC S9(5) COMP-3.
+012500      05  PETN-BNKRPTC-FILE            OCCURS 2 PIC S9(5) COMP-3.
+012600      05  BNKRPTC-COMPLD-CONT-BORR     OCCURS 2 PIC S9(5) COMP-3.
+012700      05  BNKRPTC-COMPLD-LOSS-HSE      OCCURS 2 PIC S9(5) COMP-3.
+012800      05  BNKRPTC-COMPLD-NO-FRMG       OCCURS 2 PIC S9(5) COMP-3.
+012900      05  CASES-FRCL-PNDG              OCCURS 2 PIC S9(5) COMP-3.
+013000      05  FRCL-NO-FRMNG-FMHA           OCCURS 2 PIC S9(5) COMP-3.
+013100      05  FRCL-NO-FRMG-LIENHLDR        OCCURS 2 PIC S9(5) COMP-3.
+013200      05  DTE-OF-LST-CHG                    PIC S9(7) COMP-3.
+013300      05  FILLER                            PIC X(0004).
+000050 01  RMSTIME.
+000100      05  LN-PROG-KEY                       PIC 9(2).
+000200      05  LN-PROG-DESC                      PIC X(25).
+000300      05  LN-PROG-GRP-CDE                   PIC X.
+000400      05  FILLER                            PIC X(0017).
+000500      05  TIME-STNDS-DATA-NEW         OCCURS 25 PIC S9(5) COMP-3.
+000050 01  SITE-LOOKUP.
+000100      05  CNTCT-NME                         PIC X(25).
+000200      05  MAILG-ADRS-LINE-1                 PIC X(25).
+000300      05  MAILG-ADRS-LINE-2                 PIC X(25).
+000400      05  MAILG-ADRS-LINE-3                 PIC X(25).
+000500      05  CITY-NME                          PIC X(25).
+000600      05  HQ-TWN                            PIC X(20).
+000700      05  ST-ABBR.
+000800          10  ST-ABBR-1ST                   PIC A.
+000900          10  ST-ABBR-2ND                   PIC A.
+001000      05  ZIP-CDE-GRP.
+001100          10  ZIP-CDE                       PIC 9(5).
+001200          10  ZIP-CDE-LST-4                 PIC 9(4).
+001300      05  TLPHN.
+001400          10  COMMRCL                       PIC X(12).
+001500          10  EXTENSION                     PIC X(4).
+001600          10  FTS                           PIC X(12).
+001700      05  FED-STRIP                         PIC X(6).
+001800      05  DTE-UPDTED                        PIC 9(06).
+001900      05  UPDTE-SLCTN-CDE                   PIC X(1).
+002000      05  RMT-ID                            PIC X(8).
+002100      05  FILLER                            PIC X(0123).
+000050 01  SOCCDE.
+000100      05  SOC-CDE.
+000200          10  MAJ-CLS                       PIC 9(2).
+000300          10  OBJ-CLSFCTN-CDE               PIC 9(2).
+000400      05  SOC-DESC                          PIC X(40).
+000500      05  MISC-OBJ-FLAG                     PIC X.
+000600      05  FILLER                            PIC X(0035).
+000050 01  ST-RCRD.
+000100      05  ST-REC-KEY.
+000200          10  ST-CDE-FMHA                   PIC 9(2).
+000300          10  YR-TABLE-ST                   PIC 9(2).
+000400      05  MO-TABLE-ST                       OCCURS 12.
+000500          10  LN-PROG-DATA                  OCCURS 8 PIC 9(5).
+000600      05  RMS-OPRTR-NBR                     PIC 9(3).
+000700      05  FILLER                            PIC X.
+000050 01  STAFF-RCRD.
+000100      05  RCRD-NBR-KEY                      PIC 9(2).
+000200      05  STAFF-DATA                        OCCURS 64 PIC 9(4).
+000300      05  RMS-OPRTR-NBR                     PIC 9(3).
+000400      05  FILLER                            PIC XXX.
+000050 01  STAFFYR.
+000100      05  CLDR-YR                           PIC 9(02).
+000200      05  QTY-PROJD-STAFF-YR       OCCURS 12 PIC S9(06)V9 COMP-3.
+000300      05  QTY-ACTL-STAFF-YTD       OCCURS 12 PIC S9(06)V9 COMP-3.
+000400      05  QTY-CEILG-STAFF-YR       OCCURS 12 PIC S9(06)V9 COMP-3.
+000500      05  QTY-CUR-STAFF-YR         OCCURS 12 PIC S9(6)V99 COMP-3.
+000600      05  FILLER                            PIC X(0098).
+000050 01  STNDBDGT.
+000100      05  FY                                PIC 9(2).
+000200      05  SRMP-PROJ-CDE.
+000300          10  SOC-CDE.
+000400              15  MAJ-CLS                   PIC 9(2).
+000500              15  OBJ-CLSFCTN-CDE           PIC 9(2).
+000600          10  SRMP-ALTEE                    PIC 9(02).
+000700          10  PROJ-SEQNC-NBR                PIC 9(02).
+000800      05  ACTL-AMT                          PIC S9(10) COMP-3.
+000900      05  PROJD-AMT                         PIC S9(10) COMP-3.
+001000      05  ESTD-FY-1-AMT                     PIC S9(10) COMP-3.
+001100      05  ESTD-FY-2-AMT                     PIC S9(10) COMP-3.
+001200      05  RQSTD-AMT-1                       PIC 9(10) COMP-3.
+001300      05  RQSTD-AMT-2                       PIC 9(10) COMP-3.
+001400      05  RECMDD-AMT-1                      PIC 9(10) COMP-3.
+001500      05  RECMDD-AMT-2                      PIC 9(10) COMP-3.
+001600      05  ACTL-NBR                          PIC 9(06) COMP-3.
+001700      05  RQSTD-NBR                         PIC 9(06).
+001800      05  PROJD-NBR                         PIC 9(06).
+001900      05  ALCTD-AMT                         PIC S9(10) COMP-3.
+002000      05  OBLGD-AMT                         PIC S9(10) COMP-3.
+002100      05  ADP-LSE-AMT                       PIC S9(10) COMP-3.
+002200      05  NON-ADP-LSE-AMT                   PIC S9(10) COMP-3.
+002300      05  ADP-PURCH-AMT                     PIC S9(10) COMP-3.
+002400      05  NON-ADP-PURCH-AMT                 PIC S9(10) COMP-3.
+002500      05  ADP-COMMUCTN-AMT                  PIC S9(10) COMP-3.
+002600      05  NON-ADP-COMMUCTN-AMT              PIC S9(10) COMP-3.
+002700      05  CMMTS                             OCCURS 4 PIC X(78).
+002800      05  LST-UPDTE-DTE                     PIC 9(06).
+002900      05  FILLER                            PIC X(40).
+000050 01  SYMBOL.
+000100      05  TRSRY-SYM                         PIC X(20).
+000200      05  ACCT-MO                           PIC 99.
+000300      05  DEPT-NBR                          PIC 99.
+000400      05  SRVC-AGCY                         PIC XX.
+000500      05  AGCY                              PIC XX.
+000600      05  ACCT-STATN                        PIC X(4).
+000700      05  FD-CDE.
+000800          10  FD-CDE-3.
+000900              15  FD-CDE-2                  PIC 9(2).
+001000              15  FD-CDE-3RD                PIC 9(1).
+001100          10  FD-CDE-4TH                    PIC 9(1).
+001200      05  TRNSMT                            PIC X.
+001300      05  TRNSMT-DTE                        PIC 9(6).
+001400      05  FILLER                            PIC X(0057).
+000050 01  TRNING.
+000100      05  TRNG-CRSE-TITLE                   PIC X(60).
+000200      05  TRNG-JOB-TITLE                    PIC X(20).
+000300      05  NBR-TRNG-ATNDNC                   PIC 9(03).
+000400      05  TRNG-TUITN-AMT                    PIC S9(06) COMP-3.
+000500      05  TRNG-TRVL-PER-DIEM-AMT            PIC S9(06) COMP-3.
+000600      05  FILLER                            PIC X(0029).
+000050 01  TRUCKRNT.
+000100      05  TRKS-LOCTN                        PIC 9(05).
+000200      05  TRKS-VEHCL-TYP                    PIC X(02).
+000300      05  TRKS-RENT-CST                     PIC S9(10) COMP-3.
+000400      05  TRKS-MILAGE-CST                   PIC S9(10) COMP-3.
+000500      05  TRKS-ANL-CST-1                    PIC S9(10) COMP-3.
+000600      05  TRKS-ANL-CST-2                    PIC S9(10) COMP-3.
+000700      05  TRKS-ANL-CST-3                    PIC S9(10) COMP-3.
+000800      05  FILLER                            PIC X(0027).
+000050 01  USER-HN.
+000100      05  USER-ID-PROC                      PIC X(18).
+000200      05  FILLER                            PIC X(0022).
+000050 01  USERINFO.
+000100      05  USER-ID-NAS                       PIC X(05).
+000200      05  USER-ID.
+000300          10  AUTHY-CDE-TRML-OPRTR          PIC X(1).
+000400          10  PRFCY-LVL-TRML-OPRTR          PIC X.
+000500                      88  NO-UP-AUTHTY-CDE  VALUE '0'.
+000600                      88  UP-AUTHTY-CDE     VALUE '1'.
+000700          10  FILLER                        PIC X(1).
+000800          10  ID-TRML-OPRTR                 PIC X(03).
+000900      05  OFCR-NME.
+001000          10  OFCR-LST-NME                  PIC X(17).
+001100          10  OFCR-1ST-NME                  PIC X(12).
+001200          10  OFCR-MID-NME                  PIC X.
+001300      05  OFC-ADDR.
+001400          10  OFC-ADDR-GRP.
+001500              15  OFC-STREET-CITY-1         PIC X(25).
+001600              15  OFC-STREET-CITY-2         PIC X(25).
+001700          10  OFC-ST                        PIC X(02).
+001800          10  OFC-ZIP.
+001900              15  OFC-ZIP-1                 PIC X(05).
+002000              15  OFC-ZIP-2                 PIC X(04).
+002100      05  TELMAIL-ADDR                      PIC X(40).
+002200      05  OFC-PHN.
+002300          10  OFC-AREA                      PIC X(03).
+002400          10  OFC-PHN-NBR                   PIC X(07).
+002500          10  OFC-EXTNSN                    PIC X(04).
+002600      05  CUR-PSTN.
+002700          10  LVL-PSTN                      PIC X(02).
+002800          10  LVL-AREA                      OCCURS 4 PIC X.
+002900          10  LVL-SCRTY                     OCCURS 4 PIC X.
+003000      05  LST-UPDTE-USER-ID                 PIC X(05).
+003100      05  LST-UPDTE-DTE                     PIC 9(06).
+003200      05  ACT-SWTCH                         PIC X.
+003300      05  FILLER                            PIC X(0046).
+000050 01  USGLACT.
+000100      05  USGL-ACCTS-ENTRY-KEY.
+000200          10  ACCT-NBRGL                    PIC 9(4).
+000300          10  ACCT-NBR-SUB                  PIC 9(4).
+000400          10  ACCT-NBRDA                    PIC 9(4).
+000500      05  ACCT-TITLE                        PIC X(50).
+000600      05  BAL-CDE                           PIC 9.
+000700      05  LINE-NBR-CDE.
+000800          10  PRFX-LINE-NBR                 PIC 99.
+000900          10  SFX-LINE-NBR                  PIC X.
+001000          10  SUB-SFX-LINE-NBR              PIC 9.
+001100      05  DTE-LST-RGSTR-ACCT                PIC 9(06).
+001200      05  FILLER                            PIC X(0027).
